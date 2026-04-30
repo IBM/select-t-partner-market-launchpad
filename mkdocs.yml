@@ -1,0 +1,356 @@
+site_name: IBM Americas Select-teritory Partner Market Launchpad
+site_description: Enablement program for partners to upskill in priority products that solve specific customer challenges.
+site_author: IBM Americas Service Engineering Lab
+docs_dir: docs
+repo_url: https://github.com/your-org/partner-market-launchpad
+repo_name: partner-market-launchpad
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: carbon-light
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: carbon-dark
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/rocket-launch-outline
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+extra_css:
+  - stylesheets/carbon.css
+
+plugins:
+  - search
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+
+  - Program:
+    - Overview: program/overview.md
+    - Intended Audience: program/audience.md
+    - Mode of Conduct: program/mode-of-conduct.md
+    - Partner Pipeline: program/partner-pipeline.md
+    - Changelog: program/changelog.md
+
+  - Track 1:
+    - Introduction: tracks/track-01/index.md
+    - Theory:
+      - Market Landscape: tracks/track-01/theory/what-and-why.md
+      - Products Introduction: tracks/track-01/theory/product-overview.md
+    - Labs:
+      - Lab Environment Setup: tracks/track-01/lab-environment-setup.md
+      - Lab 101:
+        - Introduction: tracks/track-01/labs/lab-101/index.md
+        - Prerequisites: tracks/track-01/labs/lab-101/prerequisites.md
+        - Domains:
+          - Retail:
+            - Overview: tracks/track-01/labs/lab-101/retail/index.md
+            - Use Cases:
+              - E-Commerce Product Catalog:
+                - Details: tracks/track-01/labs/lab-101/retail/use-case-1/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/retail/use-case-1/lab-guide.md
+              - Omnichannel Inventory:
+                - Details: tracks/track-01/labs/lab-101/retail/use-case-2/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/retail/use-case-2/lab-guide.md
+          - Legal:
+            - Overview: tracks/track-01/labs/lab-101/legal/index.md
+            - Use Cases:
+              - Contract Lifecycle Management:
+                - Details: tracks/track-01/labs/lab-101/legal/use-case-1/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/legal/use-case-1/lab-guide.md
+              - Legal Document Repository:
+                - Details: tracks/track-01/labs/lab-101/legal/use-case-2/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/legal/use-case-2/lab-guide.md
+          - Automobile:
+            - Overview: tracks/track-01/labs/lab-101/automobile/index.md
+            - Use Cases:
+              - Use Case 1:
+                - Details: tracks/track-01/labs/lab-101/automobile/use-case-1/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/automobile/use-case-1/lab-guide.md
+              - Use Case 2:
+                - Details: tracks/track-01/labs/lab-101/automobile/use-case-2/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/automobile/use-case-2/lab-guide.md
+          - Financial Services:
+            - Overview: tracks/track-01/labs/lab-101/financial-services/index.md
+            - Use Cases:
+              - Use Case 1:
+                - Details: tracks/track-01/labs/lab-101/financial-services/use-case-1/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/financial-services/use-case-1/lab-guide.md
+              - Use Case 2:
+                - Details: tracks/track-01/labs/lab-101/financial-services/use-case-2/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/financial-services/use-case-2/lab-guide.md
+          - Insurance:
+            - Overview: tracks/track-01/labs/lab-101/insurance/index.md
+            - Use Cases:
+              - Use Case 1:
+                - Details: tracks/track-01/labs/lab-101/insurance/use-case-1/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/insurance/use-case-1/lab-guide.md
+              - Use Case 2:
+                - Details: tracks/track-01/labs/lab-101/insurance/use-case-2/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/insurance/use-case-2/lab-guide.md
+          - Marketing:
+            - Overview: tracks/track-01/labs/lab-101/marketing/index.md
+            - Use Cases:
+              - Use Case 1:
+                - Details: tracks/track-01/labs/lab-101/marketing/use-case-1/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/marketing/use-case-1/lab-guide.md
+              - Use Case 2:
+                - Details: tracks/track-01/labs/lab-101/marketing/use-case-2/details.md
+                - Lab Guide: tracks/track-01/labs/lab-101/marketing/use-case-2/lab-guide.md
+      - Lab 201:
+        - Introduction: tracks/track-01/labs/lab-201/index.md
+        - Prerequisites: tracks/track-01/labs/lab-201/prerequisites.md
+        - Domains:
+          - Retail:
+            - Overview: tracks/track-01/labs/lab-201/retail/overview.md
+            - Steps: tracks/track-01/labs/lab-201/retail/steps.md
+            - Validation: tracks/track-01/labs/lab-201/retail/validation.md
+            - Recap: tracks/track-01/labs/lab-201/retail/recap.md
+          - Legal:
+            - Overview: tracks/track-01/labs/lab-201/legal/overview.md
+            - Steps: tracks/track-01/labs/lab-201/legal/steps.md
+            - Validation: tracks/track-01/labs/lab-201/legal/validation.md
+            - Recap: tracks/track-01/labs/lab-201/legal/recap.md
+          - Automobile:
+            - Overview: tracks/track-01/labs/lab-201/automobile/overview.md
+            - Steps: tracks/track-01/labs/lab-201/automobile/steps.md
+            - Validation: tracks/track-01/labs/lab-201/automobile/validation.md
+            - Recap: tracks/track-01/labs/lab-201/automobile/recap.md
+          - Financial Services:
+            - Overview: tracks/track-01/labs/lab-201/financial-services/overview.md
+            - Steps: tracks/track-01/labs/lab-201/financial-services/steps.md
+            - Validation: tracks/track-01/labs/lab-201/financial-services/validation.md
+            - Recap: tracks/track-01/labs/lab-201/financial-services/recap.md
+          - Insurance:
+            - Overview: tracks/track-01/labs/lab-201/insurance/overview.md
+            - Steps: tracks/track-01/labs/lab-201/insurance/steps.md
+            - Validation: tracks/track-01/labs/lab-201/insurance/validation.md
+            - Recap: tracks/track-01/labs/lab-201/insurance/recap.md
+          - Marketing:
+            - Overview: tracks/track-01/labs/lab-201/marketing/overview.md
+            - Steps: tracks/track-01/labs/lab-201/marketing/steps.md
+            - Validation: tracks/track-01/labs/lab-201/marketing/validation.md
+            - Recap: tracks/track-01/labs/lab-201/marketing/recap.md
+      - Lab 301:
+        - Introduction: tracks/track-01/labs/lab-301/index.md
+        - Prerequisites: tracks/track-01/labs/lab-301/prerequisites.md
+        - Domains:
+          - Retail:
+            - Overview: tracks/track-01/labs/lab-301/retail/overview.md
+            - Steps: tracks/track-01/labs/lab-301/retail/steps.md
+            - Validation: tracks/track-01/labs/lab-301/retail/validation.md
+            - Recap: tracks/track-01/labs/lab-301/retail/recap.md
+          - Legal:
+            - Overview: tracks/track-01/labs/lab-301/legal/overview.md
+            - Steps: tracks/track-01/labs/lab-301/legal/steps.md
+            - Validation: tracks/track-01/labs/lab-301/legal/validation.md
+            - Recap: tracks/track-01/labs/lab-301/legal/recap.md
+          - Automobile:
+            - Overview: tracks/track-01/labs/lab-301/automobile/overview.md
+            - Steps: tracks/track-01/labs/lab-301/automobile/steps.md
+            - Validation: tracks/track-01/labs/lab-301/automobile/validation.md
+            - Recap: tracks/track-01/labs/lab-301/automobile/recap.md
+          - Financial Services:
+            - Overview: tracks/track-01/labs/lab-301/financial-services/overview.md
+            - Steps: tracks/track-01/labs/lab-301/financial-services/steps.md
+            - Validation: tracks/track-01/labs/lab-301/financial-services/validation.md
+            - Recap: tracks/track-01/labs/lab-301/financial-services/recap.md
+          - Insurance:
+            - Overview: tracks/track-01/labs/lab-301/insurance/overview.md
+            - Steps: tracks/track-01/labs/lab-301/insurance/steps.md
+            - Validation: tracks/track-01/labs/lab-301/insurance/validation.md
+            - Recap: tracks/track-01/labs/lab-301/insurance/recap.md
+          - Marketing:
+            - Overview: tracks/track-01/labs/lab-301/marketing/overview.md
+            - Steps: tracks/track-01/labs/lab-301/marketing/steps.md
+            - Validation: tracks/track-01/labs/lab-301/marketing/validation.md
+            - Recap: tracks/track-01/labs/lab-301/marketing/recap.md
+      - Lab 401:
+        - Introduction: tracks/track-01/labs/lab-401/index.md
+        - Prerequisites: tracks/track-01/labs/lab-401/prerequisites.md
+        - Domains:
+          - Retail:
+            - Overview: tracks/track-01/labs/lab-401/retail/overview.md
+            - Steps: tracks/track-01/labs/lab-401/retail/steps.md
+            - Validation: tracks/track-01/labs/lab-401/retail/validation.md
+            - Recap: tracks/track-01/labs/lab-401/retail/recap.md
+          - Legal:
+            - Overview: tracks/track-01/labs/lab-401/legal/overview.md
+            - Steps: tracks/track-01/labs/lab-401/legal/steps.md
+            - Validation: tracks/track-01/labs/lab-401/legal/validation.md
+            - Recap: tracks/track-01/labs/lab-401/legal/recap.md
+          - Automobile:
+            - Overview: tracks/track-01/labs/lab-401/automobile/overview.md
+            - Steps: tracks/track-01/labs/lab-401/automobile/steps.md
+            - Validation: tracks/track-01/labs/lab-401/automobile/validation.md
+            - Recap: tracks/track-01/labs/lab-401/automobile/recap.md
+          - Financial Services:
+            - Overview: tracks/track-01/labs/lab-401/financial-services/overview.md
+            - Steps: tracks/track-01/labs/lab-401/financial-services/steps.md
+            - Validation: tracks/track-01/labs/lab-401/financial-services/validation.md
+            - Recap: tracks/track-01/labs/lab-401/financial-services/recap.md
+          - Insurance:
+            - Overview: tracks/track-01/labs/lab-401/insurance/overview.md
+            - Steps: tracks/track-01/labs/lab-401/insurance/steps.md
+            - Validation: tracks/track-01/labs/lab-401/insurance/validation.md
+            - Recap: tracks/track-01/labs/lab-401/insurance/recap.md
+          - Marketing:
+            - Overview: tracks/track-01/labs/lab-401/marketing/overview.md
+            - Steps: tracks/track-01/labs/lab-401/marketing/steps.md
+            - Validation: tracks/track-01/labs/lab-401/marketing/validation.md
+            - Recap: tracks/track-01/labs/lab-401/marketing/recap.md
+    - Troubleshooting: tracks/track-01/troubleshooting.md
+  - Track 2:
+    - Introduction: tracks/track-02/index.md
+    # - Theory:
+    #   - Market Landscape: tracks/track-02/theory/what-and-why.md
+    #   - Products Introduction: tracks/track-02/theory/product-overview.md
+    # - Labs:
+    #   - Lab Environment Setup: tracks/track-02/lab-environment-setup.md
+    #   - Lab 101:
+    #     - Overview: tracks/track-02/labs/lab-101/overview.md
+    #     - Prerequisites: tracks/track-02/labs/lab-101/prerequisites.md
+    #     - Steps: tracks/track-02/labs/lab-101/steps.md
+    #     - Validation: tracks/track-02/labs/lab-101/validation.md
+    #     - Recap: tracks/track-02/labs/lab-101/recap.md
+    #   - Lab 201:
+    #     - Overview: tracks/track-02/labs/lab-201/overview.md
+    #     - Prerequisites: tracks/track-02/labs/lab-201/prerequisites.md
+    #     - Steps: tracks/track-02/labs/lab-201/steps.md
+    #     - Validation: tracks/track-02/labs/lab-201/validation.md
+    #     - Recap: tracks/track-02/labs/lab-201/recap.md
+    #   - Lab 301:
+    #     - Overview: tracks/track-02/labs/lab-301/overview.md
+    #     - Prerequisites: tracks/track-02/labs/lab-301/prerequisites.md
+    #     - Steps: tracks/track-02/labs/lab-301/steps.md
+    #     - Validation: tracks/track-02/labs/lab-301/validation.md
+    #     - Recap: tracks/track-02/labs/lab-301/recap.md
+    #   - Lab 401:
+    #     - Overview: tracks/track-02/labs/lab-401/overview.md
+    #     - Prerequisites: tracks/track-02/labs/lab-401/prerequisites.md
+    #     - Steps: tracks/track-02/labs/lab-401/steps.md
+    #     - Validation: tracks/track-02/labs/lab-401/validation.md
+    #     - Recap: tracks/track-02/labs/lab-401/recap.md
+    # - Troubleshooting: tracks/track-02/troubleshooting.md
+  - Track 3:
+    - Introduction: tracks/track-03/index.md
+    # - Theory:
+    #   - Market Landscape: tracks/track-03/theory/what-and-why.md
+    #   - Products Introduction: tracks/track-03/theory/product-overview.md
+    # - Labs:
+    #   - Lab Environment Setup: tracks/track-03/lab-environment-setup.md
+    #   - Lab 101:
+    #     - Overview: tracks/track-03/labs/lab-101/overview.md
+    #     - Prerequisites: tracks/track-03/labs/lab-101/prerequisites.md
+    #     - Steps: tracks/track-03/labs/lab-101/steps.md
+    #     - Validation: tracks/track-03/labs/lab-101/validation.md
+    #     - Recap: tracks/track-03/labs/lab-101/recap.md
+    #   - Lab 201:
+    #     - Overview: tracks/track-03/labs/lab-201/overview.md
+    #     - Prerequisites: tracks/track-03/labs/lab-201/prerequisites.md
+    #     - Steps: tracks/track-03/labs/lab-201/steps.md
+    #     - Validation: tracks/track-03/labs/lab-201/validation.md
+    #     - Recap: tracks/track-03/labs/lab-201/recap.md
+    #   - Lab 301:
+    #     - Overview: tracks/track-03/labs/lab-301/overview.md
+    #     - Prerequisites: tracks/track-03/labs/lab-301/prerequisites.md
+    #     - Steps: tracks/track-03/labs/lab-301/steps.md
+    #     - Validation: tracks/track-03/labs/lab-301/validation.md
+    #     - Recap: tracks/track-03/labs/lab-301/recap.md
+    #   - Lab 401:
+    #     - Overview: tracks/track-03/labs/lab-401/overview.md
+    #     - Prerequisites: tracks/track-03/labs/lab-401/prerequisites.md
+    #     - Steps: tracks/track-03/labs/lab-401/steps.md
+    #     - Validation: tracks/track-03/labs/lab-401/validation.md
+    #     - Recap: tracks/track-03/labs/lab-401/recap.md
+    # - Troubleshooting: tracks/track-03/troubleshooting.md
+  - Track 4:
+    - Introduction: tracks/track-04/index.md
+    # - Theory:
+    #   - Market Landscape: tracks/track-04/theory/what-and-why.md
+    #   - Products Introduction: tracks/track-04/theory/product-overview.md
+    # - Labs:
+    #   - Lab Environment Setup: tracks/track-04/lab-environment-setup.md
+    #   - Lab 101:
+    #     - Overview: tracks/track-04/labs/lab-101/overview.md
+    #     - Prerequisites: tracks/track-04/labs/lab-101/prerequisites.md
+    #     - Steps: tracks/track-04/labs/lab-101/steps.md
+    #     - Validation: tracks/track-04/labs/lab-101/validation.md
+    #     - Recap: tracks/track-04/labs/lab-101/recap.md
+    #   - Lab 201:
+    #     - Overview: tracks/track-04/labs/lab-201/overview.md
+    #     - Prerequisites: tracks/track-04/labs/lab-201/prerequisites.md
+    #     - Steps: tracks/track-04/labs/lab-201/steps.md
+    #     - Validation: tracks/track-04/labs/lab-201/validation.md
+    #     - Recap: tracks/track-04/labs/lab-201/recap.md
+    #   - Lab 301:
+    #     - Overview: tracks/track-04/labs/lab-301/overview.md
+    #     - Prerequisites: tracks/track-04/labs/lab-301/prerequisites.md
+    #     - Steps: tracks/track-04/labs/lab-301/steps.md
+    #     - Validation: tracks/track-04/labs/lab-301/validation.md
+    #     - Recap: tracks/track-04/labs/lab-301/recap.md
+    #   - Lab 401:
+    #     - Overview: tracks/track-04/labs/lab-401/overview.md
+    #     - Prerequisites: tracks/track-04/labs/lab-401/prerequisites.md
+    #     - Steps: tracks/track-04/labs/lab-401/steps.md
+    #     - Validation: tracks/track-04/labs/lab-401/validation.md
+    #     - Recap: tracks/track-04/labs/lab-401/recap.md
+    # - Troubleshooting: tracks/track-04/troubleshooting.md
+
+  - Facilitator Guide:
+    - Running the Program: facilitator/running-the-program.md
+    - Session Planning: facilitator/session-planning.md
+    - Lab Environment Setup: facilitator/lab-environment-setup.md
+    - FAQ Handling: facilitator/faq-handling.md
+
+  - Resources:
+    - Further Reading: resources/further-reading.md
+    - Glossary: resources/glossary.md
+    - Support & Help: resources/support.md
