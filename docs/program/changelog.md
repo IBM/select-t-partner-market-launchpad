@@ -17,6 +17,19 @@ All notable changes to Partner Market Launchpad content are documented here so p
 - Operating system compatibility note for lab commands (MacOS/Linux focus)
 
 ### Changed
+- **Audience documentation restructure** (`docs/program/audience.md`):
+    - Reduced from three to two primary audience groups
+    - Renamed "Select-T Partners" section to "Partner-Facing Stakeholders"
+    - Renamed "Business Technical Leaders (BTLs)" section to "Client-Facing Stakeholders"
+    - Removed "Select-T Clients" as separate audience (now represented as context)
+    - Updated role descriptions to reflect IBM stakeholder focus (BTSS, BSS, PTS, TPS, ATL)
+    - Clarified that program enables IBM stakeholders who work with partners and clients
+- **Homepage updates** (`docs/index.md`):
+    - Updated program description to reference "select-t growth partners"
+    - Updated audience table with new terminology
+- **Lab documentation updates**:
+    - Multiple Track 01, 02, 03, and 04 lab files updated with new terminology
+    - Troubleshooting pages updated across all tracks
 - **Lab environment setup timing**: Reduced from 24 hours to 12 hours before session
 - **Track 01 lab environment setup**: Complete rewrite with TechZone-based provisioning
     - Replaced IBM Cloud CLI provisioning with TechZone bundle approach

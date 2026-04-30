@@ -1,49 +1,37 @@
 # Intended Audience
 
-Partner Market Launchpad is designed for three distinct but complementary audiences, brought together to enable shared understanding, stronger collaboration, and accelerated market adoption.
+Partner Market Launchpad is designed for two distinct but complementary audiences, brought together to enable shared understanding, stronger collaboration, and accelerated market adoption.
 
-## :material-handshake: Select-T Partners
+## :material-handshake: Partner-Facing Stakeholders
 
-All Select-T partners from the Americas market. These are newly onboarded partner representatives who are familiar with the IBM ecosystem but not yet confident enough to drive product conversations with customers.
-
-**Typical roles include:**
-
-- Partner sales representatives
-- Partner pre-sales consultants
-- Partner solution architects
-- Partner technical account managers
-
-**What they gain:** Product fluency, hands-on lab confidence, and a clear framework for positioning the product against real customer pain points.
-
----
-
-## :material-briefcase: Business Technical Leaders (BTLs)
-
-IBM Business Technical Leaders who serve as technical decision makers and architects on the client side, evaluating whether the product is the right fit for their environment.
+IBM stakeholders who work directly with Growth partners to drive enablement, product adoption, and market success.
 
 **Typical roles include:**
 
-- Enterprise architects
-- Solution leads with buying influence
-- Technical directors evaluating new tooling
-- IT leaders assessing implementation feasibility
+- Business Technical Sales Specialists (BTSS)
+- Business Sales Specialists (BSS)
+- Partner Technical Specialists (PTS)
+- Technical Partner Specialists (TPS)
+- Partner enablement managers
+- Technical account managers supporting partners
 
-**What they gain:** Hands-on exposure to the product in a guided, low-pressure environment — helping them move from evaluation to decision faster.
+**What they gain:** Deep product expertise, hands-on lab proficiency, and proven frameworks for enabling partners to successfully position and sell IBM solutions.
 
 ---
 
-## :material-target: Select-T Clients
+## :material-briefcase: Client-Facing Stakeholders
 
-The target clients who represent the end audience for the products being taught. These are organizations that Select-T partners will engage with post-enablement.
+IBM stakeholders who engage directly with customers to evaluate, architect, and implement IBM solutions.
 
-**Typical characteristics:**
+**Typical roles include:**
 
-- Organizations with specific business challenges that IBM products can solve
-- Companies evaluating IBM solutions for their technology stack
-- Enterprises seeking strategic technology partnerships
-- Businesses in the early stages of digital transformation
+- Business Technical Sales Specialists (BTSS)
+- Business Sales Specialists (BSS)
+- Account Technical Leaders (ATL)
+- Client-facing solution architects
+- Technical consultants and pre-sales engineers
 
-**What they represent:** The real-world context that shapes the entire enablement program — their pain points, use cases, and business requirements drive the curriculum design.
+**What they gain:** Hands-on product experience, real-world use case expertise, and the ability to confidently demonstrate value and guide customers through evaluation and implementation.
 
 ---
 
@@ -54,20 +42,22 @@ The target clients who represent the end audience for the products being taught.
 
 ---
 
-## Why All Three Audiences Matter?
+## Why Both Audiences Matter?
 
-The Partner Market Launchpad program is uniquely designed around the interplay of these three audiences:
+The Partner Market Launchpad program is uniquely designed around the collaboration of these two stakeholder groups:
 
-**Partners + BTLs in the same room:**
+**Partner-Facing + Client-Facing Stakeholders Together:**
 
-- Partners practice customer-facing conversations in a real context
-- BTLs get direct access to technical expertise during labs
-- Both sides build trust and rapport before a formal sales engagement begins
+- Partner-facing teams gain the technical depth needed to enable partners effectively
+- Client-facing teams develop hands-on expertise to guide customer evaluations
+- Both groups align on messaging, positioning, and technical capabilities
+- Shared learning creates consistency across partner and customer engagements
 
-**Select-T Clients as the North Star:**
+**:star: Real-World Use Cases as the Foundation:**
 
-- All content, labs, and use cases are designed around real client challenges
-- Partners learn to speak the language of client pain points
-- BTLs evaluate solutions through the lens of actual client requirements
+- All content, labs, and scenarios are designed around actual customer challenges
+- BTSS and BSS learn to articulate value in terms of business outcomes
+- Technical depth is balanced with business context and ROI discussions
+- Enablement is grounded in the real market needs that both partners and clients face
 
-This three-audience model ensures that enablement is not just theoretical it's grounded in the real market needs that Select-T partners will encounter.
+This dual-audience model ensures that IBM stakeholders—whether working with partners or clients—are equipped with consistent, practical expertise to drive adoption and success.

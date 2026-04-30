@@ -12,8 +12,8 @@ Partner Market Launchpad is delivered **in-person** for maximum impact. Face-to-
 
     | Session | Time | Content |
     |---------|------|---------|
-    | **Session 1** | Morning (~4 hrs) | Theory deep-dive + Lab 101 + Lab 201 |
-    | **Session 2** | Morning (~4 hrs) | Lab 301 + Lab 401 + Lab 501 (Capstone) |
+    | **Session 1** | Morning (~4 hrs) | Theory deep-dive + Lab 101 |
+    | **Session 2** | Morning (~4 hrs) | Lab 201 + Lab 301 + Lab 401 |
 
     !!! tip "Retention Advantage"
         Splitting across two days gives attendees time to reflect, explore independently, and arrive at Session 2 with sharper questions.
@@ -24,9 +24,9 @@ Partner Market Launchpad is delivered **in-person** for maximum impact. Face-to-
 
     | Block | Time | Content |
     |-------|------|---------|
-    | **Morning** | 9:00 AM – 1:00 PM | Theory + Lab 101 + Lab 201 + Q&A |
+    | **Morning** | 9:00 AM – 1:00 PM | Theory + Lab 101 + Q&A |
     | **Lunch Break** | 1:00 PM – 2:00 PM | Networking & informal discussion |
-    | **Afternoon** | 2:00 PM – 6:00 PM | Lab 301 + Lab 401 + Lab 501 (Capstone) |
+    | **Afternoon** | 2:00 PM – 6:00 PM | Lab 201 + Lab 301 + Lab 401 + Q&A |
 
     !!! tip "Intensity Advantage"
         A single day keeps momentum high and eliminates scheduling friction across multiple calendar blocks.

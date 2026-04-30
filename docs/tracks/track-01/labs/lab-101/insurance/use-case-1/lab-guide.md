@@ -63,7 +63,7 @@ Navigate to the Insurance API Swagger UI in your browser:
 
 You will see seven GET endpoints grouped under **default**.
 
-![Insurance API Swagger UI](assets/images/insurance_api_swagger.png)
+![Insurance API Swagger UI](../../../../../../assets/images/track01/insurance/101/insurance_api_swagger.png)
 
 #### 1.2 Test Customers by ID
 
@@ -73,7 +73,7 @@ You will see seven GET endpoints grouped under **default**.
 4. Click **Execute**.
 5. Scroll down to view the **Response body** — it contains the full customer record for customer 2 (name, DOB, email, address, state).
 
-![Customers by ID response](assets/images/customers_by_id_response.png)
+![Customers by ID response](../../../../../../assets/images/track01/insurance/101/customers_by_id_response.png)
 
 > **Key insight:** To use this endpoint, the agent must parse the customer ID from the user's natural-language request and pass it as a path parameter to the API.
 
@@ -120,6 +120,8 @@ Individually test the three remaining operation types:
 | **Name** | `Insurance` |
 | **Description** | `This agent retrieves information about customers and their policies` |
 
+![Agent Builder 1](../../../../../../assets/images/track01/insurance/101/1.png)
+
 4. Click **Create**.
 
 The Agent Builder workspace opens with three key areas:
@@ -130,7 +132,19 @@ The Agent Builder workspace opens with three key areas:
 | **Configuration** (centre) | Set up and customise the agent |
 | **Preview** (right) | Live test the agent during development |
 
-![Agent Builder workspace](assets/images/agent_builder_workspace.png)
+![Agent Builder 2](../../../../../../assets/images/track01/insurance/101/2.png)
+
+Below is a description of each section:
+
+- **Profile:** Define your agents purpose, usage scenarios, and interaction style. Describe what the agent does, when it should be used (especially in multi-agent configurations), and choose its style Default or ReAct guide how it interprets requests, plans, and uses tools.
+
+- **Knowledge:** Equip your agent with knowledge by uploading files or connecting to conversational search platforms such as Milvus, Elasticsearch, or custom-built sources. This ensures the agent can generate accurate, contextual responses by drawing on relevant content.
+
+- **Toolset:** Provide your agent with tools to perform tasks. Tools can be added from the Catalog, imported from OpenAPI specification files or MCP servers, or built with custom flows. Tools extend the agents capabilities, enabling it to automate actions such as retrieving data or sending emails.
+
+- **Behavior:** Define how the agent interacts with users, formats data, and handles requests. Add rules and instructions to shape its tone, response style, and overall behavior during interactions.
+
+- **Channels:** Connect your agent to communication platforms like Slack or embed it in a website.
 
 ---
 
@@ -143,13 +157,17 @@ Click **Toolset** in the left navigation panel.
 #### 3.2 Add a new tool
 
 1. Click **Add tool**.
-2. Click **Add from file or MCP server**.
-3. Click **Import from file**.
+1. Click **OpenAPI**.
+
+![Agent Builder 3](../../../../../../assets/images/track01/insurance/101/3.png)
 
 #### 3.3 Upload the OpenAPI specification
 
 1. Drag and drop (or browse to) the `insurance-services.json` file you downloaded earlier.
 2. Wait for the *Validation successful* confirmation.
+
+![Agent Builder 4](../../../../../../assets/images/track01/insurance/101/4.png)
+
 3. Click **Next**.
 
 > The `insurance-services.json` file is an OpenAPI 3.1.0 specification. Orchestrate parses it to extract tool names, descriptions, input parameters, and output schemas automatically. See [openapis.org](https://www.openapis.org/what-is-openapi) for further details on the OAS format.
@@ -157,6 +175,8 @@ Click **Toolset** in the left navigation panel.
 #### 3.4 Select operations
 
 From the list of 7 operations, **select all except Total premium**, then click **Done**.
+
+![Agent Builder 5](../../../../../../assets/images/track01/insurance/101/5.png)
 
 | Operation | Import now? |
 |---|---|
@@ -170,12 +190,16 @@ From the list of 7 operations, **select all except Total premium**, then click *
 
 > `Total premium` is excluded deliberately. You will add it later to compare LLM-only aggregation (unreliable) versus tool-assisted aggregation (deterministic).
 
+![Agent Builder 6](../../../../../../assets/images/track01/insurance/101/6.png)
+
 #### 3.5 Review an imported tool
+
+![Agent Builder 7](../../../../../../assets/images/track01/insurance/101/7.png)
 
 1. Click the **three dots (⋮)** on the **Policies by ID** tool row.
 2. Click **Edit details**.
 3. Note that the tool **Description** has been auto-populated from the OpenAPI spec — this is what the LLM uses to decide *when* to call this tool.
-4. Scroll down to review **Inputs** (requires `path_policy_id`, integer) and **Outputs** (returns `id`, `premium`, `product`, `end_date`, `start_date`).
+4. Select the **Parameters** to review **Inputs** (requires `path_policy_id`, integer) and **Outputs** (returns `id`, `premium`, `product`, `end_date`, `start_date`).
 5. Click **Cancel**.
 
 > **Best practice:** Avoid tools with similar descriptions or overlapping responsibilities. Clear, distinct descriptions improve the agent's tool selection accuracy.
@@ -197,19 +221,9 @@ Observe how the agent:
 - Extracts `3` as the `policy_id` parameter
 - Calls the API and returns the formatted result
 
-![Policy 3 result](assets/images/policy_3_result.png)
+![Policy 3 result](../../../../../../assets/images/track01/insurance/101/8.png)
 
-#### 4.2 List all customers
-
-Type the following in the **Preview** panel:
-
-```
-show me my customers
-```
-
-The agent returns a full list of customers — but in plain prose/list format, which is hard to read.
-
-#### 4.3 Improve output formatting with an instruction
+#### 4.2 List all customers by adding improved output formatting instruction
 
 1. Click **Behavior** in the left navigation panel.
 2. In the **Instructions** field, enter:
@@ -218,17 +232,15 @@ The agent returns a full list of customers — but in plain prose/list format, w
 When showing a list of customers present the data in a table.
 ```
 
-#### 4.4 Re-run and verify table format
-
-Type the following in the **Preview** panel:
+3. Type the following in the **Preview** panel:
 
 ```
 show me my customers
 ```
 
-The data is now returned in a Markdown table. Note that all 13 customers are shown, which may overflow the screen.
+The data is returned in a Markdown table. Note that all 13 customers are shown, which may overflow the screen.
 
-#### 4.5 Limit results inline
+#### 4.3 Limit results inline
 
 Type the following in the **Preview** panel:
 
@@ -238,7 +250,7 @@ show me my customers but only show the first 5
 
 Orchestrate calls the same `Customers` tool (which returns all records) but the LLM truncates the display to the first 5 rows as instructed — no API change required.
 
-![First 5 customers table](assets/images/first_5_customers.png)
+![First 5 customers table](../../../../../../assets/images/track01/insurance/101/10.png)
 
 ---
 
@@ -273,7 +285,7 @@ Click **Show Reasoning** — expand **Step 1** and **Step 2**:
 - Step 2: Tool `customers_by_state` called with `"state": "Florida"`
 - Results from both calls are merged into a single response table.
 
-![Two-state filter reasoning](assets/images/two_state_filter.png)
+![Two-state filter reasoning](../../../../../../assets/images/track01/insurance/101/two_state_filter.png)
 
 #### 5.3 Demonstrate context memory (case correction)
 
@@ -411,7 +423,7 @@ Click **Show Reasoning** — observe that **4 tool calls** were required:
 
 The agent then filters and displays only policies expiring within 30 days.
 
-![Multi-step reasoning trace](assets/images/multi_step_reasoning.png)
+![Multi-step reasoning trace](../../../../../../assets/images/track01/insurance/101/multi_step_reasoning.png)
 
 > **Design implication:** Without prior context (Sarah's ID in memory), the agent may attempt a full customer scan to find "Sarah" — which is inefficient and fragile in datasets with many customers sharing the same first name. Design your data model and tool set to minimise ambiguous lookups.
 
@@ -427,7 +439,7 @@ Embed the agent into the provided brokerage HTML portal.
 2. Click **Embedded agent**.
 3. Click the **copy icon** to copy the JavaScript snippet to your clipboard.
 
-![Embedded agent channels panel](assets/images/embedded_agent_channels.png)
+![Embedded agent channels panel](../../../../../../assets/images/track01/insurance/101/embedded_agent_channels.png)
 
 #### 8.2 Edit the HTML file
 
@@ -474,7 +486,7 @@ Right-click `insurance.html` and open with your browser (Chrome recommended).
 
 A chat icon appears in the **lower-right corner** of the brokerage portal.
 
-![Brokerage portal with chat widget](assets/images/brokerage_portal_widget.png)
+![Brokerage portal with chat widget](../../../../../../assets/images/track01/insurance/101/brokerage_portal_widget.png)
 
 #### 8.4 Test the embedded agent
 
@@ -502,7 +514,7 @@ Deploy the agent to make it available in the Orchestrate Chat UI for all users.
 
 A green **Success — You have deployed Insurance** notification appears. The Channels panel now shows both **Draft** and **Live** states for the Embedded agent.
 
-![Deployment success notification](assets/images/deployment_success.png)
+![Deployment success notification](../../../../../../assets/images/track01/insurance/101/deployment_success.png)
 
 #### 9.3 Use the deployed agent in Chat
 
@@ -540,7 +552,7 @@ The dashboard shows aggregate metrics across all agents:
 
 You will see per-agent metrics and a **Traces** table listing every conversation session with timestamp, trace ID, status, model, and latency.
 
-![Agent analytics dashboard](assets/images/agent_analytics.png)
+![Agent analytics dashboard](../../../../../../assets/images/track01/insurance/101/agent_analytics.png)
 
 #### 10.3 Inspect a trace
 
@@ -566,7 +578,7 @@ You will see per-agent metrics and a **Traces** table listing every conversation
 
 You can also see the **agent instructions** (Behavior section content) and the **current date** injected into the system prompt at runtime.
 
-![Trace detail with tags](assets/images/trace_detail_tags.png)
+![Trace detail with tags](../../../../../../assets/images/track01/insurance/101/trace_detail_tags.png)
 
 > **Production tip:** Use the Traces view to debug unexpected agent behaviour — you can inspect exactly what prompt was sent, which tools were called, what data was returned, and how the final response was generated.
 

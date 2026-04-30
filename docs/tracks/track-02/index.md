@@ -30,7 +30,7 @@ flowchart LR
     lab301 --> lab401["<strong>Lab 401</strong><br/>Advanced"]
 ```
 
-## Before You Begin
+<!-- ## Before You Begin
 
 - Complete the [Program Overview](../../program/overview.md) if you haven't already
 - Ensure your lab environment is set up per the [Track 02 Lab Environment Setup Guide](lab-environment-setup.md)
@@ -39,7 +39,7 @@ flowchart LR
 
 ## Track Sections
 
-_To be defined_
+_To be defined_ -->
 
 <!-- - [Theory — What & Why](theory/what-and-why.md)
 - [Theory — Product Overview](theory/product-overview.md)

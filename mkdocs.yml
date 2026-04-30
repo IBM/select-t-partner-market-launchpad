@@ -1,4 +1,4 @@
-site_name: IBM Americas Select-teritory Partner Market Launchpad
+site_name: IBM Americas Select-territory Partner Market Launchpad
 site_description: Enablement program for partners to upskill in priority products that solve specific customer challenges.
 site_author: IBM Americas Service Engineering Lab
 docs_dir: docs
@@ -84,6 +84,8 @@ nav:
     - Theory:
       - Market Landscape: tracks/track-01/theory/what-and-why.md
       - Products Introduction: tracks/track-01/theory/product-overview.md
+    - Domains: 
+      - Use cases: tracks/track-01/domains/overview.md
     - Labs:
       - Lab Environment Setup: tracks/track-01/lab-environment-setup.md
       - Lab 101:

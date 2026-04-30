@@ -1,0 +1,423 @@
+/* ============================================================
+   IBM Carbon Design System — MkDocs Material Theme Override
+   Fonts: IBM Plex Sans + IBM Plex Mono
+   Colors: Carbon Gray 100 palette + IBM Blue 60
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+/* ── Typography ─────────────────────────────────────────── */
+:root {
+  --md-text-font: "IBM Plex Sans", sans-serif;
+  --md-code-font: "IBM Plex Mono", monospace;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* ── Carbon Color Tokens ────────────────────────────────── */
+/* Light mode — Carbon White / Gray 10 theme */
+[data-md-color-scheme="carbon-light"] {
+  /* Backgrounds */
+  --md-default-bg-color:          #ffffff;
+  --md-default-fg-color:          #161616;
+  --md-default-fg-color--light:   #525252;
+  --md-default-fg-color--lighter: #8d8d8d;
+
+  /* Primary — IBM Blue 60 */
+  --md-primary-fg-color:          #0f62fe;
+  --md-primary-fg-color--light:   #4589ff;
+  --md-primary-fg-color--dark:    #0043ce;
+  --md-primary-bg-color:          #ffffff;
+
+  /* Accent — IBM Teal 50 */
+  --md-accent-fg-color:           #009d9a;
+  --md-accent-fg-color--transparent: #009d9a1a;
+
+  /* Sidebar */
+  --md-sidebar-bg:                #f4f4f4;
+
+  /* Code blocks */
+  --md-code-bg-color:             #f4f4f4;
+  --md-code-fg-color:             #161616;
+
+  /* Typeset */
+  --md-typeset-color:             #161616;
+  --md-typeset-a-color:           #0f62fe;
+
+  /* Admonition */
+  --md-admonition-bg-color:       #f4f4f4;
+
+  /* Footer */
+  --md-footer-bg-color:           #161616;
+  --md-footer-bg-color--dark:     #000000;
+  --md-footer-fg-color:           #f4f4f4;
+  --md-footer-fg-color--light:    #8d8d8d;
+}
+
+/* Dark mode — Carbon Gray 100 theme */
+[data-md-color-scheme="carbon-dark"] {
+  /* Backgrounds */
+  --md-default-bg-color:          #161616;
+  --md-default-fg-color:          #f4f4f4;
+  --md-default-fg-color--light:   #c6c6c6;
+  --md-default-fg-color--lighter: #8d8d8d;
+
+  /* Primary — IBM Blue 40 (lighter for dark bg) */
+  --md-primary-fg-color:          #161616;
+  --md-primary-fg-color--light:   #4589ff;
+  --md-primary-fg-color--dark:    #000000;
+  --md-primary-bg-color:          #f4f4f4;
+
+  /* Accent — IBM Teal 40 */
+  --md-accent-fg-color:           #3ddbd9;
+  --md-accent-fg-color--transparent: #3ddbd91a;
+
+  /* Code blocks */
+  --md-code-bg-color:             #262626;
+  --md-code-fg-color:             #f4f4f4;
+
+  /* Typeset */
+  --md-typeset-color:             #f4f4f4;
+  --md-typeset-a-color:           #4589ff;
+
+  /* Admonition */
+  --md-admonition-bg-color:       #262626;
+
+  /* Footer */
+  --md-footer-bg-color:           #000000;
+  --md-footer-bg-color--dark:     #000000;
+  --md-footer-fg-color:           #c6c6c6;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.md-header {
+  background-color: #161616 !important;
+  border-bottom: 1px solid #393939;
+  box-shadow: none !important;
+}
+
+.md-header__title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  color: #f4f4f4 !important;
+}
+
+.md-header__button {
+  color: #c6c6c6 !important;
+}
+
+/* ── Navigation Tabs ────────────────────────────────────── */
+.md-tabs {
+  background-color: #161616 !important;
+  border-bottom: 1px solid #393939;
+}
+
+.md-tabs__link {
+  color: #c6c6c6 !important;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  opacity: 1 !important;
+}
+
+.md-tabs__link:hover {
+  color: #f4f4f4 !important;
+}
+
+.md-tabs__link--active {
+  color: #f4f4f4 !important;
+  border-bottom: 2px solid #0f62fe;
+  font-weight: 600;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+.md-sidebar {
+  background-color: #f4f4f4;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-sidebar {
+  background-color: #262626;
+}
+
+.md-nav__title {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #525252;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-nav__title {
+  color: #8d8d8d;
+}
+
+.md-nav__link {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: #525252 !important;
+  border-left: 2px solid transparent;
+  transition: border-color 0.1s, color 0.1s;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-nav__link {
+  color: #c6c6c6 !important;
+}
+
+.md-nav__link:hover {
+  color: #161616 !important;
+  border-left-color: #0f62fe;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-nav__link:hover {
+  color: #f4f4f4 !important;
+}
+
+.md-nav__link--active {
+  color: #0f62fe !important;
+  font-weight: 600;
+  border-left: 2px solid #0f62fe;
+}
+
+/* ── Content Area ────────────────────────────────────────── */
+.md-content__inner {
+  max-width: 860px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: #161616;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+[data-md-color-scheme="carbon-dark"] h1 {
+  color: #f4f4f4;
+  border-bottom-color: #393939;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #161616;
+  margin-top: 2rem;
+}
+
+[data-md-color-scheme="carbon-dark"] h2 {
+  color: #f4f4f4;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #161616;
+}
+
+[data-md-color-scheme="carbon-dark"] h3 {
+  color: #f4f4f4;
+}
+
+/* ── Links ───────────────────────────────────────────────── */
+.md-typeset a {
+  color: #0f62fe;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.1s;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: #0f62fe;
+}
+
+/* ── Code ────────────────────────────────────────────────── */
+.md-typeset code {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8125rem;
+  background-color: #f4f4f4;
+  color: #161616;
+  border-radius: 0;
+  padding: 0.1em 0.35em;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-typeset code {
+  background-color: #262626;
+  color: #f4f4f4;
+}
+
+.md-typeset pre > code {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+/* Code block — Carbon style: no rounded corners */
+.highlight {
+  border-radius: 0 !important;
+  border-left: 3px solid #0f62fe;
+}
+
+/* ── Tables ──────────────────────────────────────────────── */
+.md-typeset table:not([class]) {
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #e0e0e0;
+  color: #161616;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 2px solid #8d8d8d;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-typeset table:not([class]) th {
+  background-color: #393939;
+  color: #f4f4f4;
+  border-bottom-color: #6f6f6f;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-typeset table:not([class]) td {
+  border-bottom-color: #393939;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background-color: #f4f4f4;
+}
+
+[data-md-color-scheme="carbon-dark"] .md-typeset table:not([class]) tr:hover td {
+  background-color: #262626;
+}
+
+/* ── Admonitions (Carbon notification style) ─────────────── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0 !important;
+  border: none !important;
+  border-left: 3px solid !important;
+  box-shadow: none !important;
+  font-size: 0.875rem;
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: #edf5ff !important;
+  color: #0043ce !important;
+}
+.md-typeset .note {
+  border-left-color: #0f62fe !important;
+  background-color: #edf5ff !important;
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: #defbe6 !important;
+  color: #044317 !important;
+}
+.md-typeset .tip {
+  border-left-color: #24a148 !important;
+  background-color: #defbe6 !important;
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: #fdf6dd !important;
+  color: #8e6a00 !important;
+}
+.md-typeset .warning {
+  border-left-color: #f1c21b !important;
+  background-color: #fdf6dd !important;
+}
+
+.md-typeset .danger,
+.md-typeset .failure {
+  border-left-color: #da1e28 !important;
+  background-color: #fff1f1 !important;
+}
+
+.md-typeset .success {
+  border-left-color: #24a148 !important;
+  background-color: #defbe6 !important;
+}
+
+/* ── Search ──────────────────────────────────────────────── */
+.md-search__form {
+  border-radius: 0 !important;
+  background-color: #393939 !important;
+}
+
+.md-search__input {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #f4f4f4 !important;
+}
+
+.md-search__input::placeholder {
+  color: #8d8d8d !important;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.md-footer {
+  background-color: #161616;
+  border-top: 1px solid #393939;
+}
+
+.md-footer-meta {
+  background-color: #000000;
+}
+
+.md-footer__title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── Scrollbar (subtle Carbon style) ────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #8d8d8d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6f6f6f;
+}
+
+/* ── Copy button ─────────────────────────────────────────── */
+.md-clipboard {
+  border-radius: 0 !important;
+  color: #8d8d8d;
+}
+.md-clipboard:hover {
+  color: #0f62fe;
+  background-color: transparent;
+}
+
+/* ── Tag / badge style ───────────────────────────────────── */
+.md-tag {
+  border-radius: 0 !important;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+}

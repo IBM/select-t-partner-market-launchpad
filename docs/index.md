@@ -1,9 +1,9 @@
-# Welcome to IBM Americas Select-teritory Partner Market Launchpad
+# Welcome to IBM Americas Select-territory Partner Market Launchpad
 
 ![Intro-banner](assets/images/intro-banner.png)
 *AI Generated image*
 
-Partner Market Launchpad is a structured, immersive enablement program designed to take our select-t partners from product-unfamiliar to customer-ready quickly.
+Partner Market Launchpad is a structured, immersive enablement program designed to take our select-t growth partners from product-unfamiliar to customer-ready quickly.
 
 ---
 
@@ -30,8 +30,8 @@ Partner Market Launchpad is enablement for partners to upskill in priority produ
 
 | Audience | Role |
 |---|---|
-| **Select-T Partners** | All the 64 Select-T partners from Americas market. |
-| **Business Technical Leaders (BTLs)** | IBM BTLs the technical decision makers and architects on the client side evaluating fit |
+| **Growth partners** | All the Growth partners from Americas market. |
+| **Business / Technical Leaders** | The technical decision makers and architects on the client side evaluating fit |
 | **Select-T Clients** | The clients who are the target audience for the products being taught |
 
 **Cohort size:** ~20 attendees per run for optimal hands-on lab experience.
