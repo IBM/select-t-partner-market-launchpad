@@ -2,7 +2,7 @@ site_name: IBM Americas Select-territory Partner Market Launchpad
 site_description: Enablement program for partners to upskill in priority products that solve specific customer challenges.
 site_author: IBM Americas Service Engineering Lab
 docs_dir: docs
-repo_url: https://github.com/your-org/partner-market-launchpad
+repo_url: https://github.com/IBM/select-t-partner-market-launchpad
 repo_name: partner-market-launchpad
 edit_uri: edit/main/docs/
 
