@@ -88,17 +88,13 @@ nav:
       - Lab Environment Setup: tracks/track-01/lab-environment-setup.md
       - Lab 101:
         - Introduction: tracks/track-01/labs/lab-101/index.md
-        - Prerequisites: tracks/track-01/labs/lab-101/prerequisites.md
         - Domains:
           - Retail:
             - Overview: tracks/track-01/labs/lab-101/retail/index.md
             - Use Cases:
-              - E-Commerce Product Catalog:
+              - AI Powered customer service:
                 - Details: tracks/track-01/labs/lab-101/retail/use-case-1/details.md
                 - Lab Guide: tracks/track-01/labs/lab-101/retail/use-case-1/lab-guide.md
-              - Omnichannel Inventory:
-                - Details: tracks/track-01/labs/lab-101/retail/use-case-2/details.md
-                - Lab Guide: tracks/track-01/labs/lab-101/retail/use-case-2/lab-guide.md
           - Legal:
             - Overview: tracks/track-01/labs/lab-101/legal/index.md
             - Use Cases:
@@ -111,12 +107,12 @@ nav:
           - Automobile:
             - Overview: tracks/track-01/labs/lab-101/automobile/index.md
             - Use Cases:
-              - Use Case 1:
+              - Vehicle Maintenance:
                 - Details: tracks/track-01/labs/lab-101/automobile/use-case-1/details.md
                 - Lab Guide: tracks/track-01/labs/lab-101/automobile/use-case-1/lab-guide.md
-              - Use Case 2:
-                - Details: tracks/track-01/labs/lab-101/automobile/use-case-2/details.md
-                - Lab Guide: tracks/track-01/labs/lab-101/automobile/use-case-2/lab-guide.md
+              # - Use Case 2:
+              #   - Details: tracks/track-01/labs/lab-101/automobile/use-case-2/details.md
+              #   - Lab Guide: tracks/track-01/labs/lab-101/automobile/use-case-2/lab-guide.md
           - Financial Services:
             - Overview: tracks/track-01/labs/lab-101/financial-services/index.md
             - Use Cases:
@@ -129,12 +125,12 @@ nav:
           - Insurance:
             - Overview: tracks/track-01/labs/lab-101/insurance/index.md
             - Use Cases:
-              - Use Case 1:
+              - Insurance broker assistant:
                 - Details: tracks/track-01/labs/lab-101/insurance/use-case-1/details.md
                 - Lab Guide: tracks/track-01/labs/lab-101/insurance/use-case-1/lab-guide.md
-              - Use Case 2:
-                - Details: tracks/track-01/labs/lab-101/insurance/use-case-2/details.md
-                - Lab Guide: tracks/track-01/labs/lab-101/insurance/use-case-2/lab-guide.md
+              # - Use Case 2:
+              #   - Details: tracks/track-01/labs/lab-101/insurance/use-case-2/details.md
+              #   - Lab Guide: tracks/track-01/labs/lab-101/insurance/use-case-2/lab-guide.md
           - Marketing:
             - Overview: tracks/track-01/labs/lab-101/marketing/index.md
             - Use Cases:

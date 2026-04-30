@@ -7,48 +7,37 @@
 
 You're working with **SecureLife Insurance**, a growing insurance provider looking to modernize their policy and claims management. They need a solution to manage customer policies, streamline claims processing, and provide customers with self-service capabilities.
 
-## What You'll Build
+## Available Use Cases
 
-- Policy management system
-- Claims processing workflow
-- Customer self-service portal
-- Basic risk assessment functionality
+Select a use case to begin your hands-on lab:
 
-## Business Outcomes
+<div class="grid cards" markdown>
 
-By completing this lab, you'll help SecureLife Insurance:
+-   :material-cart: **AI Powered customer service**
 
-- Centralize policy information across all product lines
-- Reduce claims processing time by 45%
-- Improve customer satisfaction with self-service options
-- Streamline underwriting and risk assessment
+    ---
 
-## Technical Components
+    In the logistics and shipping industry, customer satisfaction hinges on quick updates, transparent delivery tracking, and smooth returns. The AI-Powered Customer Service solution enables companies to handle customer queries related to delivery status, shipment tracking, returns, and claims through an intelligent virtual assistant.
 
-You'll work with:
+    [:octicons-arrow-right-24: View Use Case Details](use-case-1/details.md)
 
-- Policy data models and schemas
-- Claims workflow APIs
-- Customer portal components
-- Basic integration patterns
+</div>
 
 ---
 
-## Prerequisites
+## Learning Objectives
 
-Before starting, ensure you have completed the general [Lab 101 Prerequisites](../prerequisites.md).
+Regardless of which use case you choose, you will learn:
 
-### Insurance-Specific Requirements
-
-- [ ] Understanding of basic insurance concepts (policies, claims, premiums)
-- [ ] Familiarity with insurance workflows
-- [ ] Sample insurance dataset (provided by facilitator)
+- Building AI Agents with Low-code Agent Builder
+- Building AI Agents with pre-built tools and agents from the Catalog
+- Connections in watsonx Orchestrate
+- Knowledge Bases - Basic RAG
+- Web chat embedding - Basic
+- OpenAPI tools
+- Monitoring & Observability
 
 ---
 
-## Next Steps
-
-Ready to begin? Proceed to the [Lab Steps](steps.md) to start building your insurance solution.
-
-!!! tip "Learning Path"
-    After completing this lab, you can continue with Lab 201 - Insurance to build more advanced features like automated underwriting and fraud detection.
+!!! tip "Use Case Selection"
+    Choose the use case that best matches your business interests. Both use cases cover the same technical learning objectives but with different business contexts.

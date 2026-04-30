@@ -13,25 +13,13 @@ Select a use case to begin your hands-on lab:
 
 <div class="grid cards" markdown>
 
--   :material-cart: **E-Commerce Product Catalog**
+-   :material-cart: **AI Powered customer service**
 
     ---
 
-    Build a product catalog management system with inventory tracking and customer-facing browsing interface.
-
-    **What You'll Build:** Product data models, inventory APIs, search functionality
+    In the logistics and shipping industry, customer satisfaction hinges on quick updates, transparent delivery tracking, and smooth returns. The AI-Powered Customer Service solution enables companies to handle customer queries related to delivery status, shipment tracking, returns, and claims through an intelligent virtual assistant.
 
     [:octicons-arrow-right-24: View Use Case Details](use-case-1/details.md)
-
--   :material-package: **Omnichannel Inventory Management**
-
-    ---
-
-    Create a multi-location inventory system with real-time stock tracking and automated reordering.
-
-    **What You'll Build:** Multi-location inventory, stock alerts, order management
-
-    [:octicons-arrow-right-24: View Use Case Details](use-case-2/details.md)
 
 </div>
 
@@ -41,21 +29,13 @@ Select a use case to begin your hands-on lab:
 
 Regardless of which use case you choose, you will learn:
 
-- Core product concepts and architecture
-- Data modeling and schema design
-- API integration patterns
-- Basic user interface development
-- Real-time data synchronization
-
-## Prerequisites
-
-Before starting any use case, ensure you have completed the general [Lab 101 Prerequisites](../prerequisites.md).
-
-### Retail-Specific Requirements
-
-- [ ] Understanding of basic retail concepts (SKU, inventory, orders)
-- [ ] Familiarity with e-commerce workflows
-- [ ] Sample retail dataset (provided by facilitator)
+- Building AI Agents with Low-code Agent Builder
+- Building AI Agents with pre-built tools and agents from the Catalog
+- Connections in watsonx Orchestrate
+- Knowledge Bases - Basic RAG
+- Web chat embedding - Basic
+- OpenAPI tools
+- Monitoring & Observability
 
 ---
 

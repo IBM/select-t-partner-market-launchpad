@@ -4,6 +4,36 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.1.0] — 2026-04-30
+
+### Added
+- New IBMid creation guide for facilitators (`docs/facilitator/create-ibm-id.md`)
+- Comprehensive Track 01 lab environment setup documentation with TechZone provisioning instructions
+- New image assets for Track 01:
+    - Customer service use case images (34 screenshots)
+    - Insurance use case images
+    - Vehicle maintenance use case images
+    - Lab setup screenshots (TechZone, IBMid creation, watsonx Orchestrate settings)
+- Operating system compatibility note for lab commands (MacOS/Linux focus)
+
+### Changed
+- **Lab environment setup timing**: Reduced from 24 hours to 12 hours before session
+- **Track 01 lab environment setup**: Complete rewrite with TechZone-based provisioning
+    - Replaced IBM Cloud CLI provisioning with TechZone bundle approach
+    - Updated environment requirements table (removed API keys, added TechZone details)
+    - Added detailed TechZone reservation and validation steps
+    - Included watsonx Orchestrate configuration instructions
+- **Track 01 index**: Updated "Before You Begin" section with IBMid creation requirement
+- **Navigation structure** (`mkdocs.yml`):
+    - Renamed use cases with descriptive titles:
+        - Retail: "AI Powered customer service"
+        - Automobile: "Vehicle Maintenance"
+        - Insurance: "Insurance broker assistant"
+    - Removed Lab 101 prerequisites page
+    - Commented out secondary use cases for Automobile and Insurance domains
+
+---
+
 ## [1.0.0] — 2026-04-29
 
 ### Added

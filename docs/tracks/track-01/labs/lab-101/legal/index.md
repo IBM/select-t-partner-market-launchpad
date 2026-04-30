@@ -9,9 +9,12 @@ You're working with **LegalTech Partners**, a law firm looking to modernize thei
 
 ## Available Use Cases
 
-Select a use case to begin your hands-on lab:
+!!! danger "Coming soon"
+    Labs for this domain are work in progress and will be available soon. Please check back for updates.
 
-<div class="grid cards" markdown>
+<!-- Select a use case to begin your hands-on lab: -->
+
+<!-- <div class="grid cards" markdown>
 
 -   :material-scale-balance: **Contract Lifecycle Management**
 
@@ -33,7 +36,7 @@ Select a use case to begin your hands-on lab:
 
     [:octicons-arrow-right-24: View Use Case Details](use-case-2/details.md)
 
-</div>
+</div> -->
 
 ---
 
@@ -41,21 +44,13 @@ Select a use case to begin your hands-on lab:
 
 Regardless of which use case you choose, you will learn:
 
-- Core product concepts and architecture
-- Data modeling and schema design
-- API integration patterns
-- Workflow automation
-- Security and access control
-
-## Prerequisites
-
-Before starting any use case, ensure you have completed the general [Lab 101 Prerequisites](../prerequisites.md).
-
-### Legal-Specific Requirements
-
-- [ ] Understanding of basic legal concepts (contracts, compliance, case management)
-- [ ] Familiarity with document management workflows
-- [ ] Sample legal document dataset (provided by facilitator)
+- Building AI Agents with Low-code Agent Builder
+- Building AI Agents with pre-built tools and agents from the Catalog
+- Connections in watsonx Orchestrate
+- Knowledge Bases - Basic RAG
+- Web chat embedding - Basic
+- OpenAPI tools
+- Monitoring & Observability
 
 ---
 

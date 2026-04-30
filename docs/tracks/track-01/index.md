@@ -27,8 +27,9 @@ flowchart LR
 
 ## Before You Begin
 
-- Complete the [Program Overview](../../program/overview.md) if you haven't already
-- Ensure your lab environment is set up per the [Track 01 Lab Environment Setup Guide](lab-environment-setup.md)
+- Complete the [Program Overview](../../program/overview.md) if you haven't already.
+- Create an IBMid by referring to the [instructions here](/facilitator/create-ibm-id/).
+- Ensure your lab environment is set up per the [Track 01 Lab Environment Setup Guide](lab-environment-setup.md).
 
 ---
 

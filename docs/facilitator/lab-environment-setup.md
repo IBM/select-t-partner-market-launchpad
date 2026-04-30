@@ -1,6 +1,6 @@
 # Lab Environment Setup
 
-Provision and validate all lab environments **at least 24 hours before** the session. Never leave this to the morning of.
+Provision and validate all lab environments **at least 12 hours before** the session.
 
 ---
 
@@ -9,6 +9,10 @@ Provision and validate all lab environments **at least 24 hours before** the ses
 Each track has its own specific environment setup requirements based on the products and technologies covered. Select the appropriate track below to view detailed setup instructions.
 
 ---
+
+## Pre-requirement
+
+- [Create your IBMid](./create-ibm-id.md)
 
 ## Track-Specific Setup Guides
 

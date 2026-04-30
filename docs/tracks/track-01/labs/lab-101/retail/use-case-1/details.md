@@ -1,81 +1,21 @@
-# Use Case 1: E-Commerce Product Catalog
+# AI Powered customer service
 
-## Business Context
+## Overview
 
-RetailCo wants to modernize their product catalog system to support their growing e-commerce business. They need a centralized system to manage product information, track inventory across multiple warehouses, and provide customers with a seamless browsing experience.
+In the logistics and shipping industry, customer satisfaction hinges on quick updates, transparent delivery tracking, and smooth returns. The AI-Powered Customer Service solution enables companies to handle customer queries related to delivery status, shipment tracking, returns, and claims through an intelligent virtual assistant.
 
-## Business Challenge
+The solution integrates seamlessly with existing order management and logistics systems, ensuring real-time information flow and consistent customer communication across channels.
 
-Currently, RetailCo faces several challenges:
+## Benefits
 
-- Product information is scattered across multiple spreadsheets
-- Inventory levels are updated manually, leading to overselling
-- Customers can't see real-time product availability
-- Search functionality is limited and slow
-- No centralized system for product categorization
+- **Operational Efficiency:** Reduces volume of repetitive Tier-1 support queries by automating FAQs and routine tasks. Minimizes human error in order or return processing.
+- **Cost Optimization:** Frees up human agents to focus on complex cases. Lowers average handling time and cost per interaction.
+- **Scalability:** Easily scales across regions and languages via Watsonx orchestration and API integration. Integrates seamlessly with existing CRM, ERP, or logistics systems.
+- **Data-Driven Insights:** Captures chat analytics and customer sentiment to improve service quality and identify process bottlenecks.
+- **Consistency & Compliance:** Ensures standard and policy-compliant responses across all customer interactions.
 
-## Solution Overview
+## Step by step hands-on instructions
 
-You'll build a modern product catalog management system that includes:
+Proceed to the Lab Guide to begin building your e-commerce product catalog solution.
 
-1. **Centralized Product Database**
-   - Structured product data with attributes
-   - Category hierarchy and tagging
-   - Product images and descriptions
-
-2. **Real-Time Inventory Tracking**
-   - Multi-warehouse inventory management
-   - Automatic stock level updates
-   - Low-stock alerts and notifications
-
-3. **Customer-Facing Interface**
-   - Product search and filtering
-   - Category browsing
-   - Real-time availability display
-   - Product detail pages
-
-4. **Basic Order Processing**
-   - Shopping cart functionality
-   - Inventory reservation on order
-   - Order status tracking
-
-## Expected Outcomes
-
-By completing this use case, you'll help RetailCo:
-
-- ✅ Reduce inventory discrepancies by 30%
-- ✅ Improve customer satisfaction with real-time availability
-- ✅ Increase operational efficiency by 40%
-- ✅ Enable faster product launches and updates
-
-## Technical Components
-
-You'll work with:
-
-- Product data models and schemas
-- Inventory management APIs
-- Search and filtering algorithms
-- Customer interface components
-- Order processing workflows
-
-## Estimated Duration
-
-- **Setup:** ~10 minutes
-- **Implementation:** ~30 minutes
-- **Testing & Validation:** ~10 minutes
-- **Total:** ~50 minutes
-
-## Prerequisites
-
-- Completed [Lab 101 Prerequisites](../../prerequisites.md)
-- Understanding of basic retail concepts
-- Sample product dataset (provided)
-
----
-
-## Ready to Start?
-
-Proceed to the [Lab Guide](lab-guide.md) to begin building your e-commerce product catalog solution.
-
-!!! tip "Learning Focus"
-    This use case emphasizes data modeling, API integration, and real-time synchronization - core skills for any retail technology solution.
+[:material-check: Get started with the Lab](lab-guide.md){ .md-button .md-button--primary }

@@ -1,40 +1,27 @@
 # Lab 101 — Basics
 
-!!! warning "Placeholder"
-    Fill in product-specific lab content before running this track.
-
 ## What You'll Build
 
-In this foundational lab, you'll learn core concepts, explore the architecture overview, and complete the foundational setup. You'll understand what the product does and why it exists through hands-on experience in your chosen domain.
+In this foundational lab, you'll learn core concepts, explore the architecture overview, and complete the foundational setup. You'll understand what watsonx Orchestrate does and why it exists through hands-on experience in your chosen domain. You will use the low-code way of building AI Agents in these labs.
 
 ## Learning Objectives
 
 By the end of this lab, you will be able to:
 
-- Understand the core concepts and architecture of the product
-- Set up and configure the basic environment
+- Understand the core concepts and architecture of watsonx Orchestrate
+- Set up and configure the basic environment through Low-code
 - Apply foundational knowledge to real-world domain scenarios
 - Demonstrate basic proficiency with the product's key features
 
 ## Estimated Duration
 
-| Section | Time |
-|---------|------|
-| Setup | ~10 min |
-| Core steps | ~30 min |
-| Validation | ~10 min |
-| **Total** | **~50 min** |
+:material-clock: Approx. 30 minutes
 
 ## What You'll Need
 
 Before starting, ensure you have:
 
-- [ ] Laptop with internet access
-- [ ] Access to the product environment / IBM Cloud
-- [ ] Required tools or CLI installed and configured
-- [ ] Credentials provided by facilitator
-
-See detailed [Prerequisites](prerequisites.md) for more information.
+:material-check: Completed the [Lab Environment Setup](/tracks/track-01/lab-environment-setup/).
 
 ---
 
@@ -52,13 +39,13 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     [:octicons-arrow-right-24: Start Retail Lab](retail/index.md)
 
--   :material-scale-balance: **Legal**
+-   :material-shield: **Insurance**
 
     ---
 
-    Develop applications for contract management, legal research, compliance tracking, and case management.
+    Build applications for policy management, claims processing, risk assessment, and customer service.
 
-    [:octicons-arrow-right-24: Start Legal Lab](legal/index.md)
+    [:octicons-arrow-right-24: Start Insurance Lab](insurance/index.md)
 
 -   :material-car: **Automobile**
 
@@ -76,13 +63,13 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/index.md)
 
--   :material-shield: **Insurance**
+-   :material-scale-balance: **Legal**
 
     ---
 
-    Build applications for policy management, claims processing, risk assessment, and customer service.
+    Develop applications for contract management, legal research, compliance tracking, and case management.
 
-    [:octicons-arrow-right-24: Start Insurance Lab](insurance/index.md)
+    [:octicons-arrow-right-24: Start Legal Lab](legal/index.md)
 
 -   :material-chart-line: **Marketing**
 
