@@ -51,7 +51,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Build enterprise retail platforms with AI-powered recommendations, real-time inventory, and global scalability.
 
-    [:octicons-arrow-right-24: Start Retail Lab](retail/index.md)
+    [:octicons-arrow-right-24: Start Retail Lab](retail/steps.md)
 
 -   :material-scale-balance: **Legal**
 
@@ -59,7 +59,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Create enterprise legal management systems with AI analysis, automated workflows, and compliance reporting.
 
-    [:octicons-arrow-right-24: Start Legal Lab](legal/index.md)
+    [:octicons-arrow-right-24: Start Legal Lab](legal/steps.md)
 
 -   :material-car: **Automobile**
 
@@ -67,7 +67,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Develop comprehensive automotive platforms with IoT integration, predictive analytics, and fleet management.
 
-    [:octicons-arrow-right-24: Start Automobile Lab](automobile/index.md)
+    [:octicons-arrow-right-24: Start Automobile Lab](automobile/steps.md)
 
 -   :material-bank: **Financial Services**
 
@@ -75,7 +75,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Build enterprise banking platforms with real-time processing, advanced security, and regulatory compliance.
 
-    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/index.md)
+    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/steps.md)
 
 -   :material-shield: **Insurance**
 
@@ -83,7 +83,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Create enterprise insurance platforms with AI underwriting, automated claims, and comprehensive analytics.
 
-    [:octicons-arrow-right-24: Start Insurance Lab](insurance/index.md)
+    [:octicons-arrow-right-24: Start Insurance Lab](insurance/steps.md)
 
 -   :material-chart-line: **Marketing**
 
@@ -91,7 +91,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Develop enterprise marketing platforms with omnichannel orchestration, AI optimization, and real-time analytics.
 
-    [:octicons-arrow-right-24: Start Marketing Lab](marketing/index.md)
+    [:octicons-arrow-right-24: Start Marketing Lab](marketing/steps.md)
 
 </div>
 

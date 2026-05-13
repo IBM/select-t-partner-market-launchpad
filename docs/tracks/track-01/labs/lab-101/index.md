@@ -21,7 +21,7 @@ By the end of this lab, you will be able to:
 
 Before starting, ensure you have:
 
-:material-check: Completed the [Lab Environment Setup](/tracks/track-01/lab-environment-setup/).
+:material-check: Completed the [Lab Environment Setup](../../lab-environment-setup.md).
 
 ---
 
@@ -37,7 +37,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Build solutions for e-commerce, inventory management, customer experience, and omnichannel retail operations.
 
-    [:octicons-arrow-right-24: Start Retail Lab](retail/index.md)
+    [:octicons-arrow-right-24: Start Retail Lab](retail/use-case-1/details.md)
 
 -   :material-shield: **Insurance**
 
@@ -45,7 +45,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Build applications for policy management, claims processing, risk assessment, and customer service.
 
-    [:octicons-arrow-right-24: Start Insurance Lab](insurance/index.md)
+    [:octicons-arrow-right-24: Start Insurance Lab](insurance/use-case-1/details.md)
 
 -   :material-car: **Automobile**
 
@@ -53,7 +53,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Create solutions for vehicle management, dealership operations, service scheduling, and automotive analytics.
 
-    [:octicons-arrow-right-24: Start Automobile Lab](automobile/index.md)
+    [:octicons-arrow-right-24: Start Automobile Lab](automobile/use-case-1/details.md)
 
 -   :material-bank: **Financial Services**
 
@@ -61,7 +61,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Implement solutions for banking operations, investment management, risk assessment, and financial analytics.
 
-    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/index.md)
+    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/use-case-1/details.md)
 
 -   :material-scale-balance: **Legal**
 
@@ -69,15 +69,7 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
     Develop applications for contract management, legal research, compliance tracking, and case management.
 
-    [:octicons-arrow-right-24: Start Legal Lab](legal/index.md)
-
--   :material-chart-line: **Marketing**
-
-    ---
-
-    Develop solutions for campaign management, customer analytics, content optimization, and marketing automation.
-
-    [:octicons-arrow-right-24: Start Marketing Lab](marketing/index.md)
+    [:octicons-arrow-right-24: Start Legal Lab](legal/use-case-1/details.md)
 
 </div>
 

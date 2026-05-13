@@ -52,7 +52,7 @@ This instance will be valid for maximum of 5 days. Reserve the environment here:
 
     After the Techzone reservation is complete, you will receive an email about it from IBM Techzone. After this, you will receive another email from IBM Cloud inviting you to join a cloud account. Please note, you DO NOT have to create the Cloud account. Techzone reservation will create the account and you DO NOT have to put your credit card anywhere for this.
 
-    Incase you don't have access to the TechZone you most likely don't have and IBM ID. Create an IBM ID by following the instructions here: [Create your IBMid](/facilitator/create-ibm-id/)
+    Incase you don't have access to the TechZone you most likely don't have and IBM ID. Create an IBM ID by following the instructions here: [Create your IBMid](../../facilitator/create-ibm-id.md)
 
 ### Step 2: Get the free trial of IBM Bob
 

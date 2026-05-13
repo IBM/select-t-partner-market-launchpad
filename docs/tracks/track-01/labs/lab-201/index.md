@@ -35,8 +35,6 @@ Before starting, ensure you have:
 - [ ] Required tools or CLI installed and configured
 - [ ] Credentials provided by facilitator
 
-See detailed [Prerequisites](prerequisites.md) for more information.
-
 ---
 
 ## Choose Your Domain
@@ -45,53 +43,13 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
 <div class="grid cards" markdown>
 
--   :material-cart: **Retail**
-
-    ---
-
-    Enhance e-commerce capabilities, implement advanced inventory features, and optimize customer journeys.
-
-    [:octicons-arrow-right-24: Start Retail Lab](retail/index.md)
-
--   :material-scale-balance: **Legal**
-
-    ---
-
-    Implement advanced contract workflows, automate legal processes, and enhance compliance systems.
-
-    [:octicons-arrow-right-24: Start Legal Lab](legal/index.md)
-
--   :material-car: **Automobile**
-
-    ---
-
-    Build advanced vehicle tracking, implement service workflows, and create analytics dashboards.
-
-    [:octicons-arrow-right-24: Start Automobile Lab](automobile/overview.md)
-
 -   :material-bank: **Financial Services**
 
     ---
 
     Develop advanced banking features, implement security controls, and create financial reporting systems.
 
-    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/overview.md)
-
--   :material-shield: **Insurance**
-
-    ---
-
-    Automate claims workflows, implement risk models, and enhance policy management systems.
-
-    [:octicons-arrow-right-24: Start Insurance Lab](insurance/overview.md)
-
--   :material-chart-line: **Marketing**
-
-    ---
-
-    Build advanced campaign features, implement analytics pipelines, and optimize marketing automation.
-
-    [:octicons-arrow-right-24: Start Marketing Lab](marketing/overview.md)
+    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/wealth-manager/details.md)
 
 </div>
 

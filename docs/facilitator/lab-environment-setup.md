@@ -22,17 +22,17 @@ Each track has its own specific environment setup requirements based on the prod
   
     Setup for watsonx Orchestrate, watsonx.governance, and IBM Bob
 
-- :material-database: **[Track 02 — Maximize the value of enterprise data](../tracks/track-02/lab-environment-setup.md)**
+- :material-database: **Track 02 — Maximize the value of enterprise data**
   
-    Setup for watsonx.data, Guardium, and Planning Analytics
+    Setup for watsonx.data, Guardium, and Planning Analytics (Coming Soon)
 
 - :material-cog: **[Track 03 — Automate technology and operations](../tracks/track-03/lab-environment-setup.md)**
   
     Setup for Terraform, Cloudability, Kubecost, Instana, Concert, and more
 
-- :material-cloud: **[Track 04 — Work across all environments effectively with hybrid cloud](../tracks/track-04/lab-environment-setup.md)**
+- :material-cloud: **Track 04 — Work across all environments effectively with hybrid cloud**
   
-    Setup for PowerVS, Fusion, and Flush
+    Setup for PowerVS, Fusion, and Flush (Coming Soon)
 
 </div>
 

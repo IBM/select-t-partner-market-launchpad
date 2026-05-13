@@ -95,4 +95,4 @@ Once you've completed all steps, proceed to [Validation](validation.md) to verif
 
 ## Troubleshooting
 
-If you encounter issues, refer to the [Troubleshooting Guide](../../troubleshooting.md).
+If you encounter issues, refer to the [Troubleshooting Guide](../../../troubleshooting.md).

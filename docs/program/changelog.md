@@ -4,6 +4,42 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.2.0] — 2026-05-13
+
+### Added
+- New HR Agent use case for Track 01 Lab 101 (`docs/tracks/track-01/labs/lab-101/hr/`)
+- Wealth Manager use case for Track 01 Lab 201 Financial Services domain
+- Self-service KYC use case for Track 01 Lab 301 Financial Services domain
+- Complete Track 03 Maximo documentation structure with all labs (101-401)
+- "Coming Soon" placeholders for Track 02 and Track 04
+
+### Changed
+- **Track 01 index page** (`docs/tracks/track-01/index.md`):
+    - Updated products table with numbered icons and improved formatting
+    - Changed "Theory sessions" to "Overview sessions"
+    - Restructured "Before You Begin" section with warning callout
+    - Added comprehensive lab descriptions with learning objectives for all labs (101-401)
+    - Improved lab cards with detailed use case descriptions
+    - Enhanced navigation structure with domain-specific lab guides
+- **Navigation structure** (`mkdocs.yml`):
+    - Reorganized Track 01 labs to remove redundant overview pages
+    - Added HR Agent use case to Lab 101
+    - Restructured Lab 201, 301, and 401 with domain-specific use cases
+    - Removed "Domains" overview page from Track 01
+    - Added complete Track 03 Maximo navigation with theory and labs
+    - Updated Track 02 and Track 04 to show "Coming Soon" pages
+- **Facilitator lab environment setup** (`docs/facilitator/lab-environment-setup.md`):
+    - Updated Track 02 and Track 04 links to show "Coming Soon" status
+    - Removed broken links for tracks not yet available
+
+### Removed
+- Track 01 domains overview page (`docs/tracks/track-01/domains/overview.md`)
+- Multiple redundant lab overview pages across Track 01 labs
+- Placeholder Track 02 and Track 04 theory and lab files (moved to "Coming Soon")
+- Lab 101 prerequisites page from Track 01
+
+---
+
 ## [1.1.0] — 2026-04-30
 
 ### Added

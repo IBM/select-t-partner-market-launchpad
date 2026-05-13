@@ -9,7 +9,7 @@ We’ll start by looking at the data model and underlying APIs. For simplicity w
 ## Pre-requisites
 
 - Make sure you've already setup the environment:
-- [Lab Environment setup](/tracks/track-01/lab-environment-setup/)
+- [Lab Environment setup](../../../../lab-environment-setup.md)
 - [Download files](https://ibm.box.com/s/n0pkqfjzwxi3cvzaq8msaclfnf7mbwro){:target="_blank"}
 - Download the zip file from Lab1 folder
 

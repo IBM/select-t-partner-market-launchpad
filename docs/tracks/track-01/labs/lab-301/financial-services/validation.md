@@ -81,7 +81,7 @@ Your implementation is successful if:
 
 Congratulations! You've completed Lab 101 - Retail Domain.
 
-- Review the [Recap](recap.md) to reinforce key concepts
+- Review the key concepts learned in this lab
 - Continue to Lab 201 - Retail for advanced features
 - Explore other domains to see different use cases
 

@@ -35,8 +35,6 @@ Before starting, ensure you have:
 - [ ] Required tools or CLI installed and configured
 - [ ] Credentials provided by facilitator
 
-See detailed [Prerequisites](prerequisites.md) for more information.
-
 ---
 
 ## Choose Your Domain
@@ -45,53 +43,13 @@ Select a domain that aligns with your interests or business focus. Each domain p
 
 <div class="grid cards" markdown>
 
--   :material-cart: **Retail**
-
-    ---
-
-    Build complex omnichannel solutions, implement advanced analytics, and create personalized customer experiences.
-
-    [:octicons-arrow-right-24: Start Retail Lab](retail/index.md)
-
--   :material-scale-balance: **Legal**
-
-    ---
-
-    Create sophisticated legal workflows, implement AI-powered research tools, and build compliance automation.
-
-    [:octicons-arrow-right-24: Start Legal Lab](legal/index.md)
-
--   :material-car: **Automobile**
-
-    ---
-
-    Develop integrated dealership systems, implement predictive maintenance, and create customer portals.
-
-    [:octicons-arrow-right-24: Start Automobile Lab](automobile/overview.md)
-
 -   :material-bank: **Financial Services**
 
     ---
 
     Build complex trading systems, implement fraud detection, and create comprehensive risk management solutions.
 
-    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/overview.md)
-
--   :material-shield: **Insurance**
-
-    ---
-
-    Create end-to-end claims systems, implement underwriting automation, and build customer self-service portals.
-
-    [:octicons-arrow-right-24: Start Insurance Lab](insurance/overview.md)
-
--   :material-chart-line: **Marketing**
-
-    ---
-
-    Develop integrated marketing platforms, implement AI-driven personalization, and create attribution models.
-
-    [:octicons-arrow-right-24: Start Marketing Lab](marketing/overview.md)
+    [:octicons-arrow-right-24: Start Financial Services Lab](financial-services/steps.md)
 
 </div>
 
