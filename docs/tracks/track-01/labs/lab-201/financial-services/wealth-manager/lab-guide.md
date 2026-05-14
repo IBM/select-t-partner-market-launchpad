@@ -6,7 +6,8 @@ A financial advisor must go through various data points before meeting a client 
 
 ## Pre-requisites
 
-- Make sure you've already setup the environment:
+Make sure you've already setup the environment:
+
 - [Lab Environment setup](../../../../lab-environment-setup.md)
 - [ADK Installation](https://developer.watson-orchestrate.ibm.com/getting_started/installing){:target="_blank"}
 - [Download files](https://ibm.box.com/s/n0pkqfjzwxi3cvzaq8msaclfnf7mbwro){:target="_blank"}

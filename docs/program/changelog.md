@@ -4,6 +4,37 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.3.0] — 2026-05-14
+
+### Added
+- New Track 01 Lab 201 Supply Chain use case documentation and navigation
+- New Track 01 Lab 301 Legal document processing use case documentation and navigation
+- Additional Insurance Lab 101 image assets covering deployment, monitoring, analytics, and traces
+
+### Changed
+- **Track 01 index page** (`docs/tracks/track-01/index.md`):
+    - Updated lab card icons for Financial Services and Supply Chain
+    - Enabled the Supply Chain Lab 201 start link
+    - Added Lab 301 use case cards for Legal, Self-service KYC, and Flight Booking Assistant
+    - Refreshed Lab 201 and Lab 301 learning objective summaries
+- **Insurance Lab 101 guide** (`docs/tracks/track-01/labs/lab-101/insurance/use-case-1/lab-guide.md`):
+    - Expanded deployment instructions with agent monitoring activation
+    - Added in-product chat, analytics, and trace walkthrough screenshots
+    - Improved concluding section formatting with Carbon-style callouts
+- **Wealth Manager Lab 201 guide** (`docs/tracks/track-01/labs/lab-201/financial-services/wealth-manager/lab-guide.md`):
+    - Cleaned up prerequisites formatting
+- **Navigation structure** (`mkdocs.yml`):
+    - Removed redundant Track 01 introduction pages for Labs 101, 201, 301, and 401
+    - Added Supply Chain entries under Lab 201
+    - Added Legal document processing and Self-service KYC entries under Lab 301
+    - Removed obsolete Lab 401 prerequisites entry
+
+### Removed
+- Placeholder Financial Services Lab 301 steps page (`docs/tracks/track-01/labs/lab-301/financial-services/steps.md`)
+- Placeholder Financial Services Lab 301 validation page (`docs/tracks/track-01/labs/lab-301/financial-services/validation.md`)
+
+---
+
 ## [1.2.0] — 2026-05-13
 
 ### Added

@@ -110,7 +110,7 @@ flowchart LR
 
 <div class="grid cards" markdown>
 
-- :material-numeric-1-box: **Financial research and analysis**
+- :material-finance: **Financial research and analysis**
   
     ---
 
@@ -119,19 +119,13 @@ flowchart LR
     [:octicons-arrow-right-24: Start Lab](labs/lab-201/financial-services/wealth-manager/details.md){ .md-button .md-button--primary }
 
 
-- :material-numeric-2-box: **Supply chain use case**
+- :fontawesome-solid-warehouse: **Supply chain use case**
 
     ---
 
     This use case demonstrates how AI-powered agents can streamline end-to-end supply chain operations by handling domain-specific tasks and collaborating autonomously to achieve operational efficiency and business continuity.
 
-    [:octicons-arrow-right-24: Coming soon!](){ .md-button .md-button--primary }
-
-<!-- - :material-numeric-3-box: **[WIP](labs/lab-201/overview.md)**
-  Work in progress
-
-- :material-numeric-4-box: **[WIP](labs/lab-201/overview.md)**
-  Work in progress -->
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/supply-chain/use-case-1/details.md){ .md-button .md-button--primary }
 
 </div>
 
@@ -140,30 +134,51 @@ flowchart LR
 
     - Building AI Agents with Pro-code Agent Builder
     - Multi-agent collaboration with external agents
-    - Evaluations
-    - Guardrails
-    - Monitoring & Observability
+    - Python tools
 
 ---
 
 ### Lab 301 - Intermediate lab
 
-<!-- <div class="grid cards" markdown>
+!!! tip "Goal"
+    In this intermediate lab, you'll tackle more complex scenarios and integrate multiple components. You'll learn advanced techniques and best practices for building production-ready AI Agents in your domain.
 
-- :material-numeric-1-box: **[Lab 101 — Basics](labs/lab-101/index.md)**
-  Getting started with core concepts
+<div class="grid cards" markdown>
 
-- :material-numeric-2-box: **[Lab 201 — Fundamentals](labs/lab-201/overview.md)**
-  Building foundational skills
+- :fontawesome-solid-legal: **Document processing with agentic workflows**
+  
+    ---
 
-- :material-numeric-3-box: **[Lab 301 — Intermediate](labs/lab-301/overview.md)**
-  Advancing your expertise
+    Build a document classification agentic workflow capable of classifying and extracting data from documents such as contracts and invoices. The agent uses document classification and document extraction to automate data processing and minimize manual work.
 
-- :material-numeric-4-box: **[Lab 401 — Advanced](labs/lab-401/overview.md)**
-  Mastering complex implementations
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/legal/document-processing/details.md){ .md-button .md-button--primary }
 
-</div> -->
 
+- :material-bank-outline: **Self-service KYC Assistant**
+
+    ---
+
+    This use case demonstrates how AI-powered agents can streamline end-to-end supply chain operations by handling domain-specific tasks and collaborating autonomously to achieve operational efficiency and business continuity.
+
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/financial-services/self-service-kyc/details.md){ .md-button .md-button--primary }
+
+- :material-bank-outline: **Flight Booking Assistant**
+
+    ---
+
+    This use case demonstrates how AI-powered agents can streamline end-to-end supply chain operations by handling domain-specific tasks and collaborating autonomously to achieve operational efficiency and business continuity.
+
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/financial-services/self-service-kyc/details.md){ .md-button .md-button--primary }
+
+</div>
+
+!!! note "Learning Objectives"
+    By the end of this lab, you will be able to:
+
+    - Deterministic Agent
+    - Agentic AI workflow tool for deterministic flows
+    - Long running tasks
+    - Human-in-the-loop approvals
 ---
 
 ### Lab 401 - Advanced lab

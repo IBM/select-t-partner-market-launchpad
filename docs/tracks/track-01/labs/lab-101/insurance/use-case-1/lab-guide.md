@@ -58,7 +58,7 @@ Before building the agent, familiarise yourself with the API endpoints that will
 
 Navigate to the Insurance API Swagger UI in your browser:
 
-- <https://l4-insurance.1d13bpwyy9q7.us-east.codeengine.appdomain.cloud/docs>
+- <https://l4-insurance.1d13bpwyy9q7.us-east.codeengine.appdomain.cloud/docs>{:target="_blank"}
 
 
 You will see seven GET endpoints grouped under **default**.
@@ -281,6 +281,7 @@ show me my customers from Texas and Florida
 ```
 
 Click **Show Reasoning** — expand **Step 1** and **Step 2**:
+
 - Step 1: Tool `customers_by_state` called with `"state": "Texas"`
 - Step 2: Tool `customers_by_state` called with `"state": "Florida"`
 - Results from both calls are merged into a single response table.
@@ -298,6 +299,7 @@ just show me my customers from florida
 Note the lowercase `florida`. Because the prior conversation already contained the correctly capitalised response for Florida, the agent filters from memory — no additional tool call is needed.
 
 Now **reset** the chat and repeat the same lowercase query. This time:
+
 - The agent must call the API fresh
 - It may or may not correct capitalisation to `Florida` depending on LLM behaviour
 - If it submits `florida` (lowercase) to the case-sensitive API, it returns zero results
@@ -314,64 +316,64 @@ This section demonstrates why tools should be used for calculations rather than 
 
 1. Reset the chat.
 2. Type:
-
-```
-show me the policies for customer 2
-```
+  ```
+  show me the policies for customer 2
+  ```
 
 3. After the table appears, type:
+  ```
+  sum the policy premiums
+  ```
 
-```
-sum the policy premiums
-```
-
-The agent will correctly sum the premiums (e.g., $3,730.00) because the policy data is already in the conversation history — the LLM can "see" the numbers and sum them reliably in this context.
+The agent will correctly sum the premiums (e.g., $3,730.00) because the policy data is already in the conversation history. The LLM can "see" the numbers and sum them reliably in this context.
 
 #### 6.2 Aggregation without context (unreliable)
 
 1. Reset the chat.
 2. Type directly:
+  ```
+  calculate the sum of all policy premiums for customer 2
+  ```
 
-```
-calculate the sum of all policy premiums for customer 2
-```
+The agent calls `customer_policies` to fetch the data, then attempts to sum the premiums itself. Results may be $2,730, $2,830, or $3,730. The LLM is a text generator, not a calculator, and is prone to arithmetic errors, especially when multiple currency-like fields (premium, excess, tax) exist in the output.
 
-The agent calls `customer_policies` to fetch the data, then attempts to sum the premiums itself. Results may be $2,730, $2,830, or $3,730 — the LLM is a text generator, not a calculator, and is prone to arithmetic errors, especially when multiple currency-like fields (premium, excess, tax) exist in the output.
-
-> **Key lesson:** Always use a dedicated calculation tool for deterministic numeric operations. LLM-based arithmetic is non-deterministic and should not be used in production for financial data.
+!!! tip "Key lesson"
+    Always use a dedicated calculation tool for deterministic numeric operations. LLM-based arithmetic is non-deterministic and should not be used in production for financial data.
 
 #### 6.3 Add the Total premium tool
 
 1. Click **Toolset**, then **Add tool**.
-2. Click **Add from file or MCP server** → **Import from file**.
+2. Click **OpenAPI** → **Import from file**.
 3. Upload `insurance-services.json` again, click **Next**.
 4. This time, select **only Total premium**, then click **Done**.
+
+![total premium](../../../../../../assets/images/track01/insurance/101/total_premium.png)
+
 
 #### 6.4 Add a tool-use instruction
 
 1. Click **Behavior**.
 2. Append the following to the **Instructions** field:
-
-```
-When asked to calculate the total value of all policies for a customer always use the "Total premium" tool.
-```
+  ```
+  When asked to calculate the total value of all policies for a customer always use the "Total premium" tool.
+  ```
 
 #### 6.5 Re-run with the new tool
 
 1. Reset the chat.
 2. Type:
-
-```
-calculate the sum of all policy premiums for customer 2
-```
+  ```
+  calculate the sum of all policy premiums for customer 2
+  ```
 
 3. Click **Show Reasoning** → expand **Step 1**.
 
 Confirm:
+
 - **Tool used:** `total_premium`
 - **Input:** `{ "customer_id": "2" }`
 - **Output:** `{ "customer_id": 2, "total_premium": 3730 }`
-- **Result displayed:** The sum of all policy premiums for customer 2 is 3730. ✅
+- **Result displayed:** The sum of all policy premiums for customer 2 is 3730. :material-check:
 
 ---
 
@@ -383,34 +385,32 @@ This section demonstrates how the agent uses conversation history to resolve amb
 
 1. Reset the chat.
 2. Type:
-
-```
-show me my customers from Texas
-```
+  ```
+  show me my customers from Texas
+  ```
 
 A table of Texas customers appears (including Sarah Johnson, ID 2).
 
 #### 7.2 Follow-up with a name reference
 
-Type:
+1. Type:
+  ```
+  just show me details for Sarah
+  ```
 
-```
-just show me details for Sarah
-```
+Click **Show Reasoning** expand **Step 1**:
 
-Click **Show Reasoning** → expand **Step 1**:
 - **Tool:** `customers_by_id`
 - **Input:** `{ "customer_id": "2" }`
 
-The agent inferred Sarah's ID from the prior conversation — no explicit ID was provided.
+The agent inferred Sarah's ID from the prior conversation no explicit ID was provided.
 
 #### 7.3 Multi-step policy analysis
 
-Type:
-
-```
-Fetch Sarah's policies, show me any policies that end within the next 30 days
-```
+1. Type:
+  ```
+  Fetch Sarah's policies, show me any policies that end within the next 30 days
+  ```
 
 Click **Show Reasoning** — observe that **4 tool calls** were required:
 
@@ -425,7 +425,8 @@ The agent then filters and displays only policies expiring within 30 days.
 
 ![Multi-step reasoning trace](../../../../../../assets/images/track01/insurance/101/multi_step_reasoning.png)
 
-> **Design implication:** Without prior context (Sarah's ID in memory), the agent may attempt a full customer scan to find "Sarah" — which is inefficient and fragile in datasets with many customers sharing the same first name. Design your data model and tool set to minimise ambiguous lookups.
+!!! tip "Design implication"
+    Without prior context (Sarah's ID in memory), the agent may attempt a full customer scan to find "Sarah" — which is inefficient and fragile in datasets with many customers sharing the same first name. Design your data model and tool set to minimise ambiguous lookups.
 
 ---
 
@@ -498,6 +499,8 @@ Show me the policies for customer 2, just display the policy id, product and pre
 
 The agent retrieves and displays a focused table with only the three requested columns — confirming the embedded agent has full access to all configured tools.
 
+![chat widget2](../../../../../../assets/images/track01/insurance/101/chat_widget_2.png)
+
 ---
 
 ### 9. Agent Deployment
@@ -510,24 +513,38 @@ Deploy the agent to make it available in the Orchestrate Chat UI for all users.
 2. Review the **Pre-deployment summary** — it shows the agent's profile, knowledge sources, tools (7), collaborators, and behaviour configuration.
 3. Click **Deploy** to confirm.
 
+![Pre deploy agent](../../../../../../assets/images/track01/insurance/101/pre-deploy-agent.png)
+
+
 #### 9.2 Confirm deployment
 
 A green **Success — You have deployed Insurance** notification appears. The Channels panel now shows both **Draft** and **Live** states for the Embedded agent.
 
 ![Deployment success notification](../../../../../../assets/images/track01/insurance/101/deployment_success.png)
 
-#### 9.3 Use the deployed agent in Chat
+#### 9.3 Enable Agent Monitoring
+
+Upon deploying the agent, you will be prompted to enable the monitoring. As a best practice it is important to monitor the deployed agents and take corrective actions. Go ahead and click on **Activate**
+
+![Activate monitoring](../../../../../../assets/images/track01/insurance/101/activate_monitoring.png)
+
+
+#### 9.4 Use the deployed agent in Chat
 
 1. Open the **main menu** and click **Chat**.
+  ![Open wxo chat](../../../../../../assets/images/track01/insurance/101/open-wxo-chat.png)
+
 2. Click the **arrow** next to the current agent name (top-left) to open the agent picker.
 3. Select **Insurance**.
 4. In the chat window, type:
+  ```
+  Show me the policies for customer 2, just display the policy id, product and premium
+  ```
 
-```
-Show me the policies for customer 2, just display the policy id, product and premium
-```
+![Deployment success notification](../../../../../../assets/images/track01/insurance/101/chat-wxo.png)
 
-The Insurance agent responds with a correctly formatted policy table — confirming the live deployment is working.
+
+The Insurance agent responds with a correctly formatted policy table confirming the live deployment is working.
 
 ---
 
@@ -537,22 +554,27 @@ Review usage data and inspect execution traces.
 
 #### 10.1 Navigate to analytics
 
-1. Open the **main menu** → **Build** → **Agent Builder**.
-2. Click **View all** (top-right of the agent grid) to open the Agent Analytics dashboard.
+1. Open the **main menu** and select **Analyze**.
 
 The dashboard shows aggregate metrics across all agents:
 - **Total messages**
 - **Failed messages**
 - **Latency average (ms)**
 
+
+![Agent analytics dashboard 1](../../../../../../assets/images/track01/insurance/101/agent_analytics_1.png)
+
+
 #### 10.2 Filter to the Insurance agent
 
 1. In the **Agents** search field, type `Insurance`.
+  ![Agent analytics dashboard 2](../../../../../../assets/images/track01/insurance/101/agent_analytics_2.png)
+
 2. Click **Insurance** in the results table to open its analytics detail page.
 
 You will see per-agent metrics and a **Traces** table listing every conversation session with timestamp, trace ID, status, model, and latency.
 
-![Agent analytics dashboard](../../../../../../assets/images/track01/insurance/101/agent_analytics.png)
+![Agent analytics dashboard](../../../../../../assets/images/track01/insurance/101/agent_analytics_3.png)
 
 #### 10.3 Inspect a trace
 
@@ -564,6 +586,9 @@ You will see per-agent metrics and a **Traces** table listing every conversation
    - `WatsonxChatModel.chat` (LLM inference)
    - `tools.task` → `POST` (API tool call)
    - `answer.task`
+
+![Agent trace 1](../../../../../../assets/images/track01/insurance/101/trace1.png)
+
 
 3. Click the row for the last **WatsonxChatModel.chat** operation.
 4. Click **Tags** to expand the span details.
@@ -578,9 +603,10 @@ You will see per-agent metrics and a **Traces** table listing every conversation
 
 You can also see the **agent instructions** (Behavior section content) and the **current date** injected into the system prompt at runtime.
 
-![Trace detail with tags](../../../../../../assets/images/track01/insurance/101/trace_detail_tags.png)
+![Trace detail with tags](../../../../../../assets/images/track01/insurance/101/trace2.png)
 
-> **Production tip:** Use the Traces view to debug unexpected agent behaviour — you can inspect exactly what prompt was sent, which tools were called, what data was returned, and how the final response was generated.
+!!! tip "Production tip"
+    Use the Traces view to debug unexpected agent behaviour. You can inspect exactly what prompt was sent, which tools were called, what data was returned, and how the final response was generated.
 
 ---
 
@@ -588,19 +614,29 @@ You can also see the **agent instructions** (Behavior section content) and the *
 
 By completing this lab you have:
 
-- ✅ Explored a live REST API and understood its data model
-- ✅ Created an AI agent from scratch using Agent Builder
-- ✅ Imported API tools from an OpenAPI specification file
-- ✅ Used behavioral instructions to control response formatting and tool preference
-- ✅ Demonstrated intelligent filtering using the correct API endpoint (not client-side scan)
-- ✅ Compared LLM-based aggregation (unreliable) versus tool-based aggregation (deterministic)
-- ✅ Leveraged conversation context for multi-step, multi-tool agentic reasoning
-- ✅ Embedded the agent into a standalone web page using a JavaScript snippet
-- ✅ Deployed the agent to the Orchestrate Chat interface
-- ✅ Inspected execution traces in the Agent Analytics dashboard
+
+:material-check: Explored a live REST API and understood its data model
+
+:material-check: Created an AI agent from scratch using Agent Builder
+
+:material-check: Imported API tools from an OpenAPI specification file
+
+:material-check: Used behavioral instructions to control response formatting and tool preference
+
+:material-check: Demonstrated intelligent filtering using the correct API endpoint (not client-side scan)
+
+:material-check: Compared LLM-based aggregation (unreliable) versus tool-based aggregation (deterministic)
+
+:material-check: Leveraged conversation context for multi-step, multi-tool agentic reasoning
+
+:material-check: Embedded the agent into a standalone web page using a JavaScript snippet
+
+:material-check: Deployed the agent to the Orchestrate Chat interface
+
+:material-check: Inspected execution traces in the Agent Analytics dashboard
 
 These skills provide a solid foundation for building production-grade agents in the IBM watsonx Orchestrate ecosystem.
 
----
+!!! success "Conclusion"
 
-*For the source lab files, visit: [github.com/IBM/wxo-l4-assets](https://github.com/IBM/wxo-l4-assets)*
+    👏 Congratulations on completing the lab! 🎉

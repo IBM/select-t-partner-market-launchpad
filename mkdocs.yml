@@ -87,7 +87,6 @@ nav:
     - Labs:
       - Lab Environment Setup: tracks/track-01/lab-environment-setup.md
       - Lab 101:
-        - Introduction: tracks/track-01/labs/lab-101/index.md
         - Domains:
           - HR:
             - HR Agent:
@@ -122,24 +121,30 @@ nav:
                 - Details: tracks/track-01/labs/lab-101/insurance/use-case-1/details.md
                 - Lab Guide: tracks/track-01/labs/lab-101/insurance/use-case-1/lab-guide.md
       - Lab 201:
-        - Introduction: tracks/track-01/labs/lab-201/index.md
         - Domains:
           - Financial Services:
             - Use Cases:
               - Wealth Manager:
                 - Details: tracks/track-01/labs/lab-201/financial-services/wealth-manager/details.md
                 - Lab Guide: tracks/track-01/labs/lab-201/financial-services/wealth-manager/lab-guide.md
+          - Supply chain:
+            - Use Cases:
+              - Supply chain use case:
+                - Details: tracks/track-01/labs/lab-201/supply-chain/use-case-1/details.md
+                - Lab Guide: tracks/track-01/labs/lab-201/supply-chain/use-case-1/lab-guide.md
       - Lab 301:
-        - Introduction: tracks/track-01/labs/lab-301/index.md
         - Domains:
+          - Legal:
+            - Use Cases:
+              - Document Processing:
+                - Steps: tracks/track-01/labs/lab-301/legal/document-processing/details.md
+                - Lab Guide: tracks/track-01/labs/lab-301/legal/document-processing/lab-guide.md
           - Financial Services:
             - Use Cases:
               - Self-service KYC:
-                - Steps: tracks/track-01/labs/lab-301/financial-services/steps.md
-                - Lab Guide: tracks/track-01/labs/lab-301/financial-services/validation.md
+                - Steps: tracks/track-01/labs/lab-301/financial-services/self-service-kyc/details.md
+                - Lab Guide: tracks/track-01/labs/lab-301/financial-services/self-service-kyc/lab-guide.md
       - Lab 401:
-        - Introduction: tracks/track-01/labs/lab-401/index.md
-        - Prerequisites: tracks/track-01/labs/lab-401/prerequisites.md
         - Domains:
           - Retail:
             - Steps: tracks/track-01/labs/lab-401/retail/steps.md
