@@ -158,17 +158,17 @@ flowchart LR
 
     ---
 
-    This use case demonstrates how AI-powered agents can streamline end-to-end supply chain operations by handling domain-specific tasks and collaborating autonomously to achieve operational efficiency and business continuity.
+    WIP 
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-301/financial-services/self-service-kyc/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
 
 - :material-bank-outline: **Flight Booking Assistant**
 
     ---
 
-    This use case demonstrates how AI-powered agents can streamline end-to-end supply chain operations by handling domain-specific tasks and collaborating autonomously to achieve operational efficiency and business continuity.
+    WIP
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-301/financial-services/self-service-kyc/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
 
 </div>
 
@@ -183,6 +183,8 @@ flowchart LR
 
 ### Lab 401 - Advanced lab
 
+!!! warning "Work in progress"
+    
 <!-- <div class="grid cards" markdown>
 
 - :material-numeric-1-box: **[Lab 101 — Basics](labs/lab-101/index.md)**

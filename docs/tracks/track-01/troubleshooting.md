@@ -2,77 +2,30 @@
 
 This page covers the most common issues encountered across all labs. If your issue isn't listed here, ask your facilitator.
 
----
+## 1. watsonx Orchestrate ADK commands are failing
 
-## General
-
-### I can't access the lab environment
-
-- Confirm you have the credentials provided in your welcome pack
-- Try opening the environment in an incognito/private browser window
-- Check with your facilitator that the environment is provisioned for your seat
-
-### My terminal/CLI isn't responding
-
-```bash
-# Check connectivity
-ping google.com
-
-# Restart your shell session and re-export any required env variables
-export MY_VAR=value
+Check if the ADK is able to connect to your wxO server. In terminal run,
+```
+orchestrate agents list
 ```
 
----
+If you see agents listed then your ADK is connected to your wxO server. If you get error such as:
+```
+ClientAPIException(status_code=401, message={"code":401,"message":"wxO unauthorized - PEM value not found for the given kid"})
+```
 
-## Lab 101
+1. Check if the API Key has expired.
+2. Try activating env again with this command:
+    ```
+    orchestrate env activate bootcamp --apikey <your-api-key>
+    ```
 
-### _Common issue placeholder_
+If none of the above work try creating a new env with a new name.
+```
+orchestrate env add --name <new-name> --url https://api.{REGION}.watson-orchestrate.ibm.com/instances/{INSTANCE_ID} -t ibm_iam
+orchestrate env activate <new-name> --apikey <your-api-key>
+```
 
-**Symptom:** _Describe what the attendee sees_
+## 2. Lab commands are not working
 
-**Fix:** _Describe the resolution steps_
-
----
-
-## Lab 201
-
-### _Common issue placeholder_
-
-**Symptom:** _Describe what the attendee sees_
-
-**Fix:** _Describe the resolution steps_
-
----
-
-## Lab 301
-
-### _Common issue placeholder_
-
-**Symptom:** _Describe what the attendee sees_
-
-**Fix:** _Describe the resolution steps_
-
----
-
-## Lab 401
-
-### _Common issue placeholder_
-
-**Symptom:** _Describe what the attendee sees_
-
-**Fix:** _Describe the resolution steps_
-
----
-
-## Lab 501 — Capstone
-
-### _Common issue placeholder_
-
-**Symptom:** _Describe what the attendee sees_
-
-**Fix:** _Describe the resolution steps_
-
----
-
-!!! tip "Still stuck?"
-    Raise your hand during the session — facilitators are here to unblock you in real time. That's the advantage of in-person delivery.
+Ensure you are in the right directory before executing the lab commands. For example if you are executing the vehicle maintenance agent lab, ensure you're in the `vehicle_maintenance_agent/` directory and it will have `agents`, `tools`, `knowledge-base` directories.

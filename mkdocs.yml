@@ -205,39 +205,40 @@ nav:
     #     - Recap: tracks/track-02/labs/lab-401/recap.md
     # - Troubleshooting: tracks/track-02/troubleshooting.md
   - Track 3:
-    - Introduction: tracks/track-03/index.md
-    - Maximo:
-      - Introduction: tracks/track-03/maximo/index.md
-      - Overview:
-        - Market Landscape: tracks/track-03/theory/what-and-why.md
-        - Product Introduction: tracks/track-03/theory/product-overview.md
-      - Labs:
-        - Lab Environment Setup: tracks/track-03/lab-environment-setup.md
-        - Lab 101:
-          - Overview: tracks/track-03/labs/lab-101/overview.md
-          - Prerequisites: tracks/track-03/labs/lab-101/prerequisites.md
-          - Steps: tracks/track-03/labs/lab-101/steps.md
-          - Validation: tracks/track-03/labs/lab-101/validation.md
-          - Recap: tracks/track-03/labs/lab-101/recap.md
-        - Lab 201:
-          - Overview: tracks/track-03/labs/lab-201/overview.md
-          - Prerequisites: tracks/track-03/labs/lab-201/prerequisites.md
-          - Steps: tracks/track-03/labs/lab-201/steps.md
-          - Validation: tracks/track-03/labs/lab-201/validation.md
-          - Recap: tracks/track-03/labs/lab-201/recap.md
-        - Lab 301:
-          - Overview: tracks/track-03/labs/lab-301/overview.md
-          - Prerequisites: tracks/track-03/labs/lab-301/prerequisites.md
-          - Steps: tracks/track-03/labs/lab-301/steps.md
-          - Validation: tracks/track-03/labs/lab-301/validation.md
-          - Recap: tracks/track-03/labs/lab-301/recap.md
-        - Lab 401:
-          - Overview: tracks/track-03/labs/lab-401/overview.md
-          - Prerequisites: tracks/track-03/labs/lab-401/prerequisites.md
-          - Steps: tracks/track-03/labs/lab-401/steps.md
-          - Validation: tracks/track-03/labs/lab-401/validation.md
-          - Recap: tracks/track-03/labs/lab-401/recap.md
-      - Troubleshooting: tracks/track-03/troubleshooting.md
+    - Introduction: stylesheets/coming-soon.md
+    # - Introduction: tracks/track-03/index.md
+    # - Maximo:
+    #   - Introduction: tracks/track-03/maximo/index.md
+    #   - Overview:
+    #     - Market Landscape: tracks/track-03/theory/what-and-why.md
+    #     - Product Introduction: tracks/track-03/theory/product-overview.md
+    #   - Labs:
+    #     - Lab Environment Setup: tracks/track-03/lab-environment-setup.md
+    #     - Lab 101:
+    #       - Overview: tracks/track-03/labs/lab-101/overview.md
+    #       - Prerequisites: tracks/track-03/labs/lab-101/prerequisites.md
+    #       - Steps: tracks/track-03/labs/lab-101/steps.md
+    #       - Validation: tracks/track-03/labs/lab-101/validation.md
+    #       - Recap: tracks/track-03/labs/lab-101/recap.md
+    #     - Lab 201:
+    #       - Overview: tracks/track-03/labs/lab-201/overview.md
+    #       - Prerequisites: tracks/track-03/labs/lab-201/prerequisites.md
+    #       - Steps: tracks/track-03/labs/lab-201/steps.md
+    #       - Validation: tracks/track-03/labs/lab-201/validation.md
+    #       - Recap: tracks/track-03/labs/lab-201/recap.md
+    #     - Lab 301:
+    #       - Overview: tracks/track-03/labs/lab-301/overview.md
+    #       - Prerequisites: tracks/track-03/labs/lab-301/prerequisites.md
+    #       - Steps: tracks/track-03/labs/lab-301/steps.md
+    #       - Validation: tracks/track-03/labs/lab-301/validation.md
+    #       - Recap: tracks/track-03/labs/lab-301/recap.md
+    #     - Lab 401:
+    #       - Overview: tracks/track-03/labs/lab-401/overview.md
+    #       - Prerequisites: tracks/track-03/labs/lab-401/prerequisites.md
+    #       - Steps: tracks/track-03/labs/lab-401/steps.md
+    #       - Validation: tracks/track-03/labs/lab-401/validation.md
+    #       - Recap: tracks/track-03/labs/lab-401/recap.md
+    #   - Troubleshooting: tracks/track-03/troubleshooting.md
   - Track 4:
     # - Introduction: tracks/track-04/index.md
     - Introduction: stylesheets/coming-soon.md
