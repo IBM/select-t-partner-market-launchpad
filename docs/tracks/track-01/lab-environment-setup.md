@@ -28,6 +28,8 @@ This track focuses on:
 !!! note "Operating system"
     The Lab commands are built and tested on **MacOS/Linux**. There maybe slight discrepancies with windows powershell or cmd, hence subsystem for linux is recommended if using a windows PC.
 
+[:material-web: Live demo of setting up the TechZone](https://demo-now.techzone.ibm.com/psl/6z1a0r6k?g=cmp48n71r000000ilkowijnch&s=0){ target="_blank" .md-button .md-button--primary }
+
 ---
 
 ## Setup Steps
@@ -60,7 +62,7 @@ You can signup for a free 30 days trial of IBM Bob here:
 
 ![bob-trial](../../assets/images/bob_trial.png)
 
-[:material-check: Get IBM Bob](https://bob.ibm.com/trial){ .md-button .md-button--primary }
+[:material-check: Get IBM Bob](https://bob.ibm.com/trial){ :target="_blank" .md-button .md-button--primary }
 
 ### Step 3: Access the TechZone Instance
 

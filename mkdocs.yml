@@ -147,29 +147,15 @@ nav:
       - Lab 401:
         - Domains:
           - Retail:
-            - Steps: tracks/track-01/labs/lab-401/retail/steps.md
-            - Validation: tracks/track-01/labs/lab-401/retail/validation.md
-            - Recap: tracks/track-01/labs/lab-401/retail/recap.md
-          - Legal:
-            - Steps: tracks/track-01/labs/lab-401/legal/steps.md
-            - Validation: tracks/track-01/labs/lab-401/legal/validation.md
-            - Recap: tracks/track-01/labs/lab-401/legal/recap.md
-          - Automobile:
-            - Steps: tracks/track-01/labs/lab-401/automobile/steps.md
-            - Validation: tracks/track-01/labs/lab-401/automobile/validation.md
-            - Recap: tracks/track-01/labs/lab-401/automobile/recap.md
+            - Use Cases:
+              - Vendor Risk:
+                - Steps: tracks/track-01/labs/lab-401/retail/vendor-risk/details.md
+                - Lab Guide: tracks/track-01/labs/lab-401/retail/vendor-risk/lab-guide.md
           - Financial Services:
-            - Steps: tracks/track-01/labs/lab-401/financial-services/steps.md
-            - Validation: tracks/track-01/labs/lab-401/financial-services/validation.md
-            - Recap: tracks/track-01/labs/lab-401/financial-services/recap.md
-          - Insurance:
-            - Steps: tracks/track-01/labs/lab-401/insurance/steps.md
-            - Validation: tracks/track-01/labs/lab-401/insurance/validation.md
-            - Recap: tracks/track-01/labs/lab-401/insurance/recap.md
-          - Marketing:
-            - Steps: tracks/track-01/labs/lab-401/marketing/steps.md
-            - Validation: tracks/track-01/labs/lab-401/marketing/validation.md
-            - Recap: tracks/track-01/labs/lab-401/marketing/recap.md
+            - Use Cases:
+              - Financial analysis:
+                - Steps: tracks/track-01/labs/lab-401/financial-services/financial-analysis/details.md
+                - Lab Guide: tracks/track-01/labs/lab-401/financial-services/financial-analysis/lab-guide.md
     - Troubleshooting: tracks/track-01/troubleshooting.md
   - Track 2:
     # - Introduction: tracks/track-02/index.md

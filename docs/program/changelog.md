@@ -4,6 +4,29 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.4.0] — 2026-05-15
+
+### Added
+- New Track 01 Lab 401 Financial Services financial analysis use case documentation
+- New Track 01 Lab 401 Retail vendor risk use case documentation
+
+### Changed
+- **Track 01 index page** (`docs/tracks/track-01/index.md`):
+    - Replaced Lab 401 work-in-progress area with active advanced lab cards
+    - Added Vendor Risk start link and updated advanced lab descriptions
+- **Track 01 lab environment setup** (`docs/tracks/track-01/lab-environment-setup.md`):
+    - Clarified that ADK setup is required for Lab 201 and above workflows
+- **Navigation structure** (`mkdocs.yml`):
+    - Removed redundant overview and prerequisite entries for Labs 201, 301, and 401
+    - Added domain-specific Lab 401 navigation for Retail vendor risk and Financial Services financial analysis
+
+### Removed
+- Legacy Track 01 Lab 201 overview page (`docs/tracks/track-01/labs/lab-201/index.md`)
+- Legacy Track 01 Lab 301 overview page (`docs/tracks/track-01/labs/lab-301/index.md`)
+- Obsolete generic Track 01 Lab 401 overview, prerequisites, recap, steps, and validation pages across domains
+
+---
+
 ## [1.3.0] — 2026-05-14
 
 ### Added

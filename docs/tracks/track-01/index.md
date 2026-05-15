@@ -185,21 +185,34 @@ flowchart LR
 
 !!! warning "Work in progress"
     
-<!-- <div class="grid cards" markdown>
+<div class="grid cards" markdown>
 
-- :material-numeric-1-box: **[Lab 101 — Basics](labs/lab-101/index.md)**
-  Getting started with core concepts
+- :material-server-security: **AI Governance & Vendor Risk**
+  
+    ---
 
-- :material-numeric-2-box: **[Lab 201 — Fundamentals](labs/lab-201/overview.md)**
-  Building foundational skills
+    A smart assistant designed to help compliance and procurement teams evaluate third-party vendors with speed and confidence. It autonomously assesses vendor risk, checks policy compliance, generates tamper-evident audit records, and validates agent robustness against adversarial attacks.
 
-- :material-numeric-3-box: **[Lab 301 — Intermediate](labs/lab-301/overview.md)**
-  Advancing your expertise
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/retail/vendor-risk/details.md){ .md-button .md-button--primary }
 
-- :material-numeric-4-box: **[Lab 401 — Advanced](labs/lab-401/overview.md)**
-  Mastering complex implementations
 
-</div> -->
+- :material-content-save-settings-outline: **IT Service Manager**
+
+    ---
+
+    Pre-built ServiceNow agent that allows you to create incidents and tickets by organizational users and also prioritize and assign tasks, manage knowledge articles and assets within an organization.
+
+    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
+
+- :octicons-issue-reopened-16: **Issue Manager**
+
+    ---
+
+    Pre-built Jira Issue manager agent that can create, update, retrieve and delete Jira issues.
+
+    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
+
+</div>
 
 ---
 
