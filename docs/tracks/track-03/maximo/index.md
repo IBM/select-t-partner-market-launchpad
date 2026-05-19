@@ -11,4 +11,3 @@ IBM Maximo uses AI, analytics, and IoT data to help organizations predict failur
 The platform is widely used in asset-intensive industries such as manufacturing, energy, transportation, oil and gas, utilities, and government infrastructure. It also supports inventory management, inspections, compliance tracking, and mobile workforce operations.
 
 Overall, it acts as an intelligent asset management system—helping organizations improve operational efficiency, reduce maintenance costs, and keep critical infrastructure running reliably.
-

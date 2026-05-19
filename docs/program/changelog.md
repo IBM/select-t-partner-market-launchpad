@@ -4,6 +4,35 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.5.0] — 2026-05-19
+
+### Added
+- New Track 03 Maximo lab structure with domain-specific lab guides:
+    - Lab 101 Maximo documentation (`docs/tracks/track-03/labs/lab-101/maximo/`)
+    - Lab 201 Maximo documentation (`docs/tracks/track-03/labs/lab-201/maximo/`)
+    - Lab 301 Maximo documentation (`docs/tracks/track-03/labs/lab-301/maximo/`)
+    - Lab 401 Maximo documentation (`docs/tracks/track-03/labs/lab-401/maximo/`)
+- New Financial Services Lab 301 image assets (`docs/assets/images/track01/financial-services/201/301/`)
+
+### Changed
+- **Track 03 index page** (`docs/tracks/track-03/index.md`):
+    - Updated lab structure and navigation
+- **Track 03 Maximo index** (`docs/tracks/track-03/maximo/index.md`):
+    - Updated Maximo-specific content and lab references
+- **Navigation structure** (`mkdocs.yml`):
+    - Reorganized Track 03 labs with Maximo-specific structure
+    - Updated lab navigation to use domain-specific paths
+
+### Removed
+- Legacy Track 03 generic lab files:
+    - Lab 101 overview, prerequisites, steps, validation, and recap pages
+    - Lab 201 overview, prerequisites, steps, validation, and recap pages
+    - Lab 301 overview, prerequisites, steps, validation, and recap pages
+    - Lab 401 overview, prerequisites, steps, validation, and recap pages
+- Obsolete Financial Services Lab 301 image assets (8 main images and 13 flow images)
+
+---
+
 ## [1.4.0] — 2026-05-15
 
 ### Added
