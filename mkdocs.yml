@@ -137,12 +137,12 @@ nav:
           - Legal:
             - Use Cases:
               - Document Processing:
-                - Steps: tracks/track-01/labs/lab-301/legal/document-processing/details.md
+                - Details: tracks/track-01/labs/lab-301/legal/document-processing/details.md
                 - Lab Guide: tracks/track-01/labs/lab-301/legal/document-processing/lab-guide.md
           - Financial Services:
             - Use Cases:
               - Self-service KYC:
-                - Steps: tracks/track-01/labs/lab-301/financial-services/self-service-kyc/details.md
+                - Details: tracks/track-01/labs/lab-301/financial-services/self-service-kyc/details.md
                 - Lab Guide: tracks/track-01/labs/lab-301/financial-services/self-service-kyc/lab-guide.md
       - Lab 401:
         - Domains:
@@ -158,8 +158,8 @@ nav:
                 - Lab Guide: tracks/track-01/labs/lab-401/financial-services/financial-analysis/lab-guide.md
     - Troubleshooting: tracks/track-01/troubleshooting.md
   - Track 2:
-    # - Introduction: tracks/track-02/index.md
-    - Introduction: stylesheets/coming-soon.md
+    - Introduction: tracks/track-02/index.md
+    # - Introduction: stylesheets/coming-soon.md
     # - Theory:
     #   - Market Landscape: tracks/track-02/theory/what-and-why.md
     #   - Products Introduction: tracks/track-02/theory/product-overview.md
@@ -228,8 +228,8 @@ nav:
                 - Lab Guide: tracks/track-03/labs/lab-401/maximo/use-case-1/lab-guide.md
       - Troubleshooting: tracks/track-03/troubleshooting.md
   - Track 4:
-    # - Introduction: tracks/track-04/index.md
-    - Introduction: stylesheets/coming-soon.md
+    - Introduction: tracks/track-04/index.md
+    # - Introduction: stylesheets/coming-soon.md
     # - Theory:
     #   - Market Landscape: tracks/track-04/theory/what-and-why.md
     #   - Products Introduction: tracks/track-04/theory/product-overview.md

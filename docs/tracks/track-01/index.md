@@ -158,17 +158,17 @@ flowchart LR
 
     ---
 
-    WIP 
+    In the financial services industry, Know Your Customer (KYC) compliance is critical but often time-consuming. The Self-service KYC Assistant streamlines customer onboarding by automating identity verification, document validation, and compliance checks. This AI-powered solution enables customers to complete KYC requirements independently while ensuring regulatory compliance and reducing manual processing time.
 
-    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/financial-services/self-service-kyc/details.md){ .md-button .md-button--primary }
 
-- :material-bank-outline: **Flight Booking Assistant**
+- :material-airplane: **Flight Booking Assistant**
 
     ---
 
-    WIP
+    In the travel and hospitality industry, booking flights involves multiple steps including searching for flights, comparing prices, checking availability, and managing reservations. The Flight Booking Assistant simplifies this process by providing an intelligent interface that helps users find the best flight options, handle booking modifications, and manage travel itineraries efficiently through natural language interactions.
 
-    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/travel-hospitality/flight-booking/details.md){ .md-button .md-button--primary }
 
 </div>
 
