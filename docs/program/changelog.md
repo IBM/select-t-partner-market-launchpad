@@ -4,6 +4,27 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.6.0] — 2026-05-21
+
+### Added
+- New Financial Services Lab 301 Self-service KYC image assets (`docs/assets/images/track01/financial-services/301/`)
+
+### Changed
+- **Track 01 index page** (`docs/tracks/track-01/index.md`):
+    - Updated lab descriptions and navigation
+- **Financial Services Lab 301 Self-service KYC guide** (`docs/tracks/track-01/labs/lab-301/financial-services/self-service-kyc/lab-guide.md`):
+    - Updated lab guide content and instructions
+- **Financial Services Lab 301 Self-service KYC details** (`docs/tracks/track-01/labs/lab-301/financial-services/self-service-kyc/details.md`):
+    - Updated details and documentation
+- **Navigation structure** (`mkdocs.yml`):
+    - Updated navigation for Financial Services Lab 301
+
+### Removed
+- Obsolete Financial Services Lab 301 image assets from incorrect path (`docs/assets/images/track01/financial-services/201/301/`)
+    - Removed 8 main images and 13 flow images
+
+---
+
 ## [1.5.0] — 2026-05-19
 
 ### Added
