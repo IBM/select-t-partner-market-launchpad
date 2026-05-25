@@ -70,16 +70,15 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
-
-  - Program:
-    - Overview: program/overview.md
+  - Home:
+    - Overview: index.md
+    - Program Overview: program/overview.md
     - Intended Audience: program/audience.md
     - Mode of Conduct: program/mode-of-conduct.md
     - Partner Pipeline: program/partner-pipeline.md
     - Changelog: program/changelog.md
 
-  - Track 1:
+  - Boost productivity with AI Agents:
     - Introduction: tracks/track-01/index.md
     - Overview:
       - Market Landscape: tracks/track-01/theory/what-and-why.md
@@ -144,6 +143,11 @@ nav:
               - Self-service KYC:
                 - Details: tracks/track-01/labs/lab-301/financial-services/self-service-kyc/details.md
                 - Lab Guide: tracks/track-01/labs/lab-301/financial-services/self-service-kyc/lab-guide.md
+          - Travel & Hospitality:
+            - Use Cases:
+              - Flight Booking Assistant:
+                - Details: tracks/track-01/labs/lab-301/travel-hospitality/flight-booking/details.md
+                - Lab Guide: tracks/track-01/labs/lab-301/travel-hospitality/flight-booking/lab-guide.md
       - Lab 401:
         - Domains:
           - Retail:
@@ -156,8 +160,18 @@ nav:
               - Financial analysis:
                 - Steps: tracks/track-01/labs/lab-401/financial-services/financial-analysis/details.md
                 - Lab Guide: tracks/track-01/labs/lab-401/financial-services/financial-analysis/lab-guide.md
+          - IT Services:
+            - Use Cases:
+              - IT Service Manager:
+                - Details: tracks/track-01/labs/lab-401/it-services/service-manager/details.md
+                - Lab Guide: tracks/track-01/labs/lab-401/it-services/service-manager/lab-guide.md
+          - Project Management:
+            - Use Cases:
+              - Issue Manager:
+                - Details: tracks/track-01/labs/lab-401/project-management/issue-manager/details.md
+                - Lab Guide: tracks/track-01/labs/lab-401/project-management/issue-manager/lab-guide.md
     - Troubleshooting: tracks/track-01/troubleshooting.md
-  - Track 2:
+  - Maximize the value of enterprize data:
     - Introduction: tracks/track-02/index.md
     # - Introduction: stylesheets/coming-soon.md
     # - Theory:
@@ -190,7 +204,7 @@ nav:
     #     - Validation: tracks/track-02/labs/lab-401/validation.md
     #     - Recap: tracks/track-02/labs/lab-401/recap.md
     # - Troubleshooting: tracks/track-02/troubleshooting.md
-  - Track 3:
+  - Automate technology and operations:
     - Introduction: tracks/track-03/index.md
     - Maximo:
       - Introduction: tracks/track-03/maximo/index.md
@@ -227,7 +241,7 @@ nav:
                 - Details: tracks/track-03/labs/lab-401/maximo/use-case-1/details.md
                 - Lab Guide: tracks/track-03/labs/lab-401/maximo/use-case-1/lab-guide.md
       - Troubleshooting: tracks/track-03/troubleshooting.md
-  - Track 4:
+  - Work across all env with hybrid cloud:
     - Introduction: tracks/track-04/index.md
     # - Introduction: stylesheets/coming-soon.md
     # - Theory:
@@ -267,7 +281,7 @@ nav:
     - Lab Environment Setup: facilitator/lab-environment-setup.md
     - FAQ Handling: facilitator/faq-handling.md
 
-  - Resources:
-    - Further Reading: resources/further-reading.md
-    - Glossary: resources/glossary.md
-    - Support & Help: resources/support.md
+  # - Resources:
+  #   - Further Reading: resources/further-reading.md
+  #   - Glossary: resources/glossary.md
+  #   - Support & Help: resources/support.md

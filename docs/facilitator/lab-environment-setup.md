@@ -43,7 +43,7 @@ Each track has its own specific environment setup requirements based on the prod
 Regardless of track, follow these universal best practices:
 
 ### Timing
-- **Provision environments at least 24 hours before** the session
+- **Provision environments at least 12 hours before** the session
 - Never leave provisioning to the morning of the session
 - Allow time for validation and troubleshooting
 
@@ -60,7 +60,7 @@ Regardless of track, follow these universal best practices:
 - Check that sample data/configurations are loaded
 
 ### Teardown
-- Deprovision all environments within 48 hours after the session
+- TechZone environments will be deprovisioned automatically after the timeline is expired
 - This avoids unnecessary cost or license usage
 - Document any issues encountered for future sessions
 

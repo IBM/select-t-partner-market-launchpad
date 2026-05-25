@@ -154,13 +154,13 @@ flowchart LR
     [:octicons-arrow-right-24: Start Lab](labs/lab-301/legal/document-processing/details.md){ .md-button .md-button--primary }
 
 
-- :material-bank-outline: **Self-service KYC Assistant**
+- :material-bank-outline: **Self-service KYC Agent** <span class="new"></span> <span class="bob"></span> 
 
     ---
 
-    In the financial services industry, Know Your Customer (KYC) compliance is critical but often time-consuming. The Self-service KYC Assistant streamlines customer onboarding by automating identity verification, document validation, and compliance checks. This AI-powered solution enables customers to complete KYC requirements independently while ensuring regulatory compliance and reducing manual processing time.
+    In the financial services industry, Know Your Customer (KYC) compliance is critical but often time-consuming. The Self-service KYC Agent streamlines customer onboarding by automating identity verification, document validation, and compliance checks.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-301/financial-services/self-service-kyc/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/financial-services/self-service-kyc/details.md){ .md-button .md-button--primary } 
 
 - :material-airplane: **Flight Booking Assistant**
 
@@ -202,7 +202,7 @@ flowchart LR
 
     Pre-built ServiceNow agent that allows you to create incidents and tickets by organizational users and also prioritize and assign tasks, manage knowledge articles and assets within an organization.
 
-    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/it-services/service-manager/details.md){ .md-button .md-button--primary }
 
 - :octicons-issue-reopened-16: **Issue Manager**
 
@@ -210,7 +210,7 @@ flowchart LR
 
     Pre-built Jira Issue manager agent that can create, update, retrieve and delete Jira issues.
 
-    [:octicons-arrow-right-24: Start Lab](){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/project-management/issue-manager/details.md){ .md-button .md-button--primary }
 
 </div>
 
