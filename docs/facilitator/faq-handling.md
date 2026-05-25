@@ -4,7 +4,7 @@ Common questions you'll hear during a session, and suggested responses.
 
 ---
 
-## During Theory
+<!-- ## During Theory
 
 **"How does this compare to [competitor product]?"**
 > Acknowledge the question, give a direct differentiator, and offer to go deeper after the session. Don't get pulled into a lengthy comparison during theory.
@@ -39,4 +39,4 @@ Common questions you'll hear during a session, and suggested responses.
 > Collect their interest and feed it back to the program organiser.
 
 **"Can we get a recording?"**
-> Partner Market Launchpad is intentionally in-person and not recorded — the value is in the hands-on experience, not passive consumption. Offer the docs site as the reference instead.
+> Partner Market Launchpad is intentionally in-person and not recorded — the value is in the hands-on experience, not passive consumption. Offer the docs site as the reference instead. -->

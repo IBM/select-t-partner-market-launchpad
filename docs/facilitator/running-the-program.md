@@ -6,11 +6,15 @@ This guide is for anyone facilitating a Partner Market Launchpad session. The go
 
 ## Before the Session
 
-- [ ] Confirm attendee list (~20 people: partners + client-side technical leaders)
-- [ ] Provision lab environments for all seats (see [Lab Environment Setup](lab-environment-setup.md))
-- [ ] Share the welcome pack with attendees (credentials, agenda, pre-reads)
-- [ ] Prepare the room: breakout seating, projector/display, whiteboards
-- [ ] Run through labs end-to-end yourself at least once before the session
+:material-check-bold: Confirm attendee list (~20 people: partners + client-side technical leaders)
+
+:material-check-bold: Provision lab environments for all seats (see [Lab Environment Setup](lab-environment-setup.md))
+
+:material-check-bold: Share the welcome pack with attendees (credentials, agenda, pre-reads)
+
+:material-check-bold: Prepare the room: breakout seating, projector/display, whiteboards
+
+:material-check-bold: Run through labs end-to-end yourself at least once before the session
 
 ---
 
@@ -23,24 +27,23 @@ This guide is for anyone facilitating a Partner Market Launchpad session. The go
 - Walk through the agenda and timing
 - Confirm all attendees have environment access before starting
 
-### Theory Phase (60–90 min)
+### Overview Session (60–90 min)
 
-- Present the What & Why module — emphasise the customer problem, not the product features
-- Use the Use Cases & Personas page to anchor the discussion to real scenarios
-- Leave 15 min for Q&A before transitioning to labs
+- Present the market landscape and IBM's vision, What & Why module emphasise the customer problem, not the products.
+- Break for 15 min for Q&A before transitioning to labs
 
-### Lab Phase
+### Lab Session
 
-- Introduce each lab with a 2-min context-setting — why this lab, what they'll build
-- Circulate the room during labs — don't sit at the front
+- Introduce each lab with a 2-min context-setting why this lab, what they'll build
+- Circulate the room during labs
 - Call out checkpoints verbally: *"If you've completed Step 2, check your output against the Validation page before moving on"*
-- Timebox each lab — keep the group roughly in sync
+- Timebox each lab, keep the group roughly in sync
 
 ### Closing (20 min)
 
 - Facilitate a brief group debrief: what surprised them, what they'd use first
 - Share next steps: what comes after Launchpad in the partner pipeline
-- Collect feedback (form or verbal)
+- Collect feedback
 
 ---
 
