@@ -421,3 +421,77 @@ h3 {
   font-size: 0.6875rem;
   letter-spacing: 0.04em;
 }
+
+
+/* ── Bob, wxO, Gov, and New tags ─────────────────────────── */
+.bob {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin-left: 0.3em;
+  font-size: 0.55rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #1192e8;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.bob::before {
+  content: "Bob";
+}
+
+.wxo {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin-left: 0.3em;
+  font-size: 0.55rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4589ff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.wxo::before {
+  content: "wxO";
+}
+
+.gov {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin-left: 0.3em;
+  font-size: 0.55rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #a56eff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.gov::before {
+  content: "Gov";
+}
+
+.new {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin-left: 0.3em;
+  font-size: 0.55rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #24a148;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.new::before {
+  content: "New!";
+}
