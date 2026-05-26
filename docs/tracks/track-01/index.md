@@ -196,11 +196,11 @@ flowchart LR
     [:octicons-arrow-right-24: Start Lab](labs/lab-401/retail/vendor-risk/details.md){ .md-button .md-button--primary }
 
 
-- :material-content-save-settings-outline: **IT Service Manager**
+- :material-content-save-settings-outline: **IT Asset Manager**
 
     ---
 
-    Pre-built ServiceNow agent that allows you to create incidents and tickets by organizational users and also prioritize and assign tasks, manage knowledge articles and assets within an organization.
+    A specialist agent for tracking and managing IT and business assets in ServiceNow. Users can easily create, update, and view asset records, check asset types, model categories, and configuration items, all from one place.
 
     [:octicons-arrow-right-24: Start Lab](labs/lab-401/it-services/service-manager/details.md){ .md-button .md-button--primary }
 

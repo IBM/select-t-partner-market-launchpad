@@ -26,329 +26,143 @@ The IT Service Manager follows an integrated architecture:
 
 - **IT Service Manager Agent:** Pre-built agent from watsonx Orchestrate catalog
 - **ServiceNow Connector:** Authenticated connection to ServiceNow instance
-- **Incident Management Tools:** Create, update, retrieve, and close incidents
-- **Task Assignment Engine:** Automatically routes and assigns tasks to IT teams
-- **Knowledge Base Integration:** Access to ServiceNow knowledge articles
-- **Asset Management Tools:** Track and manage IT assets and equipment
+- **ServiceNow Tools:** Create, update, retrieve, and close incidents
 
-## Steps
+## ServiceNow OAuth 2.0 Setup Guide
 
-### 1. Access the Pre-built Agent
+### Quick Reference — All Fields
 
-1. Open the watsonx Orchestrate UI
-2. Navigate to the **Catalog** section
-3. Search for "ServiceNow" or "IT Service Manager"
-4. Click on the **IT Service Manager** agent card
-5. Click **Use this agent** to add it to your workspace
+| Field | Value |
+|---|---|
+| **Base URL / Server URL** | `https://<your-instance>.service-now.com` |
+| **Authorization URL** | `https://<your-instance>.service-now.com/oauth_auth.do` |
+| **Token URL** | `https://<your-instance>.service-now.com/oauth_token.do` |
+| **Client ID** | From ServiceNow Application Registry |
+| **Client Secret** | From ServiceNow Application Registry |
+| **Scopes** | `useraccount` |
+| **Callback URL** | `https://{{region}}.watson-orchestrate.cloud.ibm.com/mfe_connectors/api/v1/agentic/oauth/_callback` |
 
-### 2. Configure ServiceNow Connection
+### Steps
 
-Before using the agent, you need to establish a connection to your ServiceNow instance.
+1. Log in to Your ServiceNow Instance
 
-#### 2.1 Create ServiceNow Connection
+    | | |
+    |---|---|
+    | **Instance URL** | `https://<your-instance>.service-now.com` |
+    | **Login with** | Your ServiceNow admin credentials |
 
-1. Navigate to **Connections** in the left sidebar
-2. Click **Add connection**
-3. Search for "ServiceNow" and select it
-4. Enter your ServiceNow connection details:
-   - **Instance URL:** Your ServiceNow instance URL (e.g., `https://your-instance.service-now.com`)
-   - **Username:** ServiceNow user with ITSM permissions
-   - **Password:** ServiceNow user password
-   - **Connection Name:** "ServiceNow ITSM"
+    > **Note:** You need admin privileges to create OAuth application registry entries.
 
-5. Click **Test connection** to verify connectivity
-6. Click **Save** once the test is successful
+2. Navigate to Machine Identity Console
 
-#### 2.2 Link Connection to Agent
+    | | |
+    |---|---|
+    | **Go to** | All → Machine Identity Console (or search in navigator) |
+    | **Click** | Inbound Integrations tab |
+    | **Click** | 'New Integration' button (top right) |
 
-1. Open the **IT Service Manager** agent in Agent Builder
-2. Navigate to the **Toolset** section
-3. For each ServiceNow tool, click the settings icon
-4. Select the ServiceNow connection you created
-5. Click **Save**
+    > **Note:** Alternatively, search for 'Application Registry' in the navigator for the classic view.
 
-### 3. Configure Agent Profile
+3. Select Connection Type
 
-1. In the **Profile** section, review and customize:
-   - **Purpose:** "Assist employees with IT service requests, incident management, and knowledge base access"
-   - **Usage Scenarios:** "Use this agent for creating incidents, checking ticket status, accessing IT knowledge, and managing IT assets"
-   - **Interaction Style:** Keep as **Default** for natural conversation flow
+    | | |
+    |---|---|
+    | **Select** | `OAuth - Authorization code grant` |
+    | **Description** | Used for interactive user authorization to obtain consent for accessing the application with user context |
+    | **Do NOT select** | Client credentials grant (machine-to-machine, no user context) |
 
-### 4. Review Available Tools
+    > **Note:** Authorization code grant is required because watsonx Orchestrate connects on behalf of a user (3-legged OAuth).
 
-The pre-built agent includes the following tools:
+4. Fill in the New Record Form
 
-#### 4.1 Incident Management Tools
+    | | |
+    |---|---|
+    | **Name** | `watsonx Orchestrate` (or any descriptive name) |
+    | **Redirect URL** | `https://{{region}}.watson-orchestrate.cloud.ibm.com/mfe_connectors/api/v1/agentic/oauth/_callback` |
+    | **Active** | Checked (true) |
+    | **This is a public client** | Leave unchecked |
 
-- **create_incident:** Create new IT incidents
-  - Parameters: short_description, description, urgency, impact, category
-  - Returns: Incident number and details
+    > **Note:** The Redirect URL must be exact. This is the watsonx Orchestrate callback URL that ServiceNow will redirect to after user authorization.
 
-- **get_incident:** Retrieve incident details by number
-  - Parameters: incident_number
-  - Returns: Full incident information including status, assigned_to, priority
-
-- **update_incident:** Update existing incident
-  - Parameters: incident_number, fields_to_update
-  - Returns: Updated incident details
-
-- **close_incident:** Close resolved incidents
-  - Parameters: incident_number, resolution_notes
-  - Returns: Closure confirmation
-
-#### 4.2 Task Management Tools
-
-- **assign_task:** Assign tasks to IT teams or individuals
-  - Parameters: task_id, assigned_to, assignment_group
-  - Returns: Assignment confirmation
-
-- **get_my_tasks:** Retrieve tasks assigned to current user
-  - Returns: List of open tasks with priorities
-
-#### 4.3 Knowledge Base Tools
-
-- **search_knowledge:** Search ServiceNow knowledge base
-  - Parameters: search_query, category
-  - Returns: Relevant knowledge articles
-
-- **get_article:** Retrieve specific knowledge article
-  - Parameters: article_id
-  - Returns: Full article content
-
-#### 4.4 Asset Management Tools
-
-- **get_asset_info:** Retrieve IT asset information
-  - Parameters: asset_tag or serial_number
-  - Returns: Asset details, assignment, and status
-
-- **request_equipment:** Submit equipment request
-  - Parameters: equipment_type, justification
-  - Returns: Request number
-
-### 5. Configure Agent Behavior
-
-1. Navigate to the **Behavior** section
-2. Add or customize instructions:
-
-```
-When handling IT service requests:
-
-For Incident Creation:
-1. Gather essential information: issue description, urgency, and affected systems
-2. Ask clarifying questions if details are insufficient
-3. Categorize the incident appropriately (Hardware, Software, Network, etc.)
-4. Set priority based on urgency and business impact
-5. Provide the incident number and expected response time
-6. Offer relevant knowledge articles for common issues
-
-For Incident Status Checks:
-1. Request the incident number or search by description
-2. Provide current status, assigned team, and last update
-3. Estimate resolution time if available
-4. Offer to escalate if needed
-
-For Knowledge Base Queries:
-1. Search for relevant articles based on user's issue
-2. Present top 3 most relevant articles
-3. Offer to create an incident if articles don't resolve the issue
-4. Track which articles are most helpful
-
-For Asset Management:
-1. Verify user identity before providing asset information
-2. Track asset assignments and locations
-3. Handle equipment requests with proper approvals
-4. Monitor asset maintenance schedules
-
-Always:
-- Be professional and empathetic
-- Provide clear incident numbers and tracking information
-- Set realistic expectations for resolution times
-- Escalate critical issues immediately
-- Follow up on open incidents
-```
-
-### 6. Test the Agent
-
-Test various scenarios to ensure proper functionality:
-
-#### Test Case 1: Create an Incident
-```
-User: "My laptop won't connect to the VPN"
-Expected Response:
-- Agent asks for additional details (error messages, when it started)
-- Creates incident with appropriate priority
-- Provides incident number (e.g., INC0012345)
-- Suggests relevant knowledge articles
-- Estimates response time
-```
-
-#### Test Case 2: Check Incident Status
-```
-User: "What's the status of incident INC0012345?"
-Expected Response:
-- Retrieves incident details
-- Shows current status (In Progress, Assigned, etc.)
-- Displays assigned team/person
-- Provides last update information
-- Offers to escalate if needed
-```
-
-#### Test Case 3: Search Knowledge Base
-```
-User: "How do I reset my password?"
-Expected Response:
-- Searches knowledge base
-- Presents relevant articles
-- Provides step-by-step instructions
-- Offers to create incident if issue persists
-```
-
-#### Test Case 4: Request Equipment
-```
-User: "I need a new monitor for my workstation"
-Expected Response:
-- Asks for justification and specifications
-- Creates equipment request
-- Provides request number
-- Explains approval process
-- Estimates delivery time
-```
-
-#### Test Case 5: Asset Information
-```
-User: "What's the warranty status of asset tag ABC123?"
-Expected Response:
-- Retrieves asset information
-- Shows warranty expiration date
-- Displays maintenance history
-- Provides contact for support
-```
-
-### 7. Configure Notifications (Optional)
-
-1. Navigate to **Behavior** section
-2. Add notification rules:
-   - Send email when high-priority incidents are created
-   - Notify users of incident status changes
-   - Alert on SLA breaches
-   - Remind users of pending approvals
-
-### 8. Set Up Escalation Rules
-
-1. In the **Behavior** section, add escalation logic:
-
-```
-Escalation Rules:
-- Priority 1 (Critical): Immediate escalation to IT Manager
-- Priority 2 (High): Escalate if not assigned within 30 minutes
-- Priority 3 (Medium): Escalate if not resolved within 4 hours
-- Priority 4 (Low): Escalate if not resolved within 24 hours
-
-Auto-escalate if:
-- No response from assigned team within SLA
-- User requests escalation
-- Incident affects multiple users or critical systems
-```
-
-### 9. Deploy the Agent
-
-1. Once testing is complete, click **Deploy**
-2. Navigate to the **Channels** section
-3. Choose deployment options:
-   - **Web Chat Widget:** Embed in company intranet
-   - **Slack Integration:** Connect to IT support channel
-   - **Microsoft Teams:** Integrate with Teams workspace
-   - **Email Integration:** Handle requests via email
-
-### 10. Monitor and Optimize
-
-#### 10.1 Use Agent Analytics
-
-Track key metrics:
-- Number of incidents created per day
-- Average resolution time
-- Most common incident categories
-- Knowledge article usage
-- User satisfaction scores
-- Peak request times
-
-#### 10.2 Review Performance
-
-1. Navigate to **Analytics** dashboard
-2. Monitor:
-   - Incident creation trends
-   - Response time metrics
-   - Tool usage patterns
-   - User engagement levels
-   - Error rates
-
-#### 10.3 Continuous Improvement
-
-- Review conversation logs weekly
-- Identify common issues and add to knowledge base
-- Update agent behavior based on user feedback
-- Add new tools as ServiceNow capabilities expand
-- Train IT staff on agent capabilities
-
-## Best Practices
-
-### For Incident Management
-- Always capture complete incident details upfront
-- Set realistic expectations for resolution times
-- Provide regular status updates
-- Document resolutions for knowledge base
-- Follow up after incident closure
-
-### For Knowledge Base
-- Keep articles up-to-date and accurate
-- Use clear, non-technical language when possible
-- Include screenshots and step-by-step instructions
-- Track article effectiveness
-- Retire outdated articles
-
-### For Asset Management
-- Verify user identity before sharing asset information
-- Maintain accurate asset records
-- Track asset lifecycle and maintenance
-- Automate asset assignment workflows
-- Monitor asset utilization
-
-### For User Experience
-- Respond promptly to all requests
-- Use empathetic language
-- Provide clear next steps
-- Offer self-service options when appropriate
-- Make escalation easy when needed
-
-## Troubleshooting
-
-### Issue: Agent cannot create incidents
-**Solution:**
-- Verify ServiceNow connection is active
-- Check user permissions in ServiceNow
-- Ensure required fields are being populated
-- Review ServiceNow API logs
-
-### Issue: Incident status not updating
-**Solution:**
-- Refresh ServiceNow connection
-- Check for API rate limits
-- Verify incident number format
-- Ensure proper field mapping
-
-### Issue: Knowledge articles not found
-**Solution:**
-- Verify knowledge base is published
-- Check search permissions
-- Update search keywords
-- Ensure articles are categorized correctly
-
-### Issue: Asset information unavailable
-**Solution:**
-- Verify asset exists in ServiceNow
-- Check asset table permissions
-- Ensure asset tag format is correct
-- Update asset records if needed
+5. Configure Auth Scope
+
+    | | |
+    |---|---|
+    | **Scroll to** | Auth scope section |
+    | **Scope to use** | `useraccount` |
+    | **Description** | Grants access to all resources available to the signed-in user |
+    | **Click** | 'Save' to create the record |
+
+    > **Note:** The `useraccount` scope is the standard scope for ServiceNow OAuth integrations. Use with caution as it grants broad access.
+
+6. Copy Client ID & Client Secret
+
+    | | |
+    |---|---|
+    | **After saving, find** | Client ID field — auto-generated |
+    | **Your Client ID** | Copy from the Application Registry record |
+    | **Client Secret** | Click the copy icon next to the masked secret field |
+    | **Store securely** | Keep the Client Secret safe — it cannot be retrieved again |
+
+7. Now you should have the following fields
+
+    | Field | Value |
+    |---|---|
+    | **Base URL** | `https://<your-instance>.service-now.com` |
+    | **Authorization URL** | `https://<your-instance>.service-now.com/oauth_auth.do` |
+    | **Token URL** | `https://<your-instance>.service-now.com/oauth_token.do` |
+    | **Client ID** | (copied from Step 6) |
+    | **Client Secret** | (copied from Step 6) |
+    | **Scopes** | `useraccount` |
+
+## Build, Deploy and Monitor Asset Manager Agent in watsonx Orchestrate
+
+### Build
+
+1. Click on the hamburger menu, and select **Discover**.
+    ![build-deploy-1](../../../../../../assets/images/track01/it-services/401/1.png)
+
+1. This is the agent and tools catalog where you can find pre-built agents and tools. There are over 300 pre-built agent and over 1130 pre-built tools. Also over 10 pre-built MCP servers. Under category, click on **IT**.
+    ![build-deploy-2](../../../../../../assets/images/track01/it-services/401/2.png)
+
+1. You will see the Asset Manager agent, we'll be using this pre-built agent. Click on it.
+    ![build-deploy-3](../../../../../../assets/images/track01/it-services/401/3.png)
+
+1. Review the Service Now tools being used for this agent and click on **use as template**.
+    ![build-deploy-4](../../../../../../assets/images/track01/it-services/401/4.png)
+
+1. You will see the Asset Manager agent initialized, with tools, behavior and description.
+    ![build-deploy-5](../../../../../../assets/images/track01/it-services/401/5.png)
+
+1. Click on **Toolset** > **Tools** and click on the three dot menu on any one of the tool and click on **edit details**.
+    ![build-deploy-6](../../../../../../assets/images/track01/it-services/401/6.png)
+
+1. Go to **Connectors** tab, and you will see the OAuth2 connection variable.
+    ![build-deploy-7](../../../../../../assets/images/track01/it-services/401/7.png)
+
+1. Click on the pencil icon to edit.
+    ![build-deploy-9](../../../../../../assets/images/track01/it-services/401/9.png)
+
+1. Select **OAuth2 Authorization Code**.
+    ![build-deploy-10](../../../../../../assets/images/track01/it-services/401/10.png)
+
+1. Enter the credentials that you generated in the [ServiceNow OAuth 2.0](#servicenow-oauth-20-setup-guide) step.
+    ![build-deploy-11](../../../../../../assets/images/track01/it-services/401/11.png)
+
+1. Do the similar configuration in **Live** environment and save the changes.
+    ![build-deploy-12](../../../../../../assets/images/track01/it-services/401/12.png)
+
+### Test
+
+WIP
+
+### Deploy
+
+WIP!
+
+### Monitor
+
+WIP!
 
 ## Integration with Other Systems
 
@@ -372,6 +186,7 @@ The IT Service Manager can be extended to integrate with:
 ## Next Steps
 
 After completing this lab, consider:
+
 - Integrating with additional ITSM modules (Change Management, Problem Management)
 - Adding custom workflows for specific incident types
 - Implementing advanced analytics and reporting
@@ -382,6 +197,7 @@ After completing this lab, consider:
 ## Summary
 
 You have successfully configured and deployed an IT Service Manager agent that:
+
 - Creates and manages IT incidents through natural language
 - Provides access to knowledge base articles
 - Handles task assignment and routing
@@ -390,3 +206,7 @@ You have successfully configured and deployed an IT Service Manager agent that:
 - Improves IT service delivery and user satisfaction
 
 This agent significantly reduces the burden on IT support teams while providing employees with faster, more convenient access to IT services.
+
+!!! success "Conclusion"
+
+    👏 Congratulations on completing the lab! 🎉
