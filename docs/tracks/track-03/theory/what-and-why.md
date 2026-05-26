@@ -1,36 +1,9 @@
-# What & Why — Track 02
+# Market Landscape of Maximo Application Suite
 
-## What is [Product Name]?
+Introduction to the market landscape and IBM’s vision and offerings in that market.
 
-_To be defined: Brief introduction to the product and its core capabilities._
+!!! info "Session Presentation"
+    [:material-presentation: View the presentation slides](https://ibm.seismic.com/Link/Content/DCQ4XHQhc279CGWD2b2hVRdXh2HG){ .md-button .md-button--primary }
 
----
-
-## Why Does It Matter?
-
-### Business Challenge
-
-_To be defined: Describe the business problem this product solves._
-
-### Technical Solution
-
-_To be defined: Explain how the product addresses the challenge._
-
-### Key Benefits
-
-- **Benefit 1:** _Description_
-- **Benefit 2:** _Description_
-- **Benefit 3:** _Description_
-- **Benefit 4:** _Description_
-
----
-
-## Industry Context
-
-_To be defined: Explain the broader industry trends and why this solution is relevant now._
-
----
-
-## Next Steps
-
-Continue to [Product Overview](product-overview.md) to learn more about the product's features and capabilities.
+!!! tip "Facilitator Note"
+    Spend time on this section during the session. Partners who deeply understand the **why** before they touch the product have significantly better lab outcomes and more confident customer conversations.

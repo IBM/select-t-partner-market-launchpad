@@ -211,35 +211,35 @@ nav:
       - Overview:
         - Market Landscape: tracks/track-03/theory/what-and-why.md
         - Products Introduction: tracks/track-03/theory/product-overview.md
+      - Pre Bootcamp Learnings:
+        - Maximo L1/L2/L3: tracks/track-03/pre-bootcamp-learnings/maximo-basics.md
+        - Maximo Manage Fundamentals: tracks/track-03/pre-bootcamp-learnings/maximo-manage-fundamentals.md
       - Labs:
         - Lab Environment Setup: tracks/track-03/lab-environment-setup.md
         - Lab 101:
-          - Maximo:
-            - Use Cases:
-              - Use Case 1:
-                - Details: tracks/track-03/labs/lab-101/maximo/use-case-1/details.md
-                - Lab Guide: tracks/track-03/labs/lab-101/maximo/use-case-1/lab-guide.md
-              - Use Case 2:
-                - Details: tracks/track-03/labs/lab-101/maximo/use-case-2/details.md
-                - Lab Guide: tracks/track-03/labs/lab-101/maximo/use-case-2/lab-guide.md
+            - Core Manage: tracks/track-03/labs/lab-101/core-manage.md
+            - Core MREF: tracks/track-03/labs/lab-101/core-mref.md
+          
         - Lab 201:
-          - Maximo:
-            - Use Cases:
-              - Use Case 1:
-                - Details: tracks/track-03/labs/lab-201/maximo/use-case-1/details.md
-                - Lab Guide: tracks/track-03/labs/lab-201/maximo/use-case-1/lab-guide.md
+            - Advanced Manage: tracks/track-03/labs/lab-201/advanced-manage.md
+            - Advanced MREF: tracks/track-03/labs/lab-201/advanced-mref.md
+            - Infra and Install: tracks/track-03/labs/lab-201/infra-and-install.md
+            - Mobile (Functional): tracks/track-03/labs/lab-201/mobile-functional.md
+          
         - Lab 301:
-          - Maximo:
-            - Use Cases:
-              - Use Case 1:
-                - Details: tracks/track-03/labs/lab-301/maximo/use-case-1/details.md
-                - Lab Guide: tracks/track-03/labs/lab-301/maximo/use-case-1/lab-guide.md
+            - Monitor: tracks/track-03/labs/lab-301/monitor.md
+            - Health: tracks/track-03/labs/lab-301/health.md
+            - IoT: tracks/track-03/labs/lab-301/iot.md
+            - Field Service Management: tracks/track-03/labs/lab-301/field-service-management.md
+    
         - Lab 401:
-          - Maximo:
-            - Use Cases:
-              - Use Case 1:
-                - Details: tracks/track-03/labs/lab-401/maximo/use-case-1/details.md
-                - Lab Guide: tracks/track-03/labs/lab-401/maximo/use-case-1/lab-guide.md
+            - Mobile (Customisations): tracks/track-03/labs/lab-401/mobile-customisations.md
+            - AI Services: tracks/track-03/labs/lab-401/ai-services.md
+            - Visual Inspection: tracks/track-03/labs/lab-401/visual-inspection.md
+            - Predict: tracks/track-03/labs/lab-401/predict.md
+            - Reliability Strategies: tracks/track-03/labs/lab-401/reliability-strategies.md
+            - Asset Investment Planning: tracks/track-03/labs/lab-401/asset-investment-planning.md
+         
       - Troubleshooting: tracks/track-03/troubleshooting.md
   - Work across all env with hybrid cloud:
     # - Introduction: tracks/track-04/index.md

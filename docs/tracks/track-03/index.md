@@ -32,7 +32,7 @@ flowchart LR
 
     - Complete the [Program Overview](../../program/overview.md) if you haven't already.
     - Create an IBMid by referring to the [instructions here](../../facilitator/create-ibm-id.md).
-    - Ensure your lab environment is set up per the [Track 03 Lab Environment Setup Guide](lab-environment-setup.md).
+    - Ensure your lab environment is set up per the [Maximo Lab Environment Setup Guide] (Coming Soon).
 
 ---
 
