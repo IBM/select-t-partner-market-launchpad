@@ -7,7 +7,7 @@
 
 | Fields | Details |
 |-------|--------|
-| **Products** | :material-numeric-1-box: [watsonx Orchestrate](https://www.ibm.com/products/watsonx-orchestrate)<br> :material-numeric-2-box: [watsonx.governance](https://www.ibm.com/products/watsonx-governance) <br> :material-numeric-3-box: [IBM Bob](https://bob.ibm.com/) |
+| **Products** | :material-numeric-1-box: [watsonx Orchestrate](https://www.in.ibm.com/products/watsonx-orchestrate)<br> :material-numeric-2-box: [watsonx.governance](https://www.in.ibm.com/products/watsonx-governance) <br> :material-numeric-3-box: [IBM Bob](https://bob.in.ibm.com/) |
 | **Target Persona** | Select-t growth partners, Business/Technical Leaders and Select-t clients|
 | **Overview sessions** | 2 |
 | **Lab sessions** | 4 |
@@ -72,13 +72,13 @@ flowchart LR
 
     [:octicons-arrow-right-24: Start Lab](labs/lab-101/insurance/use-case-1/details.md){ .md-button .md-button--primary }
 
--   :fontawesome-solid-users-line: **HR use case**
+<!-- -   :fontawesome-solid-users-line: **HR use case**
 
     ---
 
     One of the main challenges faced by any big organization is their HR operations management. As companies grow in size, it becomes increasingly difficult to get information faster and execute tasks with ease. With the advent of Agentic systems, and the power or reasoning models, it becomes easier to have a single entry point for doing mostly every HR operation.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-101/hr/hr-agent/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-101/hr/hr-agent/details.md){ .md-button .md-button--primary } -->
 
 -   :material-car: **Vehicle maintenance**
 
@@ -183,8 +183,9 @@ flowchart LR
 
 ### Lab 401 - Advanced lab
 
-!!! warning "Work in progress"
-    
+!!! tip "Goal"
+    In this advanced lab, you'll learn about governing the agents, integrating third party systems such as ServiceNow, Jira to watsonx Orchestrate. You'll learn advanced techniques and best practices for building production-ready AI Agents in your domain.
+
 <div class="grid cards" markdown>
 
 - :material-server-security: **AI Governance & Vendor Risk**
@@ -214,6 +215,13 @@ flowchart LR
 
 </div>
 
+!!! note "Learning Objectives"
+    By the end of this lab, you will be able to:
+
+    - Governing AI Agents in watsonx Orchestrate
+    - Pre-built Agents & Tools
+    - Monitoring AI Agents
+
 ---
 
 ## Support
@@ -224,3 +232,22 @@ flowchart LR
   Common issues and solutions
 
 </div>
+
+Lab related support:
+
+- 101:
+    - AI Powered customer service for retail: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+    - AI Powered insurance broker assistant: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+    <!-- - HR use case: N/A -->
+    - Vehicle maintenance: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+- 201:
+    - Financial research and analysis: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+    - Supply chain use case: [Brunda Reddy](mailto:brunda.reddy@ibm.com)
+- 301:
+    - Document processing with agentic workflows: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+    - Self-service KYC Agent: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+    - Flight Booking Assistant: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+- 401:
+    - AI Governance & Vendor Risk: [Brunda Reddy](mailto:brunda.reddy@ibm.com)
+    - IT Asset Manager: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
+    - Issue Manager: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)

@@ -27,7 +27,7 @@ As a result, enterprises face:
 
 ### As-Is Architecture
 
-![supply_chain_architecture](../../../../../../assets/images/track01/supply-chain/101/supplychain-agents.png)
+![supply_chain_architecture](../../../../../../assets/images/track01/supply-chain/201/supplychain-agents.png)
 
 ## Objective
 

@@ -1,4 +1,4 @@
-# Watsonx Orchestrate — Agent Builder Lab Guide
+# Lab Guide for AI Powered Insurance Broker
 
 In this lab you're going to be using agent builder to create a simple AI agent that can help brokers in a hypothetical insurance brokerage. This agent will help brokers by providing an agentic chat facility that integrates into the brokerage platform and is embedded into the brokerage UI.
 
@@ -11,7 +11,6 @@ We’ll start by looking at the data model and underlying APIs. For simplicity w
 - Make sure you've already setup the environment:
 - [Lab Environment setup](../../../../lab-environment-setup.md)
 - [Download](https://ibm.box.com/s/rib2j1hoj5k41isu1q7rneqk53j58zzu){:target="_blank"} the lab files
-- Download the zip file from Lab1 folder
 
 ## Reference Architecture
 

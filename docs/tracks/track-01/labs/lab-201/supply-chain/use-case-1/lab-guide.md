@@ -362,7 +362,7 @@ Ensures regulatory and operational compliance.
 spec_version: v1
 style: react
 name: compliance_agent
-llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+llm: groq/openai/gpt-oss-120b
 description: >
   You are a compliance agent responsible for validating supplier eligibility.
   Your task is to check vendor certifications, ESG status, and blacklist status before procurement approval.
@@ -387,7 +387,7 @@ Acts as a central orchestrator and routes tasks to other agents.
 spec_version: v1
 style: react
 name: controller_agent
-llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+llm: groq/openai/gpt-oss-120b
 description: >
   You are the orchestrator agent for supply chain planning. You coordinate forecasting, inventory checks,
   procurement, logistics, and compliance to generate a unified operational plan.
@@ -442,7 +442,7 @@ Handles demand forecasting using statistical or ML models.
 spec_version: v1
 style: react
 name: forecast_agent
-llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+llm: groq/openai/gpt-oss-120b
 description: >
   You are a supply chain agent that specializes in **demand forecasting** for retail, pharma, and manufacturing clients.
   Your purpose is to help supply chain planners make better stocking decisions by forecasting demand patterns.
@@ -464,7 +464,7 @@ Monitors stock levels, generates reorder alerts.
 spec_version: v1
 style: react
 name: inventory_agent
-llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+llm: groq/openai/gpt-oss-120b
 description: >
   You are a supply chain agent that monitors inventory levels across warehouses and SKUs.
   Your job is to identify low stock, stockouts, and flag restocking needs proactively.
@@ -490,7 +490,7 @@ Plans and simulates transport, routing, and deliveries.
 spec_version: v1
 style: react
 name: logistics_agent
-llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+llm: groq/openai/gpt-oss-120b
 description: >
   You are a supply chain agent responsible for delivery and shipment planning.
   Your role is to schedule and prioritize deliveries based on procurement lead times and urgency.
@@ -516,7 +516,7 @@ Handles vendor communication and purchase order execution.
 spec_version: v1
 style: react
 name: procurement_agent
-llm: watsonx/meta-llama/llama-3-2-90b-vision-instruct
+llm: groq/openai/gpt-oss-120b
 description: >
   You are a supply chain agent responsible for procurement decisions.
   You decide which supplier to order from based on stock needs, vendor lead time, and cost.
