@@ -6,7 +6,7 @@ In this lab, you will configure and deploy a pre-built IT Service Manager agent 
 
 ## Pre-requisites
 
-- Make sure you've already setup the environment:
+Make sure you've already setup the environment:
 - [Lab Environment setup](../../../../lab-environment-setup.md)
 - Access to watsonx Orchestrate
 - ServiceNow instance with ITSM module enabled
