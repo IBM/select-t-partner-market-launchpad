@@ -1675,7 +1675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../lab-101/legal/use-case-1/details/" class="md-nav__link">
+      <a href="../../../../lab-101/legal/use-case-1/details.md" class="md-nav__link">
         
   
   
@@ -1703,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../lab-101/legal/use-case-1/lab-guide/" class="md-nav__link">
+      <a href="../../../../lab-101/legal/use-case-1/lab-guide.md" class="md-nav__link">
         
   
   
@@ -1797,7 +1797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../lab-101/legal/use-case-2/details/" class="md-nav__link">
+      <a href="../../../../lab-101/legal/use-case-2/details.md" class="md-nav__link">
         
   
   
@@ -1825,7 +1825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../lab-101/legal/use-case-2/lab-guide/" class="md-nav__link">
+      <a href="../../../../lab-101/legal/use-case-2/lab-guide.md" class="md-nav__link">
         
   
   
@@ -4213,17 +4213,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-launch-the-chat-ui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Launch the Chat UI
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#3-select-the-flight-booking-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4246,10 +4235,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-building-the-workflows" class="md-nav__link">
+  <a href="#building-the-workflows-in-agent-builder-optional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Building the workflows
+        Building the workflows in Agent Builder (Optional)
       
     </span>
   </a>
@@ -4266,17 +4255,6 @@
     <span class="md-ellipsis">
       
         Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Troubleshooting
       
     </span>
   </a>
@@ -7764,17 +7742,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-launch-the-chat-ui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Launch the Chat UI
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#3-select-the-flight-booking-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7797,10 +7764,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-building-the-workflows" class="md-nav__link">
+  <a href="#building-the-workflows-in-agent-builder-optional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Building the workflows
+        Building the workflows in Agent Builder (Optional)
       
     </span>
   </a>
@@ -7817,17 +7784,6 @@
     <span class="md-ellipsis">
       
         Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Troubleshooting
       
     </span>
   </a>
@@ -8102,8 +8058,7 @@
 <ul>
 <li>Make sure you've already setup the environment:</li>
 <li><a href="../../../../../lab-environment-setup/">Lab Environment setup</a></li>
-<li>Access to watsonx Orchestrate</li>
-<li>Basic understanding of REST APIs and OpenAPI specifications</li>
+<li><a href="https://ibm.box.com/s/rib2j1hoj5k41isu1q7rneqk53j58zzu" target="_blank">Download</a> the lab files</li>
 </ul>
 <h2 id="reference-architecture">Reference Architecture<a class="headerlink" href="#reference-architecture" title="Permanent link">¶</a></h2>
 <p>The Flight Booking Assistant follows an agentic workflow architecture:</p>
@@ -8135,22 +8090,13 @@
 <li>Branching conditions for handling booking confirmation</li>
 <li>Multi-turn conversation flow</li>
 </ul>
-<h3 id="2-launch-the-chat-ui">2. Launch the Chat UI<a class="headerlink" href="#2-launch-the-chat-ui" title="Permanent link">¶</a></h3>
-<ul>
-<li>Start the watsonx Orchestrate chat interface:</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>orchestrate<span class="w"> </span>chat<span class="w"> </span>start
-</code></pre></div>
-<p>This will launch the chat UI where you can interact with the flight booking agent.</p>
 <h3 id="3-select-the-flight-booking-agent">3. Select the Flight Booking Agent<a class="headerlink" href="#3-select-the-flight-booking-agent" title="Permanent link">¶</a></h3>
-<ul>
-<li>In the chat interface, select the <strong>book_a_flight_agent</strong> from the available agents list.</li>
-</ul>
+<p>In the chat interface, select the <strong>book_a_flight_agent</strong> from the available agents list.</p>
 <h3 id="4-test-the-flight-booking-workflow">4. Test the Flight Booking Workflow<a class="headerlink" href="#4-test-the-flight-booking-workflow" title="Permanent link">¶</a></h3>
 <ol>
 <li>
 <p>Type a natural language request to book a flight. For example:
-   </p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>book a flight from london to the big apple leaving tomorrow returning on Friday for me and my wife
+   </p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>book a flight from london to the big apple leaving tomorrow returning on Friday for me and my wife
 </code></pre></div><p></p>
 </li>
 <li>
@@ -8177,12 +8123,9 @@
 <p>Upon completion, you'll receive a booking summary with all travel details and a confirmation reference.</p>
 </li>
 </ol>
-<h3 id="5-building-the-workflows">5. Building the workflows<a class="headerlink" href="#5-building-the-workflows" title="Permanent link">¶</a></h3>
+<h3 id="building-the-workflows-in-agent-builder-optional">Building the workflows in Agent Builder (Optional)<a class="headerlink" href="#building-the-workflows-in-agent-builder-optional" title="Permanent link">¶</a></h3>
 <p>Watch this video to learn how to build the workflow step by step:</p>
-<div>
-<iframe allowfullscreen="allowfullscreen" height="405" src="https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/27941801?iframeembed=true&amp;entry_id=1_0vcwyy5g" style="border: none;" width="720">
-</iframe>
-</div>
+<p><a href="https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_0vcwyy5g?wid=_1773841&amp;iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_0vcwyy5g" target="_blank"><img alt="Watch the demo" src="../../../../../../../assets/images/thumbnail.png"></a></p>
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">¶</a></h2>
 <ul>
 <li><strong>Use clear and concise prompts</strong> in form questions to guide users effectively</li>
@@ -8194,40 +8137,31 @@
 <li><strong>Generate comprehensive summaries</strong> that confirm all booking details</li>
 <li><strong>Test all workflow paths</strong> including booking confirmation and cancellation</li>
 </ul>
-<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">¶</a></h2>
-<p><strong>Issue:</strong> Form fields not appearing correctly
-- Verify user activity configuration
-- Check conditional logic for dependent fields
-- Ensure variable names are correctly referenced</p>
-<p><strong>Issue:</strong> Branching condition not working
-- Verify boolean variable is correctly captured
-- Check condition syntax in branching block
-- Test both true and false paths</p>
-<p><strong>Issue:</strong> Summary message missing information
-- Verify all variables are correctly referenced in logic block
-- Check that user inputs are being stored properly
-- Ensure variable names match between activities and logic blocks</p>
-<p><strong>Issue:</strong> Flight suggestions not displaying
-- Verify logic block configuration
-- Check that all required inputs are collected
-- Ensure flight data is properly formatted</p>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">¶</a></h2>
-<p>After completing this lab, consider:
-- Adding seat selection as an additional user activity
-- Integrating meal preferences and special requests
-- Implementing multi-city trip support with additional form fields
-- Adding payment processing workflow steps
-- Creating email confirmation logic blocks
-- Integrating with calendar systems for automatic event creation</p>
+<p>After completing this lab, consider:</p>
+<ul>
+<li>Adding seat selection as an additional user activity</li>
+<li>Integrating meal preferences and special requests</li>
+<li>Implementing multi-city trip support with additional form fields</li>
+<li>Adding payment processing workflow steps</li>
+<li>Creating email confirmation logic blocks</li>
+<li>Integrating with calendar systems for automatic event creation</li>
+</ul>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
-<p>You have successfully created a Flight Booking agentic workflow that:
-- Guides users through a structured form-based booking process
-- Collects travel details using various input types (single choice, date, number, boolean)
-- Analyzes user inputs to suggest available flights
-- Uses branching conditions to handle booking confirmation or cancellation
-- Generates comprehensive booking summaries using logic blocks
-- Demonstrates how forms in user activities appear in the chat interface</p>
+<p>You have successfully created a Flight Booking agentic workflow that:</p>
+<ul>
+<li>Guides users through a structured form-based booking process</li>
+<li>Collects travel details using various input types (single choice, date, number, boolean)</li>
+<li>Analyzes user inputs to suggest available flights</li>
+<li>Uses branching conditions to handle booking confirmation or cancellation</li>
+<li>Generates comprehensive booking summaries using logic blocks</li>
+<li>Demonstrates how forms in user activities appear in the chat interface</li>
+</ul>
 <p>This form-based approach provides a guided, structured experience that ensures all necessary information is collected efficiently while maintaining a conversational interface.</p>
+<div class="admonition success">
+<p class="admonition-title">Conclusion</p>
+<p>👏 Congratulations on completing the lab! 🎉</p>
+</div>
 
 
 
