@@ -8,8 +8,7 @@ In this lab, you will create an agentic workflow (previously known as flow) that
 
 - Make sure you've already setup the environment:
 - [Lab Environment setup](../../../../lab-environment-setup.md)
-- Access to watsonx Orchestrate
-- Basic understanding of REST APIs and OpenAPI specifications
+- [Download](https://ibm.box.com/s/rib2j1hoj5k41isu1q7rneqk53j58zzu){:target="_blank"} the lab files
 
 ## Reference Architecture
 
@@ -45,19 +44,9 @@ This script will import the `book_a_flight_agent` with all the necessary configu
 - Branching conditions for handling booking confirmation
 - Multi-turn conversation flow
 
-### 2. Launch the Chat UI
-
-- Start the watsonx Orchestrate chat interface:
-
-```bash
-orchestrate chat start
-```
-
-This will launch the chat UI where you can interact with the flight booking agent.
-
 ### 3. Select the Flight Booking Agent
 
-- In the chat interface, select the **book_a_flight_agent** from the available agents list.
+In the chat interface, select the **book_a_flight_agent** from the available agents list.
 
 ### 4. Test the Flight Booking Workflow
 
@@ -83,19 +72,11 @@ This will launch the chat UI where you can interact with the flight booking agen
 
 1. Upon completion, you'll receive a booking summary with all travel details and a confirmation reference.
 
-### 5. Building the workflows
+### Building the workflows in Agent Builder (Optional)
 
 Watch this video to learn how to build the workflow step by step:
 
-<div markdown="1">
-<iframe
-  src="https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/27941801?iframeembed=true&entry_id=1_0vcwyy5g"
-  width="720"
-  height="405"
-  allowfullscreen
-  style="border: none;">
-</iframe>
-</div>
+[![Watch the demo](../../../../../../assets/images/thumbnail.png)](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_0vcwyy5g?wid=_1773841&iframeembed=true&playerId=kaltura_player&entry_id=1_0vcwyy5g){target="_blank"}
 
 ## Best Practices
 
@@ -108,31 +89,10 @@ Watch this video to learn how to build the workflow step by step:
 - **Generate comprehensive summaries** that confirm all booking details
 - **Test all workflow paths** including booking confirmation and cancellation
 
-## Troubleshooting
-
-**Issue:** Form fields not appearing correctly
-- Verify user activity configuration
-- Check conditional logic for dependent fields
-- Ensure variable names are correctly referenced
-
-**Issue:** Branching condition not working
-- Verify boolean variable is correctly captured
-- Check condition syntax in branching block
-- Test both true and false paths
-
-**Issue:** Summary message missing information
-- Verify all variables are correctly referenced in logic block
-- Check that user inputs are being stored properly
-- Ensure variable names match between activities and logic blocks
-
-**Issue:** Flight suggestions not displaying
-- Verify logic block configuration
-- Check that all required inputs are collected
-- Ensure flight data is properly formatted
-
 ## Next Steps
 
 After completing this lab, consider:
+
 - Adding seat selection as an additional user activity
 - Integrating meal preferences and special requests
 - Implementing multi-city trip support with additional form fields
@@ -143,6 +103,7 @@ After completing this lab, consider:
 ## Summary
 
 You have successfully created a Flight Booking agentic workflow that:
+
 - Guides users through a structured form-based booking process
 - Collects travel details using various input types (single choice, date, number, boolean)
 - Analyzes user inputs to suggest available flights
@@ -151,3 +112,7 @@ You have successfully created a Flight Booking agentic workflow that:
 - Demonstrates how forms in user activities appear in the chat interface
 
 This form-based approach provides a guided, structured experience that ensures all necessary information is collected efficiently while maintaining a conversational interface.
+
+!!! success "Conclusion"
+
+    👏 Congratulations on completing the lab! 🎉

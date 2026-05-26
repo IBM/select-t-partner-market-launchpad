@@ -10,7 +10,7 @@ We’ll start by looking at the data model and underlying APIs. For simplicity w
 
 - Make sure you've already setup the environment:
 - [Lab Environment setup](../../../../lab-environment-setup.md)
-- [Download files](https://ibm.box.com/s/n0pkqfjzwxi3cvzaq8msaclfnf7mbwro){:target="_blank"}
+- [Download](https://ibm.box.com/s/rib2j1hoj5k41isu1q7rneqk53j58zzu){:target="_blank"} the lab files
 - Download the zip file from Lab1 folder
 
 ## Reference Architecture

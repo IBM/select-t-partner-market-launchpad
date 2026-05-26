@@ -4,6 +4,37 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.7.0] — 2026-05-26
+
+### Added
+- New IT Services Lab 401 Service Manager use case documentation (`docs/tracks/track-01/labs/lab-401/it-services/service-manager/`)
+- New IT Services Lab 401 image assets (`docs/assets/images/track01/it-services/401/`)
+- New thumbnail image asset (`docs/assets/images/thumbnail.png`)
+
+### Changed
+- **Track 01 index page** (`docs/tracks/track-01/index.md`):
+    - Updated lab descriptions and navigation
+- **Lab 101 lab guides** - Updated content and instructions:
+    - Automobile use case 1 (`docs/tracks/track-01/labs/lab-101/automobile/use-case-1/lab-guide.md`)
+    - HR Agent (`docs/tracks/track-01/labs/lab-101/hr/hr-agent/lab-guide.md`)
+    - Insurance use case 1 (`docs/tracks/track-01/labs/lab-101/insurance/use-case-1/lab-guide.md`)
+    - Retail use case 1 (`docs/tracks/track-01/labs/lab-101/retail/use-case-1/lab-guide.md`)
+- **Lab 201 Financial Services Wealth Manager guide** (`docs/tracks/track-01/labs/lab-201/financial-services/wealth-manager/lab-guide.md`):
+    - Updated lab guide content and instructions
+- **Lab 301 lab guides** - Updated content and instructions:
+    - Financial Services Self-service KYC (`docs/tracks/track-01/labs/lab-301/financial-services/self-service-kyc/lab-guide.md`)
+    - Legal Document Processing (`docs/tracks/track-01/labs/lab-301/legal/document-processing/lab-guide.md`)
+    - Travel & Hospitality Flight Booking (`docs/tracks/track-01/labs/lab-301/travel-hospitality/flight-booking/lab-guide.md`)
+- **Lab 401 IT Services Service Manager** (`docs/tracks/track-01/labs/lab-401/it-services/service-manager/`):
+    - Updated details and lab guide documentation
+
+### Removed
+- Legal Lab 101 use case documentation:
+    - Use case 1 details and lab guide (`docs/tracks/track-01/labs/lab-101/legal/use-case-1/`)
+    - Use case 2 details and lab guide (`docs/tracks/track-01/labs/lab-101/legal/use-case-2/`)
+
+---
+
 ## [1.6.0] — 2026-05-21
 
 ### Added

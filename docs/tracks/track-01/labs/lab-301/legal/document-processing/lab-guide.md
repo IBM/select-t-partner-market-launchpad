@@ -11,8 +11,7 @@ In this lab scenario, a financial services firm processes numerous contracts and
 - Make sure you've already setup the environment:
 - [Lab Environment setup](../../../../lab-environment-setup.md)
 - [ADK Installation](https://developer.watson-orchestrate.ibm.com/getting_started/installing){:target="_blank"}
-- [Download files](https://ibm.box.com/s/n0pkqfjzwxi3cvzaq8msaclfnf7mbwro){:target="_blank"}
-- Download the **document-extraction-lab.zip** file from Lab1 folder.
+- [Download](https://ibm.box.com/s/rib2j1hoj5k41isu1q7rneqk53j58zzu){:target="_blank"} the lab files
 
 ## Reference Architecture
 
