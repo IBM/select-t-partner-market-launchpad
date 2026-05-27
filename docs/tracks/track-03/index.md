@@ -1,7 +1,7 @@
 # Track 03 — Automate technology and operations
 
-!!! danger "Work in progress"
-    This track is work in progress check back later.
+!!! warning "Stay tuned — brilliance is loading."
+    We’re refining this track to make it exceptional — revisit shortly.
 
 ![track3-hero](../../assets/images/track03-hero.png)
 *AI Generated image*
@@ -32,7 +32,7 @@ flowchart LR
 
     - Complete the [Program Overview](../../program/overview.md) if you haven't already.
     - Create an IBMid by referring to the [instructions here](../../facilitator/create-ibm-id.md).
-    - Ensure your lab environment is set up per the [Track 03 Lab Environment Setup Guide](lab-environment-setup.md).
+    - Ensure your lab environment is set up per the [Maximo Lab Environment Setup Guide] (Coming Soon).
 
 ---
 
@@ -65,7 +65,7 @@ flowchart LR
 
     Introduction to MAS Manage: assets, locations, work orders & Manage architecture in the EAM foundation. Learn the fundamentals of asset lifecycle management, location hierarchies, and work order creation and tracking within the Maximo platform.
     
-    [:octicons-arrow-right-24: Start Lab](labs/lab-101/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-101/core-manage.md){ .md-button .md-button--primary }
 
 -   :material-file-tree: **Core MREF**
 
@@ -73,7 +73,7 @@ flowchart LR
 
     Explore Maximo Reference Data: classification, domains & master data that underpin all MAS modules. Understand how reference data structures, classification hierarchies, and domain values form the foundation for consistent asset management across the organization.
     
-    [:octicons-arrow-right-24: Start Lab](labs/lab-101/maximo/use-case-2/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-101/core-mref.md){ .md-button .md-button--primary }
 
 </div>
 
@@ -101,7 +101,7 @@ flowchart LR
 
     Work management, preventive maintenance, purchasing, Work Centers, KPIs & admin configuration. Learn to set up recurring maintenance schedules, manage procurement workflows, configure work centers, and establish key performance indicators for operational excellence.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-201/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/advanced-manage.md){ .md-button .md-button--primary }
 
 
 - :material-file-document-multiple: **Advanced MREF**
@@ -110,7 +110,7 @@ flowchart LR
 
     Classification structures, condition monitoring, failure codes (FMEA) & reference hierarchy management. Master advanced classification techniques, implement condition-based monitoring strategies, and leverage FMEA (Failure Mode and Effects Analysis) for predictive maintenance.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-201/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/advanced-mref.md){ .md-button .md-button--primary }
 
 - :material-cloud-upload: **Infra & Install**
 
@@ -118,7 +118,7 @@ flowchart LR
 
     MAS deployment on OpenShift, installation via Db2 & MongoDB config, and environment management. Gain hands-on experience deploying Maximo Application Suite on OpenShift, configuring database backends, and managing multi-environment deployments.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-201/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/infra-and-install.md){ .md-button .md-button--primary }
 
 - :material-cellphone-link: **Mobile (Functional)**
 
@@ -126,7 +126,7 @@ flowchart LR
 
     Work order management on mobile, inspection forms, crew scheduling & offline field operations. Enable field technicians with mobile capabilities for work order execution, digital inspections, crew coordination, and offline data synchronization.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-201/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/mobile-functional.md){ .md-button .md-button--primary }
 
 </div>
 
@@ -154,7 +154,7 @@ flowchart LR
 
     Connect IoT data, build dashboards, set alert thresholds & use EDC for managed gateway scenarios. Learn to integrate sensor data streams, create real-time monitoring dashboards, configure intelligent alerting, and leverage Edge Data Collector for distributed asset monitoring.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-301/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/monitor.md){ .md-button .md-button--primary }
 
 
 - :material-access-point: **IoT**
@@ -163,7 +163,7 @@ flowchart LR
 
     Device registration, data ingestion pipelines, message schemas & sensor data to Monitor dashboards. Master IoT device onboarding, design data ingestion architectures, define message schemas, and visualize sensor telemetry in Monitor dashboards for actionable insights.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-301/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/iot.md){ .md-button .md-button--primary }
 
 - :material-heart-pulse: **Health**
 
@@ -171,7 +171,7 @@ flowchart LR
 
     Asset health scores, custom contributor weightings, health rankings & linking insights to work orders. Implement comprehensive asset health scoring systems, configure custom health indicators, prioritize maintenance based on health rankings, and automate work order generation from health insights.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-301/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/health.md){ .md-button .md-button--primary }
 
 - :material-briefcase-clock: **Field Service Mgmt**
 
@@ -179,7 +179,7 @@ flowchart LR
 
     Service requests, scheduling optimization, technician dispatch, SLA management & work order lifecycle. Optimize field service operations with intelligent scheduling, automated technician dispatch, SLA tracking, and end-to-end work order lifecycle management for customer-facing services.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-301/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-301/field-service-management.md){ .md-button .md-button--primary }
 
 </div>
 
@@ -207,7 +207,7 @@ flowchart LR
 
     Custom forms, Application Designer tweaks, custom fields, branding & workflow actions in mobile. Master advanced mobile customization techniques including custom form design, Application Designer modifications, field-level customizations, corporate branding, and workflow automation for mobile users.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-401/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/mobile-customisations.md){ .md-button .md-button--primary }
 
 
 - :material-robot: **AI Services**
@@ -216,7 +216,7 @@ flowchart LR
 
     Maximo Assistant, Work Order Intelligence (job plan prediction) & FMEA-based failure prediction. Leverage AI-powered virtual assistants for natural language interactions, implement intelligent work order recommendations, and use machine learning for failure mode prediction and prevention.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-401/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/ai-services.md){ .md-button .md-button--primary }
 
 - :material-camera-iris: **Visual Inspection**
 
@@ -224,7 +224,7 @@ flowchart LR
 
     Build CV models via MVI Training Server, deploy to MVI Edge 3.x & integrate results into Manage. Develop custom computer vision models for automated defect detection, deploy models to edge devices for real-time inspection, and seamlessly integrate inspection results into Maximo Manage workflows.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-401/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/visual-inspection.md){ .md-button .md-button--primary }
 
 - :material-chart-line: **Predict**
 
@@ -232,7 +232,7 @@ flowchart LR
 
     Run Predict notebooks in CPMD; train failure prediction models & surface risk scores in Health. Utilize IBM Cloud Pak for Data to develop predictive maintenance models, train machine learning algorithms on historical failure data, and integrate risk scores into Health for proactive maintenance planning.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-401/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/predict.md){ .md-button .md-button--primary }
 
 - :material-strategy: **Reliability Strategies**
 
@@ -240,7 +240,7 @@ flowchart LR
 
     RCM strategy design, failure mode analysis, maintenance strategy optimization & PM schedule linking. Implement Reliability-Centered Maintenance (RCM) methodologies, conduct comprehensive failure mode analysis, optimize maintenance strategies based on criticality, and link strategies to preventive maintenance schedules.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-401/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/reliability-strategies.md){ .md-button .md-button--primary }
 
 - :material-finance-chart: **Asset Investment Planning**
 
@@ -248,7 +248,7 @@ flowchart LR
 
     Build investment scenarios, compare risk-cost profiles & score assets for replacement or refurbishment. Develop strategic asset investment plans, perform cost-benefit analysis for replacement vs. refurbishment decisions, and prioritize capital investments based on risk, cost, and business impact.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-401/maximo/use-case-1/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-401/asset-investment-planning.md){ .md-button .md-button--primary }
 
 </div>
 
