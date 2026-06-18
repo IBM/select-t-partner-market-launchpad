@@ -1,8 +1,5 @@
 # Product Overview
 
-!!! info "Placeholder"
-    Track 1 - Boost productivity with AI Agents consists of watsonx Orchestrate, watsonx.governance and IBM Bob
-
 ## What is watsonx Orchestrate?
 
 IBM watsonx Orchestrate is a platform that helps organizations automate work using AI agents.

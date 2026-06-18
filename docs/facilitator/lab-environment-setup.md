@@ -14,21 +14,21 @@ Each track has its own specific environment setup requirements based on the prod
 
 - [Create your IBMid](./create-ibm-id.md)
 
-## Track-Specific Setup Guides
+## Environments
 
 <div class="grid cards" markdown>
 
-- :material-robot: **[Track 01 — Boost productivity with AI agents](../tracks/track-01/lab-environment-setup.md)**
+- :material-robot: **[watsonx Orchestrate & Bob](../tracks/track-01/lab-environment-setup.md)**
   
     Setup for watsonx Orchestrate, watsonx.governance, and IBM Bob
 
-- :material-database: **Track 02 — Maximize the value of enterprise data**
+- :material-database: **watsonx.data**
   
-    Setup for watsonx.data, Guardium, and Planning Analytics (Coming Soon)
+    Setup for watsonx.data & watsonx.data premium (Coming Soon)
 
-- :material-cog: **[Track 03 — Automate technology and operations](../tracks/track-03/lab-environment-setup.md)**
+- :material-cog: **[Maximo](../tracks/track-03/lab-environment-setup.md)**
   
-    Setup for Terraform, Cloudability, Kubecost, Instana, Concert, and more
+    Setup Maximo.
 
 - :material-cloud: **Track 04 — Work across all environments effectively with hybrid cloud**
   

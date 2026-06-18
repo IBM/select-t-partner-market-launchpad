@@ -80,6 +80,8 @@ nav:
 
   - Boost productivity with AI Agents:
     - Introduction: tracks/track-01/index.md
+    - Pre-learning: 
+      - Learning: tracks/track-01/prelearning.md
     - Overview:
       - Market Landscape: tracks/track-01/theory/what-and-why.md
       - Products Introduction: tracks/track-01/theory/product-overview.md
@@ -172,8 +174,8 @@ nav:
                 - Lab Guide: tracks/track-01/labs/lab-401/project-management/issue-manager/lab-guide.md
     - Troubleshooting: tracks/track-01/troubleshooting.md
   - Maximize the value of enterprize data:
-    # - Introduction: tracks/track-02/index.md
-    - Introduction: stylesheets/coming-soon.md
+    - Introduction: tracks/track-02/index.md
+    # - Introduction: stylesheets/coming-soon.md
     # - Theory:
     #   - Market Landscape: tracks/track-02/theory/what-and-why.md
     #   - Products Introduction: tracks/track-02/theory/product-overview.md
@@ -242,8 +244,8 @@ nav:
          
       - Troubleshooting: tracks/track-03/troubleshooting.md
   - Work across all env with hybrid cloud:
-    # - Introduction: tracks/track-04/index.md
-    - Introduction: stylesheets/coming-soon.md
+    - Introduction: tracks/track-04/index.md
+    # - Introduction: stylesheets/coming-soon.md
     # - Theory:
     #   - Market Landscape: tracks/track-04/theory/what-and-why.md
     #   - Products Introduction: tracks/track-04/theory/product-overview.md
