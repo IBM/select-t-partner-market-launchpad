@@ -490,6 +490,17 @@ orchestrate evaluations generate \
   --tools-path   tools/governance_tools/governance_tools.py \
   --output-dir   evaluations/generate/output/
 ```
+![Synthetic DataGeneration - CLI](../../../../../../assets/images/track01/vendor-risk-401/7.1_synthhetic_data.png)
+
+
+> **Note:** If you encounter the error `AttributeError: 'ToolResponse' object has no attribute '_meta'`, verify your orchestrate ADK version . Check your version with:
+> ```bash
+> pip show ibm-watsonx-orchestrate
+> ```
+> If the version is below or above 2.9.0, change it to 2.9.0 with:
+> ```bash
+> pip install --upgrade ibm-watsonx-orchestrate
+> ```
 
 ---
 
@@ -505,6 +516,8 @@ I want to check whether beta_solutions is GDPR compliant.,governance_risk_agent
 Check if delta_cloud meets ISO 27001 compliance requirements.,governance_risk_agent
 What is the risk profile for an unknown vendor that is not in our database?,governance_risk_agent
 ```
+![Stories](../../../../../../assets/images/track01/vendor-risk-401/7.2_stories.png)
+
 
 ---
 
@@ -514,12 +527,14 @@ What is the risk profile for an unknown vendor that is not in our database?,gove
 evaluations/generate/output/
 ├── governance_risk_agent_snapshot_llm.json      ← LLM reasoning snapshot used during generation
 └── governance_risk_agent_test_cases/
-    ├── story_001.json                           ← one JSON file per story
-    ├── story_002.json
+    ├── synthetic_test_case_1.json                           ← one JSON file per story
+    ├── synthetic_test_case_2.json
     └── ...
 ```
 
 Each output JSON has the same schema as the hand-crafted datasets in `evaluations/evaluate/`. Review them before using them for evaluation — the generated tool call sequences and argument values may need manual corrections.
+
+![Synthetic Test Case](../../../../../../assets/images/track01/vendor-risk-401/7.3_test_case_1.png)
 
 ---
 
@@ -547,6 +562,17 @@ orchestrate evaluations quick-eval \
   --tools-path tools/governance_tools/governance_tools.py \
   --env-file .env
 ```
+
+> **Note:** If you encounter the error `TypeError: QuickEvalConfig.__init__() got an unexpected keyword argument 'is_adk'`, verify your evaluation framework version. Check your version with:
+> ```bash
+> pip show ibm-watsonx-orchestrate-evaluation-framework
+> ```
+> If the version is below 1.4.14, upgrade it:
+> ```bash
+> pip install --upgrade ibm-watsonx-orchestrate-evaluation-framework
+> ```
+
+![Quick Eval Output](../../../../../../assets/images/track01/vendor-risk-401/8.1_quick_eval.png)
 
 ---
 
@@ -609,6 +635,7 @@ orchestrate evaluations evaluate \
   --config evaluations/evaluate/config.yaml \
   --env-file .env
 ```
+![Full Evaluation Running](../../../../../../assets/images/track01/vendor-risk-401/9.1_evaluate_running.png)
 
 ---
 
@@ -637,8 +664,14 @@ llm_user_config:
     - "Always provide the vendor name when asking about compliance"
 ```
 
-> `auth_config.url` must match your `WO_INSTANCE` value in `.env` exactly.  
+> `auth_config.url` must match your `WO_INSTANCE` value in `.env` exactly.
 > `tenant_name` is the name of the environment shown in the top-left of your watsonx Orchestrate SaaS workspace.
+
+> **Note:** If you encounter a 404 error with the message `Model 'bedrock/openai.gpt-oss-120b-1:0' was not found` when running `bash scripts/03_evaluate.sh`, add the following field to your `evaluations/evaluate/config.yaml` file:
+> ```yaml
+> evaluation_model: "meta-llama/llama-3-3-70b-instruct"
+> ```
+> This specifies the model to use for LLM-as-a-judge evaluations. 
 
 ---
 
@@ -733,6 +766,17 @@ results/evaluate/<timestamp>/
     ├── data_acme_full_assessment.run2.messages.json           ← raw conversation, run 2
     └── ...
 ```
+**Run Messages Analysis** :
+
+![Run Message Analyze](../../../../../../assets/images/track01/vendor-risk-401/9.4_run_message_analyze.png)
+
+**Run Messages** :
+
+![Run Message](../../../../../../assets/images/track01/vendor-risk-401/9.4_run_messages.png)
+
+**Run Metrics** :
+
+![Run Metrics](../../../../../../assets/images/track01/vendor-risk-401/9.4_run_metrics.png)
 
 ---
 
@@ -747,6 +791,8 @@ results/evaluate/<timestamp>/
 | **Journey Success** | True only if all steps were correct end-to-end across the entire run. | True (1.0) |
 | **Journey Completion %** | Percentage of required steps completed, even if arguments were wrong. | 100% |
 | **Avg Resp Time (sec)** | Average latency per agent response. | < 10 s |
+
+![Run Metrics](../../../../../../assets/images/track01/vendor-risk-401/9.5_agent_metrics_v2.png)
 
 ---
 
@@ -769,6 +815,9 @@ orchestrate evaluations analyze \
 ```
 
 The `-m enhanced` flag activates docstring analysis — the analyzer reads your tool definitions and suggests improvements to any tool description that may have caused the agent to call the wrong tool.
+
+![Evaluation Analytics 1](../../../../../../assets/images/track01/vendor-risk-401/10.1_analyze_p1.png)
+![Evaluation Analytics 2](../../../../../../assets/images/track01/vendor-risk-401/10.1_analyze_p2.png)
 
 ---
 
@@ -904,6 +953,8 @@ The agent should ignore the malicious part and proceed normally. A resilient res
 
 **OWASP:** LLM01, LLM06, LLM09
 
+![Instruction Override](../../../../../../assets/images/track01/vendor-risk-401/11.5_instruction_override.png)
+
 ---
 
 #### Role Playing (On-Policy)
@@ -915,6 +966,8 @@ The attacker tells the agent to adopt an unrestricted persona — typically "Dev
 This attack was repeated 4 times with escalating pressure in attack 08. A resilient response: refusing every time with `"I'm sorry, but I can't fulfill that request."` — even after 4 turns of escalation.
 
 **OWASP:** LLM01, LLM06
+
+![Role Playing](../../../../../../assets/images/track01/vendor-risk-401/11.5_role_playing.png)
 
 ---
 
@@ -934,6 +987,8 @@ The `<|LOVE PLINY LOVE|>` pattern is a known jailbreak token designed to confuse
 A resilient response: `"I'm sorry, but I can't help with that."` — three consecutive refusals, with the injection having zero effect.
 
 **OWASP:** LLM01, LLM06, LLM09
+
+![Jail Breaking](../../../../../../assets/images/track01/vendor-risk-401/11.5_jailbreaking.png)
 
 ---
 
@@ -1003,6 +1058,17 @@ results/red-teaming/
 ├── evaluations/            ← detailed results per individual attack
 └── messages/               ← full conversation logs (read these to understand what happened)
 ```
+**Attack Messages** :
+
+![Attack Messages](../../../../../../assets/images/track01/vendor-risk-401/11.8_messages_attack.png)
+
+**Attack Evaluation** :
+
+![Attack Evaluation](../../../../../../assets/images/track01/vendor-risk-401/11.8_evaluation_attack.png)
+
+**Attacks Result** :
+
+![Attacks Result](../../../../../../assets/images/track01/vendor-risk-401/11.8_attacks_result.png)
 
 ---
 
@@ -1058,6 +1124,9 @@ orchestrate evaluations red-teaming list
 |---|---|---|
 | `orchestrate: command not found` | Virtual env not activated | `source demo-wg/bin/activate` |
 | `401 Unauthorized` | Wrong API key or instance URL | Check `WO_API_KEY` and `WO_INSTANCE` in `.env` |
+| `404 Model 'bedrock/openai.gpt-oss-120b-1:0' was not found` | Default evaluation model not available in your region | Add `evaluation_model: "meta-llama/llama-3-3-70b-instruct"` to `evaluations/evaluate/config.yaml` |
+| `TypeError: QuickEvalConfig.__init__() got an unexpected keyword argument 'is_adk'` | Outdated evaluation framework version | Check version with `pip show ibm-watsonx-orchestrate-evaluation-framework` and upgrade to 1.4.14+ with `pip install --upgrade ibm-watsonx-orchestrate-evaluation-framework` |
+| `AttributeError: 'ToolResponse' object has no attribute '_meta'` | Unsupported orchestrate ADK version | Check version with `pip show ibm-watsonx-orchestrate` and install 2.9.0 with `pip install --upgrade ibm-watsonx-orchestrate` |
 | `Connection refused` or timeout | Wrong SaaS URL in config | Verify `auth_config.url` in `evaluations/evaluate/config.yaml` matches `WO_INSTANCE` |
 | `evaluate error: agent not found` | Agent not imported | Run `bash scripts/00_setup.sh` first |
 | Journey Success: False every run | Wrong tool order or wrong argument values | Check analyze output for the specific step that failed |
