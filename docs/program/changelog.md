@@ -4,6 +4,19 @@ All notable changes to Partner Market Launchpad content are documented here so p
 
 ---
 
+## [1.8.0] — 2026-06-19
+
+### Changed
+- **Lab 401 Retail Vendor Risk lab guide** (`docs/tracks/track-01/labs/lab-401/retail/vendor-risk/lab-guide.md`):
+    - Fixed and expanded lab guide content and instructions
+    - Added screenshots for synthetic data, stories, test cases, quick eval, evaluate running, run messages, run metrics, summary metrics, agent metrics, analyze, and adversarial attack steps
+
+### Added
+- New Retail Vendor Risk Lab 401 image assets (`docs/assets/images/track01/vendor-risk-401/`):
+    - 18 screenshots covering evaluation, analysis, and adversarial attack workflows
+
+---
+
 ## [1.7.0] — 2026-05-26
 
 ### Added

@@ -233,7 +233,7 @@ flowchart LR
 
 </div>
 
-Lab related support:
+Lab credits and support:
 
 - 101:
     - AI Powered customer service for retail: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
@@ -248,6 +248,6 @@ Lab related support:
     - Self-service KYC Agent: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
     - Flight Booking Assistant: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
 - 401:
-    - AI Governance & Vendor Risk: [Brunda Reddy](mailto:brunda.reddy@ibm.com)
+    - AI Governance & Vendor Risk: [Brunda Reddy](mailto:brunda.reddy@ibm.com) & [Yash Dravid](mailto:Yash.Dravid@ibm.com)
     - IT Asset Manager: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
     - Issue Manager: [Manoj Jahgirdar](mailto:manoj.jahgirdar@in.ibm.com)
