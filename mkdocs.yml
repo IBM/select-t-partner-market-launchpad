@@ -87,6 +87,7 @@ nav:
       - Products Introduction: tracks/track-01/theory/product-overview.md
     - Labs:
       - Lab Environment Setup: tracks/track-01/lab-environment-setup.md
+      - Hands-on Labs: tracks/track-01/#hands-on-labs
       - Lab 101:
         - Domains:
           - HR:

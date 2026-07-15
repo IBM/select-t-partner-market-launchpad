@@ -7,6 +7,7 @@ In this lab, you will configure and deploy a pre-built IT Service Manager agent 
 ## Pre-requisites
 
 Make sure you've already setup the environment:
+
 - [Lab Environment setup](../../../../lab-environment-setup.md)
 - Access to watsonx Orchestrate
 - ServiceNow instance with ITSM module enabled
@@ -154,15 +155,88 @@ The IT Service Manager follows an integrated architecture:
 
 ### Test
 
-WIP
+1. In the **Preview** panel, type the following prompt:
+    ```
+    List all the assets
+    ```
+    ![build-deploy-13](../../../../../../assets/images/track01/it-services/401/13.png)
+
+1. You will get a **Connect app** button to connect to Oauth2 server. Click on **Connect** and you will be redirected to ServiceNow page to authorize the user. Click on **allow**.
+    ![build-deploy-14](../../../../../../assets/images/track01/it-services/401/14.png)
+
+1. The Oauth2 connection is successfully established the agent will have access to invoke the ServiceNow tools and will show you the results.
+    ![build-deploy-16](../../../../../../assets/images/track01/it-services/401/16.png)
+
+1. Lets now list the available users: 
+    ```
+    List all the users
+    ```
+    ![build-deploy-17](../../../../../../assets/images/track01/it-services/401/17.png)
+
+1. Lets create a new asset and assign it to the user. Enter the prompt:
+    ```
+    Create a new laptop asset. 
+    Asset type: Hardware
+    Model name: Apple MacBook Pro 17"
+    Model category: Computer
+    Quantity: 1
+    serial number: xxx-xxx-xxxx
+    Asset tag: dev_machine
+    ```
+
+1. Once the asset is created we can assign it to the user:
+    ```
+    Assign the dev_machine to son.marschke
+    ```
+
+1. You can now list the assets assigned to the user using the prompt:
+    ```
+    list all the assets assigned to son.marschke
+    ```
+    ![build-deploy-18](../../../../../../assets/images/track01/it-services/401/18.png)
+
+1. You will see that the assets assigned to this perticular user is being displayed.
 
 ### Deploy
 
-WIP!
+1. Once you have tested the agent, you can click on **Deploy** to view the pre-deploy panel.
+    ![build-deploy-19](../../../../../../assets/images/track01/it-services/401/19.png)
 
-### Monitor
+1. Finally click on **Deploy**.
+    ![build-deploy-20](../../../../../../assets/images/track01/it-services/401/20.png)
 
-WIP!
+## Test deployed agent
+
+1. Click on the **hamburger menu** and select **Chat**.
+    ![build-deploy-21](../../../../../../assets/images/track01/it-services/401/21.png)
+
+1. You will see the Orchestrate chat panel, select the **Asset Manager** agent from the drop down and try the prompt:
+    ```
+    List the users
+    ```
+
+1. You will be prompted to allow the connection to ServiceNow via Oauth2. Go ahead and allow it.
+    ![build-deploy-22](../../../../../../assets/images/track01/it-services/401/22.png)
+
+1. You can see the response.
+    ![build-deploy-23](../../../../../../assets/images/track01/it-services/401/23.png)
+
+1. If the answer is wrong, you can select the **thumbs down** and enter the feedback and **submit** it.
+    ![build-deploy-24](../../../../../../assets/images/track01/it-services/401/24.png)
+
+### Monitoring & Observability
+
+1. Click on the **hamburger menu** and select **Analyze**.
+    ![build-deploy-25](../../../../../../assets/images/track01/it-services/401/25.png)
+
+1. Select the **Asset Manager** from the agents list.
+    ![build-deploy-26](../../../../../../assets/images/track01/it-services/401/26.png)
+
+1. You will see all the metrics for this agent, the feedback that was given previously will also be displayed. Click on the **donught chart** to view the conversation where the feedback was provided.
+    ![build-deploy-27](../../../../../../assets/images/track01/it-services/401/27.png)
+
+1. You can now trace the entire coversation that received a positive/negative feedback.
+    ![build-deploy-28](../../../../../../assets/images/track01/it-services/401/28.png)
 
 ## Integration with Other Systems
 
@@ -183,17 +257,6 @@ The IT Service Manager can be extended to integrate with:
 - Comply with data privacy regulations
 - Regular security reviews and updates
 
-## Next Steps
-
-After completing this lab, consider:
-
-- Integrating with additional ITSM modules (Change Management, Problem Management)
-- Adding custom workflows for specific incident types
-- Implementing advanced analytics and reporting
-- Creating specialized agents for different IT teams
-- Automating routine maintenance tasks
-- Building integration with monitoring and alerting systems
-
 ## Summary
 
 You have successfully configured and deployed an IT Service Manager agent that:
@@ -204,6 +267,8 @@ You have successfully configured and deployed an IT Service Manager agent that:
 - Manages IT assets and equipment requests
 - Integrates seamlessly with ServiceNow ITSM
 - Improves IT service delivery and user satisfaction
+- Tried the feedback loop in watsonx Orchestrate
+- Enabled monitoring and observability for the agent
 
 This agent significantly reduces the burden on IT support teams while providing employees with faster, more convenient access to IT services.
 
