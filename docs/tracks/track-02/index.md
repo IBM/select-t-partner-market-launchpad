@@ -197,4 +197,58 @@ flowchart LR
 
 </div> -->
 
+## Hands-on Labs
+
+### Lab 101 - Basics lab
+
+!!! tip "Goal"
+    In this basic lab, you'll learn core concepts, explore the architecture overview, and complete the foundational setup. You'll understand the key products and why they exist through hands-on experience in your chosen domain.
+
+<div class="grid cards" markdown>
+
+-   :material-stethoscope: **Early Diagnostics Detector**
+
+    ---
+
+    Coming soon.
+
+    [:octicons-arrow-right-24: Start Lab](labs/lab-101/healthcare/early-diagnostics-detector/details.md){ .md-button .md-button--primary }
+
+</div>
+
+!!! note "Learning Objectives"
+    By the end of this lab, you will be able to:
+
+    - TBD
+    - TBD
+    - TBD
+
+---
+
+### Lab 201 - Fundamentals lab
+
+!!! tip "Goal"
+    In this foundational lab, you'll build upon the basics and dive deeper into core platform capabilities. You'll work with more advanced features and learn how to implement practical intelligent application solutions in your chosen domain.
+
+<div class="grid cards" markdown>
+
+-   :material-bullhorn: **Marketing Campaign Generation**
+
+    ---
+
+    Coming soon.
+
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/marketing/marketing-campaign-generation/details.md){ .md-button .md-button--primary }
+
+</div>
+
+!!! note "Learning Objectives"
+    By the end of this lab, you will be able to:
+
+    - TBD
+    - TBD
+    - TBD
+
+---
+
 Lab related support: TBD

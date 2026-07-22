@@ -176,37 +176,22 @@ nav:
     - Troubleshooting: tracks/track-01/troubleshooting.md
   - Maximize the value of enterprize data:
     - Introduction: tracks/track-02/index.md
-    # - Introduction: stylesheets/coming-soon.md
-    # - Theory:
-    #   - Market Landscape: tracks/track-02/theory/what-and-why.md
-    #   - Products Introduction: tracks/track-02/theory/product-overview.md
-    # - Labs:
-    #   - Lab Environment Setup: tracks/track-02/lab-environment-setup.md
-    #   - Lab 101:
-    #     - Overview: tracks/track-02/labs/lab-101/overview.md
-    #     - Prerequisites: tracks/track-02/labs/lab-101/prerequisites.md
-    #     - Steps: tracks/track-02/labs/lab-101/steps.md
-    #     - Validation: tracks/track-02/labs/lab-101/validation.md
-    #     - Recap: tracks/track-02/labs/lab-101/recap.md
-    #   - Lab 201:
-    #     - Overview: tracks/track-02/labs/lab-201/overview.md
-    #     - Prerequisites: tracks/track-02/labs/lab-201/prerequisites.md
-    #     - Steps: tracks/track-02/labs/lab-201/steps.md
-    #     - Validation: tracks/track-02/labs/lab-201/validation.md
-    #     - Recap: tracks/track-02/labs/lab-201/recap.md
-    #   - Lab 301:
-    #     - Overview: tracks/track-02/labs/lab-301/overview.md
-    #     - Prerequisites: tracks/track-02/labs/lab-301/prerequisites.md
-    #     - Steps: tracks/track-02/labs/lab-301/steps.md
-    #     - Validation: tracks/track-02/labs/lab-301/validation.md
-    #     - Recap: tracks/track-02/labs/lab-301/recap.md
-    #   - Lab 401:
-    #     - Overview: tracks/track-02/labs/lab-401/overview.md
-    #     - Prerequisites: tracks/track-02/labs/lab-401/prerequisites.md
-    #     - Steps: tracks/track-02/labs/lab-401/steps.md
-    #     - Validation: tracks/track-02/labs/lab-401/validation.md
-    #     - Recap: tracks/track-02/labs/lab-401/recap.md
-    # - Troubleshooting: tracks/track-02/troubleshooting.md
+    - Labs:
+      - Hands-on Labs: tracks/track-02/#hands-on-labs
+      - Lab 101:
+        - Domains:
+          - Healthcare:
+            - Use Cases:
+              - Early Diagnostics Detector:
+                - Details: tracks/track-02/labs/lab-101/healthcare/early-diagnostics-detector/details.md
+                - Lab Guide: tracks/track-02/labs/lab-101/healthcare/early-diagnostics-detector/lab-guide.md
+      - Lab 201:
+        - Domains:
+          - Marketing:
+            - Use Cases:
+              - Marketing Campaign Generation:
+                - Details: tracks/track-02/labs/lab-201/marketing/marketing-campaign-generation/details.md
+                - Lab Guide: tracks/track-02/labs/lab-201/marketing/marketing-campaign-generation/lab-guide.md
   - Automate technology and operations:
     - Introduction: tracks/track-03/index.md
     - Maximo:
