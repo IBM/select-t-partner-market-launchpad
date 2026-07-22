@@ -153,8 +153,6 @@ The IT Service Manager follows an integrated architecture:
 1. Do the similar configuration in **Live** environment and save the changes.
     ![build-deploy-12](../../../../../../assets/images/track01/it-services/401/12.png)
 
-### Test
-
 1. In the **Preview** panel, type the following prompt:
     ```
     List all the assets
@@ -205,7 +203,7 @@ The IT Service Manager follows an integrated architecture:
 1. Finally click on **Deploy**.
     ![build-deploy-20](../../../../../../assets/images/track01/it-services/401/20.png)
 
-## Test deployed agent
+### Test deployed agent
 
 1. Click on the **hamburger menu** and select **Chat**.
     ![build-deploy-21](../../../../../../assets/images/track01/it-services/401/21.png)
