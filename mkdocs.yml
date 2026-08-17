@@ -177,6 +177,7 @@ nav:
   - Maximize the value of enterprize data:
     - Introduction: tracks/track-02/index.md
     - Labs:
+      - Lab Environment Setup: tracks/track-02/lab-environment-setup.md
       - Hands-on Labs: tracks/track-02/#hands-on-labs
       - Lab 101:
         - Domains:
@@ -185,6 +186,11 @@ nav:
               - Early Diagnostics Detector:
                 - Details: tracks/track-02/labs/lab-101/healthcare/early-diagnostics-detector/details.md
                 - Lab Guide: tracks/track-02/labs/lab-101/healthcare/early-diagnostics-detector/lab-guide.md
+          - Finance:
+            - Use Cases:
+              - Getting Started with Data Ingestion:
+                - Details: tracks/track-02/labs/lab-101/finance/data-ingestion/details.md
+                - Lab Guide: tracks/track-02/labs/lab-101/finance/data-ingestion/lab-guide.md
       - Lab 201:
         - Domains:
           - Marketing:
