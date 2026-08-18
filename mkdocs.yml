@@ -174,24 +174,25 @@ nav:
                 - Details: tracks/track-01/labs/lab-401/project-management/issue-manager/details.md
                 - Lab Guide: tracks/track-01/labs/lab-401/project-management/issue-manager/lab-guide.md
     - Troubleshooting: tracks/track-01/troubleshooting.md
-  - Maximize the value of enterprize data:
+  - Maximize the value of enterprise data:
     - Introduction: tracks/track-02/index.md
     - Labs:
-      - Hands-on Labs: tracks/track-02/#hands-on-labs
       - Lab 101:
         - Domains:
-          - Healthcare:
-            - Use Cases:
-              - Early Diagnostics Detector:
-                - Details: tracks/track-02/labs/lab-101/healthcare/early-diagnostics-detector/details.md
-                - Lab Guide: tracks/track-02/labs/lab-101/healthcare/early-diagnostics-detector/lab-guide.md
+          - Finance:
+            - Getting Started with Data Ingestion in watsonx.data:
+              - Details: tracks/track-02/labs/lab-101/finance/data-ingestion/details.md
+              - Lab Guide: tracks/track-02/labs/lab-101/finance/data-ingestion/lab-guide.md
       - Lab 201:
         - Domains:
-          - Marketing:
-            - Use Cases:
-              - Marketing Campaign Generation:
-                - Details: tracks/track-02/labs/lab-201/marketing/marketing-campaign-generation/details.md
-                - Lab Guide: tracks/track-02/labs/lab-201/marketing/marketing-campaign-generation/lab-guide.md
+          - Data Engineering:
+            - Build CRUD-Capable Apache Iceberg Tables with Spark:
+              - Details: tracks/track-02/labs/lab-201/data-engineering/iceberg-crud-spark/details.md
+              - Lab Guide: tracks/track-02/labs/lab-201/data-engineering/iceberg-crud-spark/lab-guide.md
+          - Retail:
+            - Unified Data Access Through Federation in watsonx.data:
+              - Details: tracks/track-02/labs/lab-201/retail/data-federation/details.md
+              - Lab Guide: tracks/track-02/labs/lab-201/retail/data-federation/lab-guide.md
   - Automate technology and operations:
     - Introduction: tracks/track-03/index.md
     - Maximo:

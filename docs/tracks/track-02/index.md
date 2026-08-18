@@ -1,8 +1,5 @@
 # Track 02 — Build intelligent applications
 
-!!! danger "Work in progress"
-    This track is work in progress check back later.
-
 ![track2-hero](../../assets/images/track02-hero.png)
 *AI Generated image*
 
@@ -10,11 +7,11 @@
 
 | Fields | Details |
 |-------|--------|
-| **Products** | :material-numeric-1-box: [watsonx.data](https://www.ibm.com/products/watsonx-data)<br> :material-numeric-2-box: [IBM Guardium](https://www.ibm.com/products/guardium-data-protection) <br> :material-numeric-3-box: [IBM Planning Analytics](https://www.ibm.com/products/planning-analytics) <br> :material-numeric-4-box: watsonx.data Integration |
+| **Products** | :material-numeric-1-box: [watsonx.data](https://www.ibm.com/products/watsonx-data)<br> :material-numeric-2-box: [watsonx.data Intelligence](https://www.ibm.com/products/watsonx-data-intelligence)<br> :material-numeric-3-box: [watsonx.data Integration](https://www.ibm.com/products/watsonx-data-integration)<br> |
 | **Target Persona** | Select-t growth partners, Application Developers/Technical Leaders and Select-t clients|
 | **Overview sessions** | 2 |
 | **Lab sessions** | 4 |
-| **Estimated Duration** | TBD |
+| **Estimated Duration** | ~6–7 hrs (excluding breaks) |
 
 ---
 
@@ -206,49 +203,71 @@ flowchart LR
 
 <div class="grid cards" markdown>
 
--   :material-stethoscope: **Early Diagnostics Detector**
+-   :material-bank: **Getting Started with Data Ingestion in watsonx.data**
+
+    **Domain: Finance**
 
     ---
 
-    Coming soon.
+    In the financial services industry, organizations deal with large volumes of transactional and analytical data that must be ingested, stored, and queried efficiently. This lab walks you through loading financial datasets into watsonx.data, setting up the ingestion pipeline, and querying the ingested data using the built-in Presto and Spark engines.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-101/healthcare/early-diagnostics-detector/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-101/finance/data-ingestion/details.md){ .md-button .md-button--primary }
 
 </div>
 
 !!! note "Learning Objectives"
     By the end of this lab, you will be able to:
 
-    - TBD
-    - TBD
-    - TBD
+    - Understand the core capabilities of watsonx.data and its role in a modern lakehouse architecture.
+    - Ingest, manage, and access data across open table formats and diverse data sources using watsonx.data.
+    - Apply data engineering and federation capabilities to build scalable, unified data solutions.
 
 ---
 
-### Lab 201 - Fundamentals lab
+### Lab 201 - Foundational lab
 
 !!! tip "Goal"
     In this foundational lab, you'll build upon the basics and dive deeper into core platform capabilities. You'll work with more advanced features and learn how to implement practical intelligent application solutions in your chosen domain.
 
 <div class="grid cards" markdown>
 
--   :material-bullhorn: **Marketing Campaign Generation**
+-   :material-database: **Build CRUD-Capable Apache Iceberg Tables with Spark**
+
+    **Domain: Data Engineering**
 
     ---
 
-    Coming soon.
+    In the data engineering space, teams need reliable, scalable ways to manage large datasets stored in object storage. This lab walks you through building CRUD-capable Apache Iceberg tables using Apache Spark on watsonx.data — enabling row-level create, read, update, and delete operations on open table format data in the lakehouse.
 
-    [:octicons-arrow-right-24: Start Lab](labs/lab-201/marketing/marketing-campaign-generation/details.md){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/data-engineering/iceberg-crud-spark/details.md){ .md-button .md-button--primary }
+
+-   :material-store: **Unified Data Access Through Federation in watsonx.data**
+
+    **Domain: Retail**
+
+    ---
+
+    In the retail industry, data is often siloed across multiple systems — POS databases, inventory platforms, and customer analytics tools. This lab shows you how to use watsonx.data's data federation capabilities to create a unified query layer across disparate data sources, enabling seamless access to retail data without moving it.
+
+    [:octicons-arrow-right-24: Start Lab](labs/lab-201/retail/data-federation/details.md){ .md-button .md-button--primary }
 
 </div>
 
 !!! note "Learning Objectives"
     By the end of this lab, you will be able to:
 
-    - TBD
-    - TBD
-    - TBD
+    - Understand the core capabilities of watsonx.data and its role in a modern lakehouse architecture.
+    - Ingest, manage, and access data across open table formats and diverse data sources using watsonx.data.
+    - Apply data engineering and federation capabilities to build scalable, unified data solutions.
 
 ---
 
-Lab related support: TBD
+## Support
+
+Lab credits and support:
+
+- 101:
+    - Getting Started with Data Ingestion in watsonx.data: [Pratik Sinha](mailto:pratik.sinha1@ibm.com)
+- 201:
+    - Build CRUD-Capable Apache Iceberg Tables with Spark: [Netra C N](mailto:netrcn03@in.ibm.com) & [Pradnya Khade](mailto:Pradnya.Rajendra.Khade@ibm.com)
+    - Unified Data Access Through Federation in watsonx.data: TBD
