@@ -177,6 +177,7 @@ nav:
   - Maximize the value of enterprise data:
     - Introduction: tracks/track-02/index.md
     - Labs:
+      - Lab Environment Setup: tracks/track-02/lab-environment-setup.md
       - Lab 101:
         - Domains:
           - Finance:

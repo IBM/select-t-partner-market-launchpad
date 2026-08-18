@@ -196,6 +196,9 @@ flowchart LR
 
 ## Hands-on Labs
 
+!!! tip "Before you begin"
+    Make sure your lab environment is set up: [Lab Environment Setup](lab-environment-setup.md)
+
 ### Lab 101 - Basics lab
 
 !!! tip "Goal"
@@ -203,13 +206,13 @@ flowchart LR
 
 <div class="grid cards" markdown>
 
--   :material-bank: **Getting Started with Data Ingestion in watsonx.data**
+-   :material-database-arrow-up: **Getting Started with Data Ingestion**
 
     **Domain: Finance**
 
     ---
 
-    In the financial services industry, organizations deal with large volumes of transactional and analytical data that must be ingested, stored, and queried efficiently. This lab walks you through loading financial datasets into watsonx.data, setting up the ingestion pipeline, and querying the ingested data using the built-in Presto and Spark engines.
+    Ingest financial CSV data into watsonx.data using local file upload and Cloud Object Storage.
 
     [:octicons-arrow-right-24: Start Lab](labs/lab-101/finance/data-ingestion/details.md){ .md-button .md-button--primary }
 
@@ -218,13 +221,13 @@ flowchart LR
 !!! note "Learning Objectives"
     By the end of this lab, you will be able to:
 
-    - Understand the core capabilities of watsonx.data and its role in a modern lakehouse architecture.
-    - Ingest, manage, and access data across open table formats and diverse data sources using watsonx.data.
-    - Apply data engineering and federation capabilities to build scalable, unified data solutions.
+    - Ingest structured data into watsonx.data using the Data Manager
+    - Load data from both local file system and Cloud Object Storage
+    - Register ingested data as a managed table in the watsonx.data catalog
 
 ---
 
-### Lab 201 - Foundational lab
+### Lab 201 - Fundamentals lab
 
 !!! tip "Goal"
     In this foundational lab, you'll build upon the basics and dive deeper into core platform capabilities. You'll work with more advanced features and learn how to implement practical intelligent application solutions in your chosen domain.
@@ -237,7 +240,7 @@ flowchart LR
 
     ---
 
-    In the data engineering space, teams need reliable, scalable ways to manage large datasets stored in object storage. This lab walks you through building CRUD-capable Apache Iceberg tables using Apache Spark on watsonx.data — enabling row-level create, read, update, and delete operations on open table format data in the lakehouse.
+    Turn flat CSV files in object storage into fully CRUD-capable SQL tables using Apache Spark and Apache Iceberg on watsonx.data.
 
     [:octicons-arrow-right-24: Start Lab](labs/lab-201/data-engineering/iceberg-crud-spark/details.md){ .md-button .md-button--primary }
 
@@ -247,7 +250,7 @@ flowchart LR
 
     ---
 
-    In the retail industry, data is often siloed across multiple systems — POS databases, inventory platforms, and customer analytics tools. This lab shows you how to use watsonx.data's data federation capabilities to create a unified query layer across disparate data sources, enabling seamless access to retail data without moving it.
+    Use watsonx.data's federation capabilities to create a unified query layer across siloed retail data sources — without moving data.
 
     [:octicons-arrow-right-24: Start Lab](labs/lab-201/retail/data-federation/details.md){ .md-button .md-button--primary }
 
@@ -256,18 +259,10 @@ flowchart LR
 !!! note "Learning Objectives"
     By the end of this lab, you will be able to:
 
-    - Understand the core capabilities of watsonx.data and its role in a modern lakehouse architecture.
-    - Ingest, manage, and access data across open table formats and diverse data sources using watsonx.data.
-    - Apply data engineering and federation capabilities to build scalable, unified data solutions.
+    - Build CRUD-capable Apache Iceberg tables using Spark on watsonx.data
+    - Run row-level INSERT, UPDATE, and DELETE operations on object storage data
+    - Federate queries across multiple data sources without data movement
 
 ---
 
-## Support
-
-Lab credits and support:
-
-- 101:
-    - Getting Started with Data Ingestion in watsonx.data: [Pratik Sinha](mailto:pratik.sinha1@ibm.com)
-- 201:
-    - Build CRUD-Capable Apache Iceberg Tables with Spark: [Netra C N](mailto:netrcn03@in.ibm.com) & [Pradnya Khade](mailto:Pradnya.Rajendra.Khade@ibm.com)
-    - Unified Data Access Through Federation in watsonx.data: TBD
+Lab related support: TBD
